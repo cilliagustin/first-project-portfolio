@@ -15,8 +15,10 @@
 }
 
 body{
+    overflow-x: hidden;
+    background-color: rgb(10, 25, 47);
     font-family: 'Lato', sans-serif;
-    overflow: hidden;
+    color: var(--main-color);
 }
 
 .container{
@@ -33,7 +35,7 @@ body{
 /* NAVBAR */
 
 nav{
-    background-color: red;
+    background-color: none;
     position: sticky;
     top: 0;
     width: 100%;
@@ -45,7 +47,7 @@ nav{
 }
 
 .hamb-line {
-    background: white;
+    background: var(--white);
     display: block;
     height: 2px;
     position: relative;
@@ -55,7 +57,7 @@ nav{
 
 .hamb-line::before,
 .hamb-line::after{
-    background: white;
+    background: var(--white);
     content: '';
     display: block;
     height: 100%;
@@ -90,18 +92,44 @@ nav{
 }
 
 .nav-link{
+    color: var(--main-color);
+    font-weight: 400;
     text-decoration: none;
-    display: block;
-    padding: 10px;
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    padding: 0.2em 0;
+    position: relative;
 }
+
+.nav-link:hover{
+    color: var(--highlight-color);
+    transition: 0.3s ease;
+}
+
+.nav-link::before{
+    content:"";
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--highlight-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+a:hover::before {
+    transform: scaleX(1);
+  }
 
 /* TOGGLED NAVBAR */
 .side-menu:checked ~ .nav{
     max-height: 100%;
     overflow: visible;
-    z-index: -1;
     position: absolute;
-    top: 20px;
+    top: 29px;
 }
 
 .side-menu:checked ~ .hamb .hamb-line {
@@ -130,7 +158,7 @@ nav{
     /* GENERAL STYLING */
 
     .container{
-        padding: 7px 20px;
+        padding: 15px 30px;
     }
 
     /* NAVBAR*/
@@ -148,7 +176,7 @@ nav{
     }
 
     .nav-link{
-        padding: 0 5px;
+        margin: 0 7px;
     }
     
     .menu a:hover{
