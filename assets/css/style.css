@@ -1,0 +1,19 @@
+/* GENERAL STYLING */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --main-color:rgb(173, 185, 222);
+    --white:rgb(235, 230, 230);
+    --highlight-color: rgb(49, 191, 230);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
