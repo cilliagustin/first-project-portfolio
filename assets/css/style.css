@@ -38,6 +38,13 @@ body{
     justify-content: center;
 }
 
+.flex-column-center {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .highlight{
     color: var(--highlight-color);
 }
@@ -189,12 +196,6 @@ a:hover::before {
 }
 
 /* HOME */
-.home{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .home-container{
     width: 90%;
@@ -227,19 +228,8 @@ a:hover::before {
 
 /* ABOUT ME */
 
-.about-me{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .about-me-content{
     width: 100%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
     margin-top:15px;
     margin-bottom:15px;
 }
@@ -339,7 +329,26 @@ a:hover::before {
     position: relative;
 }
 
+/* MY WORK */
 
+.my-work-content{
+    width: 100%;
+    padding: 0 1em;
+}
+
+.my-work-container{
+    width: 100%;
+}
+
+.my-work-card{
+    height: 100%;
+    width: 40%;
+    max-width: 250px;
+    margin: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* DESKTOP */
 
