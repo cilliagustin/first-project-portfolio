@@ -7,6 +7,7 @@
     --white:rgb(235, 230, 230);
     --highlight-color: rgb(49, 191, 230);
     --background-color: rgb(40, 42, 54);
+    --border:1px solid var(--highlight-color);
 }
 
 *{
@@ -25,6 +26,12 @@ body{
 .container{
     width: 100%;
     padding: 10px 20px;
+}
+
+.flex-start{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .flex-between{
@@ -70,14 +77,17 @@ body{
 .secondary-title{
     color: var(--white);
     font-family: 'Montserrat', sans-serif;
+    padding-left: 1.3em;
 }
 
 .btn-custom{
     color: var(--highlight-color);
     background-color: transparent;
-    border: 1px solid var(--highlight-color);
+    border: var(--border);
+    border-radius: 4px;
     padding: 0.75em 1em;
     margin:3px 5px;
+    text-decoration: none;  
 }
 
 .btn-custom:hover{
@@ -365,7 +375,6 @@ a:hover::before {
     width: 120px; 
     height: 120px;
     background-color: var(--highlight-color);
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -389,9 +398,80 @@ a:hover::before {
     transition: .3s ease-in;
 }
 
+#my-work .secondary-title{
+    margin-top: 1.3em;
+}
+
 .portfolio{
     width: 100%;
-    height: 20px;
+    padding: 1em 0;
+    flex-wrap: wrap;
+}
+
+.portfolio-card{
+    background: rgb(53, 56, 80);
+    cursor: default;
+    border-radius: 4px;
+    max-width: 400px;
+    height: 350px;
+    padding: 1em;
+    margin: .8em;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.portfolio-links{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.portfolio-links .btn-custom{
+    cursor: pointer;
+    padding: 0.3em 0.6em;
+    margin: 0;
+    font-size: .9em;
+}
+
+.portfolio-links i{
+    cursor: pointer;
+    font-size: 2em;
+    color: var(--main-color)!important;
+}
+
+.portfolio-bottom-info p{
+    margin: auto 0 0 0;
+    margin-left: auto;
+    padding: 0;
+}
+
+.portfolio-title{
+    margin:1em 0;
+    transition: .3s ease-in;
+}
+
+.portfolio-text{
+    padding-right: 2.4em;
+}
+
+.portfolio-bottom-info{
+    margin-top: auto;
+    width: 100%;
+}
+
+.portfolio-bottom-info i{
+    color: var(--main-color)!important;
+    font-size: 1.7em;
+    margin-right: .8em;
+    transition: .3s ease-in;
+}
+
+.portfolio-card:hover .portfolio-title,
+.portfolio-card:hover .portfolio-bottom-info i,
+.portfolio-links a i:hover{
+    color: var(--highlight-color)!important;
+    transition: .3s ease-in;
 }
 
 /* DESKTOP */
@@ -495,6 +575,10 @@ a:hover::before {
 
     .my-work-card{
         margin: 0 5px;
+    }
+
+    .portfolio-card{
+        width: 320px;
     }
 }
 
