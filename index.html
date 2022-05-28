@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="container flex-between">
+    <nav id="navbar" class="container flex-between">
         <a href="#" class="logo">LR</a>
         <input class="side-menu" type="checkbox" id="side-menu"/>
         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
@@ -18,22 +18,22 @@
         <div class="nav">
             <ul class="menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About Me</a> 
+                    <a href="#about-me" class="nav-link">About Me</a> 
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">My Work</a>
+                    <a href="#my-work" class="nav-link">My Work</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- HOME -->
-    <header class="container flex-column-start">
+    <header id="home" class="container flex-column-start">
         <div class="home-container">
             <h1 class="main-title">Agustin Cilli</h1>
             <h2 class="subtitle">Welcome to my Website!</h2>
@@ -44,11 +44,11 @@
         </div>
         
         <div class="button-container flex-center">
-            <button type="button" class="btn-custom">Danger</button>
-            <button type="button" class="btn-custom">Danger</button>
-            <button type="button" class="btn-custom">Danger</button>
-            <button type="button" class="btn-custom">Danger</button>
-            <button type="button" class="btn-custom">Danger</button>
+            <button type="button" class="btn-custom">80´s</button>
+            <button type="button" class="btn-custom">90´s</button>
+            <button type="button" class="btn-custom">00´s</button>
+            <button type="button" class="btn-custom">2010´s</button>
+            <button type="button" class="btn-custom">Present Day</button>
           </div>
     </header>
     <!-- ABOUT ME -->
@@ -78,7 +78,7 @@
         
     </section>
     <!-- MY WORK -->
-    <section id="my-work" class="container flex-column-center">
+    <section id="my-work" id="my-work" class="container flex-column-center">
         <div class="section-title-container">
             <h2 class="section-title">My work</h2>
         </div>
@@ -179,6 +179,13 @@
             <button class="btn-custom">Send</button>
         </div>
     </section>
-    
+    <!-- FOOTER -->
+    <footer id="footer" class="container flex-center">
+        <p>© 2022 Agustin Cilli</p>
+        <div class="footer-icons">
+            <a href="https://github.com/cilliagustin?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href = "mailto:abc@example.com?subject=Contact information" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
 </body>
 </html>

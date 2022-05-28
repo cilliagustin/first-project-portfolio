@@ -588,6 +588,25 @@ textarea:focus + label{
     align-self: flex-end;
 }
 
+
+footer p{
+    font-size: .8em;
+}
+
+footer .footer-icons a i{
+    padding-left: 1em;
+    font-size: 2em;
+    color: var(--gray-typography)!important;
+    transition: var(--transition-03s);
+}
+
+footer .footer-icons a i:hover{
+    padding-left: 1em;
+    font-size: 2em;
+    color: var(--blue)!important;
+    transition: var(--transition-03s);
+}
+
 /* DESKTOP */
 
 @media (min-width: 768px) {
