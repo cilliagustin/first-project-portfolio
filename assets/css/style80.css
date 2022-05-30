@@ -299,7 +299,7 @@ nav{
 
 .about-me-list li:before{
     content: "*";
-    color: red;
+    color: var(--secondary-green);
     display: block;
     height: 0;
     width: 0;
