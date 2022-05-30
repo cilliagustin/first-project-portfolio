@@ -1,4 +1,5 @@
 let eighties = document.getElementById("80s");
+let present = document.getElementById("present");
 let imgContainer = document.getElementById("img-container");
 let iconResponsive = document.getElementById("icon-responsive");
 let iconNavegate = document.getElementById("icon-navegate");
@@ -6,6 +7,11 @@ let iconModern = document.getElementById("icon-modern");
 let iconFast = document.getElementById("icon-fast");
 
 eighties.addEventListener(("click"), setEighties);
+present.addEventListener(("click"), setPresent);
+
+function setPresent() {
+    resetHTML();
+};
 
 function setEighties() {
     resetHTML();
@@ -40,7 +46,7 @@ function setEighties() {
     ..................................................<br>
     </p>
 </div> `;
-iconNavegate.innerHTML= `<div class="icon-container">
+    iconNavegate.innerHTML= `<div class="icon-container">
     <p>
 ........................@@@........................<br>
 ...............@@@@@@@@@@@@@@@@@@@@@...............<br>
@@ -96,8 +102,7 @@ iconNavegate.innerHTML= `<div class="icon-container">
 ...................................................<br>
     </p>
 </div>`;
-    iconFast.innerHTML= `
-    <div class="icon-container">
+    iconFast.innerHTML= `<div class="icon-container">
     <p>
 ...................................................<br>
 ...................................................<br>
@@ -124,8 +129,7 @@ iconNavegate.innerHTML= `<div class="icon-container">
 ...................................................<br>
 ...................................................<br>
     </p>
-    </div>
-    `;
+</div>`;
 };
 
 
@@ -133,10 +137,24 @@ iconNavegate.innerHTML= `<div class="icon-container">
 function resetHTML(){
     imgContainer.innerHTML =   `<img src="/assets/images/placeholder.webp" alt="">
                                 <div class="img-border"></div>`;
+    iconResponsive.innerHTML = `<div class="glow">
+    <div class="icon-container">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+    </div>`;
     iconNavegate.innerHTML = `<div class="glow">
     <div class="icon-container">
          <i class="fa-solid fa-route"></i>
      </div> 
- </div>`
+ </div>`;
+    iconModern.innerHTML = `<div class="glow">
+    <div class="icon-container">
+        <i class="fa-solid fa-circle-nodes"></i>
+    </div>
+</div>`;
+    iconFast.innerHTML = `<div class="glow">
+    <div class="icon-container">
+        <i class="fa-solid fa-gauge-simple-high"></i>
+    </div>
+</div>`;
     alert("reset");
 };

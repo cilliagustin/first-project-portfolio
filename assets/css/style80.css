@@ -298,15 +298,12 @@ nav{
 }
 
 .about-me-list li:before{
-    content: "";
-    border-color: transparent var(--blue);
-    border-style: solid;
-    border-width: 0.2em 0 0.2em 0.45em;
+    content: "*";
+    color: red;
     display: block;
     height: 0;
     width: 0;
-    left: -1em;
-    top: 0.9em;
+    right: 20%;
     position: relative;
 }
 
