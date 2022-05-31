@@ -6,12 +6,7 @@
     --typography-green: rgb(9, 191, 9);
     --secondary-green: rgb(42 128 22);
     --background-green:rgb(10, 20, 10);
-    --background-gray: rgb(40, 42, 54);
-    --gray-typography:rgb(143, 154, 185);
-    --secondary-gray: rgb(53, 56, 80);
     --white:rgb(235, 230, 230);
-    --blue: rgb(49, 191, 230);
-    --blue-translucid: rgba(49, 191, 230, .3);
     --border:1px solid var(--secondary-green);
 }
 
@@ -26,17 +21,18 @@ body{
     background-color: var(--background-green);
     font-family: 'Share Tech Mono', monospace;
     color: var(--typography-green);
+    text-shadow: 0 0 5px var(--secondary-green);
 }
 
 body::after {
     content: "";
-    z-index: 10;
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: repeating-linear-gradient(rgb(10, 16, 8), white 1px, white 1px, white 1px);
+    background: repeating-linear-gradient(black, white 2px);
     opacity: .1;
     pointer-events: none;
   }
@@ -129,19 +125,28 @@ body::after {
 
 /* NAVBAR */
 
-nav{
-    background-color: var(--background-green);
-    position: sticky;
-    top: 0;
+nav {
     width: 100%;
-    z-index: 3;
+    padding: .8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: var(--background-green);
+    position: fixed;
+    z-index: 20;
 }
 
-.hamb{
+nav .logo{
+    margin-right: auto;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav .hamb{
     cursor: pointer;
 }
 
-.hamb-line {
+nav .hamb .hamb-line {
     background: var(--secondary-green);
     display: block;
     height: 2px;
@@ -149,8 +154,8 @@ nav{
     width: 24px;
 }
 
-.hamb-line::before,
-.hamb-line::after{
+nav .hamb .hamb-line::before,
+nav .hamb .hamb-line::after{
     background: var(--secondary-green);
     content: '';
     display: block;
@@ -159,74 +164,78 @@ nav{
     width: 100%;
 }
 
-.hamb-line::before{
+nav .hamb .hamb-line::before{
     top: 5px;
 }
 
-.hamb-line::after{
+nav .hamb .hamb-line::after{
     top: -5px;
 }
 
-.side-menu {
+nav .side-menu{
     display: none;
 }
 
-.nav{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    overflow: hidden;
+nav .menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 40%;
+    height: auto;
     max-height: 0;
-    }
-
-.menu{
-    position: relative;
-    left: -20px;
-    background-color: var(--background-green);
+    overflow: hidden;
+    background: inherit;
 }
-.nav-item{
+
+nav .menu ul{
+    display: flex;
+    flex-direction: column;
+}
+
+nav .menu ul li{
     list-style: none;
-    padding-left: 15px;
+    margin: .5em 0;
 }
 
-.nav-link{
-    color: var(--typography-green);
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 2em;
-    padding: 0.2em 0;
+nav .menu ul li a{
+    color: inherit;
     position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.3s ease;
 }
 
-.nav-link:hover{
+nav .menu ul li a:hover{
     text-decoration: underline;
-  }
+}
+
 
 /* TOGGLED NAVBAR */
-.side-menu:checked ~ .nav{
-    max-height: 100%;
-    overflow: visible;
-    position: absolute;
-    top: 29px;
-}
-
 .side-menu:checked ~ .hamb .hamb-line {
     background: transparent;
+    transform: rotate(-90deg);
 }
 
 .side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
+    transform: rotate(-135deg);
     top:0;
 }
 
 .side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
+    transform: rotate(135deg);
     top:0;
+}
+
+.side-menu:checked ~ .menu{
+    height: auto;
+    max-height: 100vw;
+    padding: .5em 2em;
 }
 
 /* HOME */
 
 .home-container{
+    margin-top: 2em;
     width: 90%;
 }
 
@@ -510,38 +519,32 @@ footer .btn-custom{
 
     /* NAVBAR*/
 
-    .nav{
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: right;
-        width: fit-content;
-    }
-    
-    .nav-item{
-        float: left;
-    }
-
-    .nav-link{
-        margin: 0 7px;
-    }
-    
-    .menu a:hover{
-        background-color: transparent;
-        color: var(--gray);
-
-    }
-
-    .hamb{
+    nav .hamb{
         display: none;
     }
 
-    .side-menu:checked ~ .nav{
-        max-height: 100%;
-        overflow: visible;
-        z-index: 0;
+    nav .menu,
+    .side-menu:checked ~ .menu{
         position: relative;
         top: 0;
+        left: 0;
+        max-height: 100vh;
+        width: auto;
+        padding: 0;
+    }
+
+    nav .menu ul,
+    .side-menu:checked ~ .menu ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    nav .menu ul li,
+    .side-menu:checked ~ .menu ul li{
+        display: inline-block;
+        padding-left: 1.2em;
+        margin: 0;
     }
 
     /* HOME */
