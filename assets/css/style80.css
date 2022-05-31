@@ -93,7 +93,17 @@ body::after {
     color: var(--background-green);
     background: var(--typography-green);
     display: inline-block;
-    padding: .2em;
+    padding: .2em .7em;
+    position: relative;
+}
+
+.section-title::before,
+.section-title::after{
+    content: "*";
+    background: var(--typography-green);
+    position: relative;
+    z-index: 2;
+    top:0%;
 }
 
 .secondary-title{
@@ -311,19 +321,17 @@ nav{
 
 .my-work-content{
     width: 100%;
-    padding: 0 1em;
 }
 
 .my-work-container{
-    width: 100%;
     flex-wrap: wrap;
 }
 
 .my-work-card{
-    height: 285px;
-    width: 230px;
-    padding: 10px .3em;
-    margin: 1px;
+    height: 205px;
+    width: 163px;
+    margin: .3em;
+    padding: 0.2em 0;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -334,7 +342,8 @@ nav{
 }
 
 .my-work-card .icon p{
-    font-size: .5em;
+    font-size: .1em;
+    font-family: monospace;
     color: var(--typography-green);
 }
 
@@ -364,7 +373,6 @@ nav{
 }
 
 .portfolio-card{
-    background: var(--secondary-gray);
     border: var(--border);
     cursor: default;
     border-radius: 4px;
@@ -380,7 +388,7 @@ nav{
 
 .portfolio-links{
     width: 100%;
-    margin-bottom: 1em;
+    margin-top: auto;
 }
 
 .portfolio-links .btn-custom{
@@ -390,61 +398,42 @@ nav{
     font-size: .9em;
 }
 
-.portfolio-links i{
-    cursor: pointer;
-    font-size: 2em;
-    color: var(--gray-typography)!important;
+.portfolio-bottom-info p{
+    padding-right: 0.5em;
 }
 
-.portfolio-bottom-info p{
-    margin: auto 0 0 0;
+.portfolio-bottom-info :last-child{
     margin-left: auto;
-    padding: 0;
 }
 
 .portfolio-title{
-    margin:1em 0;
+    font-family: 'Press Start 2P', monospace;
+    text-align: center;
+    width: 100%;
+    background: var(--typography-green);
+    color: var(--background-green);
+    margin-bottom: auto;
+    padding: 0.2em 0;
+    font-size: 1.3em;
+    border: var(--border);
 }
 
 .portfolio-text{
-    padding-right: 2.4em;
+    text-align: justify;
+    padding: .2em;
+    border: var(--border);
 }
 
 .portfolio-bottom-info{
-    margin-top: auto;
     width: 100%;
-}
-
-.portfolio-bottom-info i{
-    color: var(--gray-typography)!important;
-    font-size: 1.7em;
-    margin-right: .8em;
-}
-
-.portfolio-card:hover{
-    background: rgb(58, 64, 88);
-    -webkit-box-shadow:0px 0px 21px 3px rgba(49,191,230,0.68);
-    -moz-box-shadow: 0px 0px 21px 3px rgba(49,191,230,0.68);
-    box-shadow: 0px 0px 21px 3px rgba(49,191,230,0.68);
-}
-
-.portfolio-card:hover p,
-.portfolio-card:hover .portfolio-links a i{
-    color: var(--white)!important;
-}
-
-.portfolio-card:hover .portfolio-title,
-.portfolio-card:hover .portfolio-bottom-info i,
-.portfolio-card .portfolio-links a i:hover{
-    color: var(--blue)!important;
+    margin: auto;
 }
 
 /* CONTACT */
 
 .contact-card{
-    background: var(--secondary-gray);
     border: var(--border);
-    border-radius: 4px;
+    border-radius: 2px;
     width: 85%;
     padding: 1em 2em; 
     margin: .8em 0;
@@ -458,70 +447,56 @@ nav{
     margin-bottom: 2.5em;
 }
 
+.contact-card form label{
+    display: block;
+    width: fit-content;
+    padding: 0.1em 0.3em;
+}
 
 .contact-card input,
 .contact-card textarea{
     width: 100%;
     background: none;
-    color: var(--white);
+    color: var(--typography-green);
     border: var(--border);
-    border-radius: 4px;
+    border-radius: 2px;
     display: block;
     padding: .2em;
     margin: .5em 0;
     resize: none;
 }
 
-::placeholder{ 
-    color: var(--gray-typography)!important;
-  }
-
-.contact-card:hover{
-    background: rgb(58, 64, 88);
-    -webkit-box-shadow:0px 0px 21px 3px rgba(49,191,230,0.68);
-    -moz-box-shadow: 0px 0px 21px 3px rgba(49,191,230,0.68);
-    box-shadow: 0px 0px 21px 3px rgba(49,191,230,0.68);
-
-}
-
-.contact-card input:focus,
-.contact-card textarea:focus{
-    -webkit-box-shadow:0px 0px 21px 3px rgba(49,191,230,0.68);
-    -moz-box-shadow: 0px 0px 21px 3px rgba(49,191,230,0.68);
-    box-shadow: 0px 0px 21px 3px rgba(49,191,230,0.68);
-    border: var(--border);
-    border-radius: 4px;
-}
 .contact-card input:focus-visible,
 .contact-card textarea:focus-visible{
-    outline: none;
+    outline: var(--border);
 }
 
 input:focus + label,
 textarea:focus + label{
-    color: var(--white);
+    color: var(--background-green);
+    background: var(--typography-green);
 }
 
 .contact-card .btn-custom{
-    align-self: flex-end;
+    align-self: center;
 }
 
+footer{
+    flex-flow: column;
+}
 
 footer p{
     font-size: .8em;
+    padding: 0 .5em;
+    margin-bottom: .2em;
 }
 
-footer .footer-icons a i{
-    padding-left: 1em;
-    font-size: 2em;
-    color: var(--gray-typography)!important;
+footer .btn-custom{
+    font-size: .7em;
+    padding: 0.5em;
+    margin: 0;
 }
 
-footer .footer-icons a i:hover{
-    padding-left: 1em;
-    font-size: 2em;
-    color: var(--blue)!important;
-}
 
 /* DESKTOP */
 
@@ -607,8 +582,12 @@ footer .footer-icons a i:hover{
 
     /* MY WORK */
 
+    .my-work-content{
+        flex-flow: row;
+    }
+
     .my-work-card{
-        margin: 1em 2em;
+        margin: 1px;
     }
 
     .portfolio-card{
