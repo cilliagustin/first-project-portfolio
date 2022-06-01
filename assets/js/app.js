@@ -1,4 +1,5 @@
 let eighties = document.getElementById("80s");
+let nineties = document.getElementById("90s");
 let present = document.getElementById("present");
 let imgContainer = document.getElementById("img-container");
 let iconResponsive = document.getElementById("icon-responsive");
@@ -10,11 +11,8 @@ let contador = document.getElementById("contador-calorias");
 let footer = document.getElementById("footer");
 
 eighties.addEventListener(("click"), setEighties);
+nineties.addEventListener(("click"), setNineties);
 present.addEventListener(("click"), setPresent);
-
-function setPresent() {
-    resetHTML();
-};
 
 function setEighties() {
     resetHTML();
@@ -164,7 +162,14 @@ function setEighties() {
     </div>`
 };
 
+function setNineties() {
+    resetHTML();
+    imgContainer.innerHTML= `<img src="/assets/images/90splaceholder.png" alt="">`;
+}
 
+function setPresent() {
+    resetHTML();
+};
 
 function resetHTML(){
     imgContainer.innerHTML =   `<img src="/assets/images/placeholder.webp" alt="">
