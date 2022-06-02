@@ -165,6 +165,19 @@ function setEighties() {
 function setNineties() {
     resetHTML();
     imgContainer.innerHTML= `<img src="/assets/images/90splaceholder.png" alt="">`;
+    iconResponsive.innerHTML= `<div class="icon-container">
+    <img src="assets/images/computer90.png" alt="">
+    <img src="assets/images/computer-small90.png" alt="">
+</div>`;
+iconNavegate.innerHTML= `<div class="icon-container">
+    <img src="assets/images/planet90.png" alt="">
+</div>`;
+iconModern.innerHTML= `<div class="icon-container">
+    <img src="assets/images/gears90.png" alt="">
+</div>`;
+iconFast.innerHTML= `<div class="icon-container">
+    <img src="assets/images/mouse-speed90.png" alt="">
+</div>`;
 }
 
 function setPresent() {
