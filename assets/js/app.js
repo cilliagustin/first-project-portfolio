@@ -168,7 +168,7 @@ function setEighties() {
 function setNineties() {
     resetHTML();
     cssFile.setAttribute("href", "assets/css/style90.css");
-    imgContainer.innerHTML= `<img src="/assets/images/90splaceholder.png" alt="">`;
+    imgContainer.innerHTML= `<img src="assets/images/90splaceholder.png" alt="">`;
     iconResponsive.innerHTML= `<div class="icon-container">
     <img src="assets/images/computer90.png" alt="">
     <img src="assets/images/computer-small90.png" alt="">
@@ -246,7 +246,7 @@ function setPresent() {
 };
 
 function resetHTML(){
-    imgContainer.innerHTML =   `<img src="/assets/images/placeholder.webp" alt="">
+    imgContainer.innerHTML =   `<img src="assets/images/placeholder.webp" alt="">
                                 <div class="img-border"></div>`;
     iconResponsive.innerHTML = `<div class="glow">
     <div class="icon-container">
