@@ -341,8 +341,9 @@ nav{
 }
 
 .my-work-card{
-    height: 205px;
-    width: 163px;
+    height: 215px;
+    min-width: 200px;
+    width: 80%;
     margin: 3px;
     padding: 0.2em 0;
     display: flex;
@@ -592,6 +593,11 @@ footer .btn-custom{
 
     .my-work-container{
         max-width: none;
+    }
+
+    .my-work-card{
+        width: 170px;
+        min-width: auto;
     }
 
 
