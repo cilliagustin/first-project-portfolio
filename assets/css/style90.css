@@ -85,20 +85,23 @@ body{
     text-decoration: underline;
 }
 
-.section-title-container{
-    width: 100%;
-}
-
 .section-title{
     font-family: 'VT323', monospace;
     font-size: 2.3em;
     letter-spacing: 2px;
+    margin: .4em 0;
+    width: 100%;
+    display: inline-block;
 }
 
 .secondary-title{
     font-family: 'VT323', monospace;
     font-size: 1.9em;
     padding-left: 1.3em;
+    width: 100%;
+    display: inline-block;
+    margin: .3em 0;
+    text-align: center;
 }
 
 .btn-custom{
@@ -332,19 +335,24 @@ body{
 
 /* MY WORK */
 
-.my-work-content{
-    width: 100%;
-    padding: 0 1em;
+#my-work{
+    padding: 0;
+}
+
+#my-work .section-title{
+    padding-left: 10vw;
 }
 
 .my-work-container{
     width: 100%;
+    max-width: 310px;
+    flex-wrap: wrap;
 }
 
 .my-work-card{
-    margin: 2px;
+    margin: 3px;
     height: 155px;
-    width: 150px;
+    width: 145px;
     padding:2px 2px 10px;
     box-shadow: var(--raised-box);
     background: var(--background-gray);
@@ -686,25 +694,11 @@ footer .btn-custom{
     }
 
     /* MY WORK */
-    .my-work-content{
-        flex-flow: row;
-    }
 
     .my-work-container{
-        width: 40%;
+        max-width: none;
     }
 
-    .my-work-container:first-child{
-        justify-content: flex-end;
-    }
-
-    .my-work-container:nth-child(2){
-        justify-content: flex-start;
-    }
-
-    .my-work-card{
-        margin: 0 5px;
-    }
 
     .portfolio-card{
         width: 340px;

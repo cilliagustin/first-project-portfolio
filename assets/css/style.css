@@ -66,12 +66,10 @@ body{
     color: var(--blue)!important;
 }
 
-.section-title-container{
-    width: 100%;
-}
-
 .section-title{
     color: var(--white);
+    display: inline-block;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     letter-spacing: 2px;
@@ -80,7 +78,10 @@ body{
 .secondary-title{
     color: var(--white);
     font-family: 'Montserrat', sans-serif;
-    padding-left: 1.3em;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: .8em 0
 }
 
 .btn-custom{
@@ -261,7 +262,6 @@ nav{
 
 .button-container{
     width: 100%;
-    margin-top:10px;
     flex-wrap: wrap;
 }
 
@@ -377,24 +377,22 @@ nav{
 
 /* MY WORK */
 
-.my-work-content{
-    width: 100%;
-    padding: 0 1em;
-}
-
 .my-work-container{
     width: 100%;
+    max-width: 345px;
+    flex-wrap: wrap;
 }
 
 .my-work-card{
     height: 200px;
-    width: 170px;
-    padding: 10px 5px 0px 0px;
+    width: 127px;
+    padding: 10px 0px 5px 0px;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    margin: 3px;
 }
 
 .glow{
@@ -441,7 +439,6 @@ nav{
 
 .portfolio{
     width: 100%;
-    padding: 1em 0;
     flex-wrap: wrap;
 }
 
@@ -700,24 +697,9 @@ footer .footer-icons a i:hover{
     }
 
     /* MY WORK */
-    .my-work-content{
-        flex-flow: row;
-    }
 
     .my-work-container{
-        width: 40%;
-    }
-
-    .my-work-container:first-child{
-        justify-content: flex-end;
-    }
-
-    .my-work-container:nth-child(2){
-        justify-content: flex-start;
-    }
-
-    .my-work-card{
-        margin: 0 5px;
+        max-width: none;
     }
 
     .portfolio-card{

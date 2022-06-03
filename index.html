@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6037b4c484.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style80.css">
+    <link rel="stylesheet" href="assets/css/style90.css">
     <title>Document</title>
 </head>
 <body>
@@ -35,10 +35,10 @@
             <p>
                 Hello World! And welcome to my website<br>I was supposed to create my porfolio, one that would show all my proyects and skills, but I am afraid I dont really have much experience <span class="highlight">(yet)</span> so I decided I would create 5 different versions of this website, one for each decade so you can see how my first landing page would have looked back in the <span class="highlight">80´s</span>, <span class="highlight">90´s</span>, <span class="highlight">00´s</span>, <span class="highlight">2010´s</span> and in the <span class="highlight">present day</span>.<br>So, have fun, try the different versions and <span class="highlight">(hopefully)</span> hire me!
             </p>
-            <h3 class="secondary-title">Check all the versions</h3>
         </div>
         
         <div class="button-container flex-center">
+            <h3 class="secondary-title">Check all the versions</h3>
             <button type="button" id="80s" class="btn-custom">80´s</button>
             <button type="button" id="90s" class="btn-custom">90´s</button>
             <button type="button" class="btn-custom">00´s</button>
@@ -48,9 +48,7 @@
     </header>
     <!-- ABOUT ME -->
     <section id="about-me" class="container flex-column-center">
-        <div class="section-title-container">
-            <h2 class="section-title">About me</h2>
-        </div>
+        <h2 class="section-title">About me</h2>
         <div class="about-me-content flex-column-center">
             <div id="img-container" class="img-container flex-center">
                 <img src="/assets/images/placeholder.webp" alt="">
@@ -74,59 +72,51 @@
     </section>
     <!-- MY WORK -->
     <section id="my-work" id="my-work" class="container flex-column-center">
-        <div class="section-title-container">
-            <h2 class="section-title">My work</h2>
-        </div>
-        <div class="my-work-content flex-column-center">
-            <div class="my-work-container flex-center">
-                <div class="my-work-card">
-                    <span id="icon-responsive" class="icon">
-                        <div class="glow">
+        <h2 class="section-title">My work</h2>
+        <div class="my-work-container flex-center">
+            <div class="my-work-card">
+                <span id="icon-responsive" class="icon">
+                    <div class="glow">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                </div>
+                </span>
+                <h4 class="my-work-card-title">Responsive</h4>
+            </div>
+            <div class="my-work-card">
+                <span id="icon-navegate" class="icon">
+                    <div class="glow">
+                       <div class="icon-container">
+                            <i class="fa-solid fa-route"></i>
+                        </div> 
+                    </div>    
+                </span>
+                <h4 class="my-work-card-title">Easy to navigate</h4>
+            </div>
+            <div class="my-work-card">
+                <span id="icon-modern" class="icon">
+                    <div class="glow">
                         <div class="icon-container">
-                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <i class="fa-solid fa-circle-nodes"></i>
                         </div>
                     </div>
-                    </span>
-                    <h4 class="my-work-card-title">Responsive</h4>
-                </div>
-                <div class="my-work-card">
-                    <span id="icon-navegate" class="icon">
-                        <div class="glow">
-                           <div class="icon-container">
-                                <i class="fa-solid fa-route"></i>
-                            </div> 
-                        </div>    
-                    </span>
-                    <h4 class="my-work-card-title">Easy to navigate</h4>
-                </div>
+                </span>
+                <h4 class="my-work-card-title">Modern</h4>
             </div>
-            <div class="my-work-container flex-center">
-                <div class="my-work-card">
-                    <span id="icon-modern" class="icon">
-                        <div class="glow">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-circle-nodes"></i>
-                            </div>
+            <div class="my-work-card">
+                <span id="icon-fast" class="icon">
+                    <div class="glow">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-gauge-simple-high"></i>
                         </div>
-                    </span>
-                    <h4 class="my-work-card-title">Modern</h4>
-                </div>
-                <div class="my-work-card">
-                    <span id="icon-fast" class="icon">
-                        <div class="glow">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-gauge-simple-high"></i>
-                            </div>
-                        </div>
-                    </span>
-                    <h4 class="my-work-card-title">Fast</h4>
-                </div>
-            </div>
-        </div>
-        <div class="section-title-container">
-            <h3 class="secondary-title">Portfolio</h3>
+                    </div>
+                </span>
+                <h4 class="my-work-card-title">Fast</h4>
+            </div> 
         </div>
         <div class="portfolio flex-center">
+            <h3 class="secondary-title">Portfolio</h3>
             <div id="minimal-coffee" class="portfolio-card">
                 <div class="portfolio-links flex-between">
                     <a href="https://cilliagustin.github.io/minimalcoffee/" class="btn-custom" target="_blank">Visit website</a>
@@ -159,9 +149,7 @@
     </section>
     <!-- CONTACT -->
     <section id="contact" class="container flex-column-center">
-        <div class="section-title-container">
-            <h2 class="section-title">Contact</h2>
-        </div>
+        <h2 class="section-title">Contact</h2>
         <div id="contact-form" class="contact-card">
             <form action="" method="post">
                 <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Anything else I should know?..."></textarea>

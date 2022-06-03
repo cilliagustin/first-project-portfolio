@@ -78,17 +78,14 @@ body::after {
     text-decoration: underline;
 }
 
-.section-title-container{
-    width: 100%;
-    margin-bottom: .5em;
-}
-
 .section-title{
     font-family: 'Press Start 2P', monospace;
     letter-spacing: 2px;
     color: var(--background-green);
     background: var(--typography-green);
     display: inline-block;
+    width: 100%;
+    margin: .8em 0;
     padding: .2em .7em;
     position: relative;
 }
@@ -105,7 +102,10 @@ body::after {
 .secondary-title{
     color: var(--white);
     font-family: 'Press Start 2P', monospace;
-    padding-left: 1.3em;
+    display: inline-block;
+    width: 100%;
+    margin: .8em 0;
+    text-align: center;
 }
 
 .btn-custom{
@@ -242,15 +242,15 @@ nav{
 
 .home-container{
     margin-top: 2em;
-    width: 90%;
+    width: 100%;
 }
 
 .main-title{
     color: var(--background-green);
     background-color: var(--typography-green);
     font-family: 'Press Start 2P', monospace;
-    font-size: clamp(40px, 8vw, 80px);
-    padding: .2em;
+    font-size: 33px;
+    padding: .5em .2em;
     margin-bottom: .2em;
     text-transform: uppercase;
 }
@@ -258,7 +258,7 @@ nav{
 .subtitle{
     color: var(--white);
     font-family: 'Press Start 2P', monospace;
-    font-size: clamp(25px, 8vw, 60px);
+    font-size: 20px;
     padding-bottom: 0.5em;
 }
 
@@ -334,18 +334,16 @@ nav{
 
 /* MY WORK */
 
-.my-work-content{
-    width: 100%;
-}
-
 .my-work-container{
     flex-wrap: wrap;
+    max-width: 350px;
+    width: 100%;
 }
 
 .my-work-card{
     height: 205px;
     width: 163px;
-    margin: .3em;
+    margin: 3px;
     padding: 0.2em 0;
     display: flex;
     flex-flow: column;
@@ -377,9 +375,6 @@ nav{
     color: var(--background-green);
 }
 
-#my-work .secondary-title{
-    margin-top: 1.3em;
-}
 
 .portfolio{
     width: 100%;
@@ -562,8 +557,12 @@ footer .btn-custom{
         justify-content: center;
     }
 
-    .home-title{
-        width: 70%;
+    .main-title{
+        font-size: 45px;
+    }
+
+    .subtitle{
+        font-size: 25px;
     }
 
     /* ABOUT ME */
@@ -591,17 +590,10 @@ footer .btn-custom{
 
     /* MY WORK */
 
-    .my-work-content{
-        flex-flow: row;
+    .my-work-container{
+        max-width: none;
     }
 
-    .my-work-card{
-        margin: 1px;
-    }
-
-    .portfolio-card{
-        width: 320px;
-    }
 
     /* CONTACT */
     .contact-card{
