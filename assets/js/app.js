@@ -229,6 +229,12 @@ contactForm.innerHTML=` <h3>contact form</h3>
 </div>
 <hr>
 <button class="btn-custom">Send</button>`;
+footer.innerHTML= `<hr>
+    <p>© 2022 Agustin Cilli</p>
+    <div class="footer-icons">
+        <a href="https://github.com/cilliagustin?tab=repositories" target="_blank" class="btn-custom">Visit Github</a>
+        <a href = "mailto:abc@example.com?subject=Contact information" target="_blank" class="btn-custom">Send Email</a>
+    </div>`;
 }
 
 function setPresent() {

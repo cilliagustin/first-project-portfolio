@@ -109,6 +109,8 @@ body{
     min-width: 75px;
     padding: 1px 12px 1px 12px;
     box-shadow: var(--raised-box);
+    text-decoration: none;
+    color: var(--black);
 }
 
 .btn-custom:active{
@@ -180,6 +182,7 @@ body{
     position: absolute;
     top: 100%;
     left: 0;
+    min-width: 250px;
     width: 40%;
     height: auto;
     max-height: 0;
@@ -192,7 +195,7 @@ body{
     display: flex;
     flex-direction: column;
     border: var(--border);
-    box-shadow: var(--engraved-box);
+    box-shadow: var(--raised-box);
     width: 100%;
     height: 100%;
     padding: 0em 1.5em;
@@ -202,23 +205,25 @@ body{
     list-style: none;
     text-align: center;
     margin: .5em;
-    background-color: var(--background-gray);
-    border: none;
-    box-shadow: inset -1px -1px var(--black), inset 1px 1px white, inset -2px -2px var(--darkest-gray), inset 2px 2px var(--secondary-gray);
-}
-
-.nav .menu ul li:active{
-    box-shadow: inset -1px -1px white, inset 1px 1px var(--black), inset -2px -2px var(--secondary-gray), inset 2px 2px var(--darkest-gray);
-    padding: 2px 11px 0 13px;
 }
 
 .nav .menu ul li a{
     color: inherit;
     position: relative;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: capitalize; 
+    width: 100%;
+    display: inline-block;
+    background-color: var(--background-gray);
+    border: none;
+    padding: 1px 12px;
+    box-shadow: var(--raised-box);
 }
 
+.nav .menu ul li a:active{
+    box-shadow: var(--engraved-box);
+    padding: 2px 11px 0 13px;
+}
 /* TOGGLED NAVBAR */
 
 .side-menu:checked ~ .hamb .hamb-line {
@@ -457,11 +462,6 @@ body{
     margin-top: auto;
 }
 
-.portfolio-links .btn-custom{
-    text-decoration: none;
-    color: var(--black);
-}
-
 /* CONTACT */
 
 .contact-card{
@@ -583,15 +583,25 @@ form :nth-child(5){
 }
 
 
-footer p{
-    font-size: .8em;
+footer{
+    flex-flow: column;
 }
 
-footer .footer-icons a i{
-    padding-left: 1em;
-    font-size: 2em;
-    color: var(--gray-typography)!important;
-    transition: var(--transition-03s);
+footer hr{
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+footer p{
+    font-size: .8em;
+    padding: 0 .5em;
+    margin-bottom: .2em;
+}
+
+footer .btn-custom{
+    font-size: .7em;
+    padding: 0.5em;
+    margin: 0;
 }
 
 /* DESKTOP */
