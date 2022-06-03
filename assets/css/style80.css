@@ -125,28 +125,33 @@ body::after {
 
 /* NAVBAR */
 
-nav {
+nav{
     width: 100%;
     padding: .8em 1.2em;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     background: var(--background-green);
     position: fixed;
     z-index: 20;
 }
 
-nav .logo{
+.nav {
+    width: 100%;
+    background: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav .logo{
     margin-right: auto;
     text-decoration: none;
     color: inherit;
 }
 
-nav .hamb{
+.nav .hamb{
     cursor: pointer;
 }
 
-nav .hamb .hamb-line {
+.nav .hamb .hamb-line {
     background: var(--secondary-green);
     display: block;
     height: 2px;
@@ -154,8 +159,8 @@ nav .hamb .hamb-line {
     width: 24px;
 }
 
-nav .hamb .hamb-line::before,
-nav .hamb .hamb-line::after{
+.nav .hamb .hamb-line::before,
+.nav .hamb .hamb-line::after{
     background: var(--secondary-green);
     content: '';
     display: block;
@@ -164,22 +169,23 @@ nav .hamb .hamb-line::after{
     width: 100%;
 }
 
-nav .hamb .hamb-line::before{
+.nav .hamb .hamb-line::before{
     top: 5px;
 }
 
-nav .hamb .hamb-line::after{
+.nav .hamb .hamb-line::after{
     top: -5px;
 }
 
-nav .side-menu{
+.nav .side-menu{
     display: none;
 }
 
-nav .menu{
+.nav .menu{
     position: absolute;
     top: 100%;
     left: 0;
+    min-width: 220px;
     width: 40%;
     height: auto;
     max-height: 0;
@@ -187,17 +193,17 @@ nav .menu{
     background: inherit;
 }
 
-nav .menu ul{
+.nav .menu ul{
     display: flex;
     flex-direction: column;
 }
 
-nav .menu ul li{
+.nav .menu ul li{
     list-style: none;
     margin: .5em 0;
 }
 
-nav .menu ul li a{
+.nav .menu ul li a{
     color: inherit;
     position: relative;
     text-decoration: none;
@@ -205,7 +211,7 @@ nav .menu ul li a{
     transition: 0.3s ease;
 }
 
-nav .menu ul li a:hover{
+.nav .menu ul li a:hover{
     text-decoration: underline;
 }
 
@@ -519,11 +525,11 @@ footer .btn-custom{
 
     /* NAVBAR*/
 
-    nav .hamb{
+    .nav .hamb{
         display: none;
     }
 
-    nav .menu,
+    .nav .menu,
     .side-menu:checked ~ .menu{
         position: relative;
         top: 0;
@@ -533,14 +539,14 @@ footer .btn-custom{
         padding: 0;
     }
 
-    nav .menu ul,
+    .nav .menu ul,
     .side-menu:checked ~ .menu ul{
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
     }
 
-    nav .menu ul li,
+    .nav .menu ul li,
     .side-menu:checked ~ .menu ul li{
         display: inline-block;
         padding-left: 1.2em;

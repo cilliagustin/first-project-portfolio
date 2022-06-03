@@ -99,30 +99,35 @@ body{
     transition: var(--transition-03s);
 }
 
-/* NAVBAR */
+/* .NAVBAR */
 
-nav {
-    width: 100%;
+nav{
     padding: .8em 1.2em;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    width: 100%;
     background: var(--background-gray);
     position: fixed;
     z-index: 20;
 }
 
-nav .logo{
+.nav {
+    background: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav .logo{
     margin-right: auto;
     text-decoration: none;
     color: inherit;
 }
 
-nav .hamb{
+.nav .hamb{
     cursor: pointer;
 }
 
-nav .hamb .hamb-line {
+.nav .hamb .hamb-line {
     background: white;
     display: block;
     height: 2px;
@@ -131,8 +136,8 @@ nav .hamb .hamb-line {
     transition: all .4s ease;
 }
 
-nav .hamb .hamb-line::before,
-nav .hamb .hamb-line::after{
+.nav .hamb .hamb-line::before,
+.nav .hamb .hamb-line::after{
     background: white;
     content: '';
     display: block;
@@ -142,22 +147,23 @@ nav .hamb .hamb-line::after{
     width: 100%;
 }
 
-nav .hamb .hamb-line::before{
+.nav .hamb .hamb-line::before{
     top: 5px;
 }
 
-nav .hamb .hamb-line::after{
+.nav .hamb .hamb-line::after{
     top: -5px;
 }
 
-nav .side-menu{
+.nav .side-menu{
     display: none;
 }
 
-nav .menu{
+.nav .menu{
     position: absolute;
     top: 100%;
     left: 0;
+    min-width: 220px;
     width: 40%;
     height: auto;
     max-height: 0;
@@ -167,17 +173,17 @@ nav .menu{
     transition: .3s;
 }
 
-nav .menu ul{
+.nav .menu ul{
     display: flex;
     flex-direction: column;
 }
 
-nav .menu ul li{
+.nav .menu ul li{
     list-style: none;
     margin: .5em 0;
 }
 
-nav .menu ul li a{
+.nav .menu ul li a{
     color: inherit;
     position: relative;
     text-decoration: none;
@@ -185,11 +191,11 @@ nav .menu ul li a{
     transition: 0.3s ease;
 }
 
-nav .menu ul li a:hover{
+.nav .menu ul li a:hover{
     color: var(--blue);
 }
 
-nav .menu ul li a::before{
+.nav .menu ul li a::before{
     content: "";
     position: absolute;
     display: block;
@@ -201,11 +207,11 @@ nav .menu ul li a::before{
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
-nav .menu ul li a:hover::before {
+.nav .menu ul li a:hover::before {
     transform: scaleX(1);
   }
 
-/* TOGGLED NAVBAR */
+/* TOGGLED .NAVBAR */
 .side-menu:checked ~ .hamb .hamb-line {
     background: transparent;
     transform: rotate(-90deg);
@@ -626,13 +632,13 @@ footer .footer-icons a i:hover{
         padding: 15px 30px;
     }
 
-    /* NAVBAR*/
+    /* .NAVBAR*/
 
-    nav .hamb{
+    .nav .hamb{
         display: none;
     }
 
-    nav .menu,
+    .nav .menu,
     .side-menu:checked ~ .menu{
         position: relative;
         top: 0;
@@ -642,14 +648,14 @@ footer .footer-icons a i:hover{
         padding: 0;
     }
 
-    nav .menu ul,
+    .nav .menu ul,
     .side-menu:checked ~ .menu ul{
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
     }
 
-    nav .menu ul li,
+    .nav .menu ul li,
     .side-menu:checked ~ .menu ul li{
         display: inline-block;
         padding-left: 1.2em;
