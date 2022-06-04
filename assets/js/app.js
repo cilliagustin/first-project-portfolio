@@ -1,6 +1,8 @@
 let cssFile = document.getElementById("style");
 let eighties = document.getElementById("80s");
 let nineties = document.getElementById("90s");
+let twoThousands = document.getElementById("00s");
+let twentyTwenties = document.getElementById("10s");
 let present = document.getElementById("present");
 let imgContainer = document.getElementById("img-container");
 let iconResponsive = document.getElementById("icon-responsive");
@@ -14,6 +16,7 @@ let footer = document.getElementById("footer");
 
 eighties.addEventListener(("click"), setEighties);
 nineties.addEventListener(("click"), setNineties);
+twoThousands.addEventListener(("click"), setTwoThousands);
 present.addEventListener(("click"), setPresent);
 
 function setEighties() {
@@ -238,6 +241,12 @@ function setNineties() {
         <a href="https://github.com/cilliagustin?tab=repositories" target="_blank" class="btn-custom">Visit Github</a>
         <a href = "mailto:abc@example.com?subject=Contact information" target="_blank" class="btn-custom">Send Email</a>
     </div>`;
+}
+
+function setTwoThousands() {
+    resetHTML();
+    cssFile.setAttribute("href", "assets/css/style00.css");
+    imgContainer.innerHTML= `<div class="img"></div>`;
 }
 
 function setPresent() {
