@@ -198,7 +198,7 @@ function setNineties() {
 </div>
 <div class="portfolio-links flex-between">
     <a href="https://cilliagustin.github.io/minimalcoffee/" class="btn-custom" target="_blank">Visit website</a>
-    <a href="https://github.com/cilliagustin/minimalcoffee" class="btn-custom" target="_blank">Github Repository</a>
+    <a href="https://github.com/cilliagustin/minimalcoffee" class="btn-custom" target="_blank">Github repository</a>
 </div>`;
     contador.innerHTML= `<h4 class="portfolio-title">Contador de calorías</h4>
 <div class="portfolio-content">
@@ -213,7 +213,7 @@ function setNineties() {
 </div>
 <div class="portfolio-links flex-between">
     <a href="https://github.com/cilliagustin/ContadorDeCalorias/" class="btn-custom" target="_blank">Visit website</a>
-    <a href="https://cilliagustin.github.io/ContadorDeCalorias/" class="btn-custom" target="_blank">Github Repository</a>
+    <a href="https://cilliagustin.github.io/ContadorDeCalorias/" class="btn-custom" target="_blank">Github repository</a>
 </div>`
     contactForm.innerHTML=` <h3>contact form</h3>
 <div class="contact-info">
@@ -247,6 +247,43 @@ function setTwoThousands() {
     resetHTML();
     cssFile.setAttribute("href", "assets/css/style00.css");
     imgContainer.innerHTML= `<div class="img"></div>`;
+    iconResponsive.innerHTML=`<div class="icon-container">
+    <img src="assets/images/computer00.svg" alt="">
+    <img src="assets/images/phone00.svg" alt="">
+</div>`;
+    iconNavegate.innerHTML=`<div class="icon-container">
+    <img src="assets/images/location00.svg" alt="">
+</div>`;
+    iconModern.innerHTML=`<div class="icon-container">
+    <img src="assets/images/chip00.svg" alt="">
+</div>`;
+    iconFast.innerHTML=`<div class="icon-container">
+    <img src="assets/images/bolt00.svg" alt="">
+</div>`;
+    minimalCoffee.innerHTML= `<h4 class="portfolio-title">Minimal Coffee</h4>
+    <p class="portfolio-text">A website for a fake coffee franchise located in Argentina.<br>The website is divided in 5 pages: <span class="highlight">Inicio</span> (Home), <span class="highlight">Nosotros</span> (About us), <span class="highlight">Menu</span>, <span class="highlight">Sucursales</span> (Locations), <span class="highlight">Contacto</span> (Contact). <br>The goal of this website is to show a correct use of the <span class="highlight">SEO</span> and <span class="highlight">front end tools</span>.</p>
+    <div class="portfolio-bottom-info flex-start">
+        <p>HTML</p>
+        <p>Css</p>
+        <p>Bootstrap</p>
+        <p>Lang: SP</p>
+    </div>
+    <div class="portfolio-links flex-between">
+        <a href="https://cilliagustin.github.io/minimalcoffee/" class="btn-custom" target="_blank">Visit website</a>
+        <a href="https://github.com/cilliagustin/minimalcoffee" class="btn-custom" target="_blank">Github repository</a>
+    </div>`;
+    contador.innerHTML= `<h4 class="portfolio-title">Contador de calorías</h4>
+    <p class="portfolio-text"><span class="highlight">Single page web app</span> made to keep record of the food you eat as well of the calories ingested. This website uses the <span class="highlight">materialize  framework</span> to provide the grid.<br>The website <span class="highlight">stores data in the browser</span> to keep control over the days.</p>
+    <div class="portfolio-bottom-info flex-start">
+        <p>HTML</p>
+        <p>Css</p>
+        <p>JavaScript</p>
+        <p>Lang: SP</p>
+    </div>
+    <div class="portfolio-links flex-between">
+        <a href="https://cilliagustin.github.io/ContadorDeCalorias/" class="btn-custom" target="_blank">Visit website</a>
+        <a href="https://github.com/cilliagustin/ContadorDeCalorias/" class="btn-custom" target="_blank">Github repository</a>
+    </div>`;
 }
 
 function setPresent() {
