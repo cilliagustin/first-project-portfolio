@@ -22,7 +22,6 @@ body{
     font-family: 'Share Tech Mono', monospace;
     color: var(--typography-green);
     text-shadow: 0 0 5px var(--secondary-green);
-    -webkit-text-size-adjust: 100%;
 }
 
 body::after {
@@ -360,8 +359,6 @@ nav{
     font-size: 5px;
     font-family: monospace;
     color: var(--typography-green);
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
 }
 
 .my-work-card .my-work-card-title{
