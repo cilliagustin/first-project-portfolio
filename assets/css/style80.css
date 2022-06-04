@@ -357,9 +357,11 @@ nav{
 }
 
 .my-work-card .icon p{
-    font-size: .1em;
+    font-size: 5px;
     font-family: monospace;
     color: var(--typography-green);
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 .my-work-card .my-work-card-title{
