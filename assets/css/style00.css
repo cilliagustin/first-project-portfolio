@@ -166,31 +166,41 @@ body::after{
 /* .NAVBAR */
 
 #navbar{
-    border: var(--orange-border);
-    padding: .8em 1.2em;
     width: 100%;
-    background: var(--orange-gradient);
+    min-height: 32px;
     position: fixed;
     top: 0;
     z-index: 20;
+    background: rgb(75, 128, 201);
+    padding-top: 5px;
 }
 
 .nav {
-    background: none;
+    background: rgb(75, 128, 201);
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav .logo{
-    margin-right: auto;
+    background: linear-gradient(180deg, 
+    rgba(113,163,231,1) 0%,  
+    rgba(35,101,160,1) 35%, 
+    rgba(113,163,231,1) 100%);
+    width: 66px;
+    border: 1px solid var(--dark-blue);
+    border-bottom: none;
+    border-radius:3px 3px 0 0;
+    text-align: center;
     text-decoration: none;
-    color: inherit;
 }
 
 .nav .hamb{
     cursor: pointer;
+    background-color: red;
+    border: 2px solid blue;
 }
 
 .nav .hamb .hamb-line {
@@ -226,64 +236,69 @@ body::after{
 }
 
 .nav .menu{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 220px;
-    width: 40%;
-    height: auto;
-    max-height: 0;
-    padding: 0 2em;
+    width: 100%;
+    border-top: 1px solid var(--dark-blue);
+    border-bottom: 1px solid var(--dark-blue);
+    background:linear-gradient(180deg, 
+    rgba(113,163,231,1) 0px,  
+    rgba(35,101,160,1) 5px,
+    rgba(35,101,160,1) 10px, 
+    rgba(113,163,231,1) 39px);
     overflow: hidden;
-    background: linear-gradient(0deg, 
-    rgba(235,121,6,1) 0%, 
-    rgba(240,172,24,1) 10%, 
-    rgba(240,175,25,1) 35%, 
-    rgba(247,249,51,1) 50%, 
-    rgba(240,175,25,1) 65%, 
-    rgba(240,172,24,1) 90%, 
-    rgba(235,121,6,1) 100%);
+    height: 9px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 8px;
+    transition: .3s ease-in;
 }
 
 .nav .menu ul{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid var(--dark-blue);
 }
 
 .nav .menu ul li{
     list-style: none;
-    margin: 0.5em 0;
+    background: linear-gradient(180deg, 
+    rgba(35,101,160,1) 0px,  
+    rgba(35,101,160,1) 8px, 
+    rgba(113,163,231,1) 21px);
+    width: 66px;
+    height: 22px;
+    border: 1px solid var(--dark-blue);
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+    text-align: center;
 }
 
 .nav .menu ul li a{
     display: inline-block;
-    text-align: center;
-    background: var(--blue-gradient);
-    width: 95px;
-    border: 3px solid var(--dark-blue);
-    border-radius: 12px;
-    height: 25px;
+    width: 100%;
+    height: 100%;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
-    position: relative;
     text-decoration: none;
     text-transform: capitalize;
+    font-size: 13px;
 }
 
-.nav .menu ul li a:hover{
-    background: var(--inverted-blue-gradient);
+.nav .menu ul li:hover{
+    height: 24px;
 }
 
-.nav .menu ul li a:active{
-    color: darkblue;
-}
 
 /* TOGGLED .NAVBAR */
 .side-menu:checked ~ .hamb .hamb-line {
     background: transparent;
     transform: rotate(-90deg);
+    transform-origin: top;
 }
 
 .side-menu:checked ~ .hamb .hamb-line::before {
@@ -297,11 +312,7 @@ body::after{
 }
 
 .side-menu:checked ~ .menu{
-    height: auto;
-    max-height: 100vw;
-    padding: .5em 2em;
-    border: var(--orange-border);
-    border-radius:0 0 10px 10px;
+    height: 35px;
 }
 
 /* HOME */
@@ -733,16 +744,36 @@ footer .footer-icons a i:hover{
 
     /* .NAVBAR*/
 
+    #navbar{
+        height: 36px;
+        border-bottom: 1px solid var(--dark-blue);
+        background:linear-gradient(180deg, 
+        rgb(75 128 201) 0px, 
+        rgb(75 128 201) 26px, 
+        rgba(113,163,231,1) 27px, 
+        rgba(35,101,160,1) 32px, 
+        rgba(53,115,176,1) 36px);
+        align-items: flex-end;
+        padding-bottom: 8px;
+    }
+
+    .nav{
+        position: relative;
+    }
+
+    .nav .logo{
+        position: absolute;
+        left: 5px;
+        bottom: 0px;
+    }
+
     .nav .hamb{
         display: none;
     }
 
     .nav .menu,
     .side-menu:checked ~ .menu{
-        position: relative;
-        top: 0;
-        left: 0;
-        max-height: 100vh;
+        height: auto;
         width: auto;
         padding: 0;
         background: none;
@@ -752,15 +783,25 @@ footer .footer-icons a i:hover{
     .nav .menu ul,
     .side-menu:checked ~ .menu ul{
         flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
+        align-items: flex-end;
+        border-top: none;
     }
 
     .nav .menu ul li,
     .side-menu:checked ~ .menu ul li{
-        display: inline-block;
-        padding-left: 1.2em;
-        margin: 0;
+        height: 22px;
+        background: linear-gradient(0deg, 
+        rgba(113,163,231,1) 0px, 
+        rgba(35,101,160,1) 8px, 
+        rgba(113,163,231,1) 21px);
+        border: 1px solid var(--dark-blue);
+        border-bottom: none;
+        border-radius: 3px 3px 0 0;
+    }
+
+    .nav .menu ul li:hover,
+    .side-menu:checked ~ .menu ul li:hover{
+        height: 20px;
     }
 
     /* HOME */
