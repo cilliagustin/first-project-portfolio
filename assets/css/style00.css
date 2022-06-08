@@ -75,7 +75,7 @@ body{
     position: relative;
     overflow-x: hidden;
     font-family: 'Mali', cursive;
-    color: var(--white);
+
 }
 
 body::before{
@@ -112,7 +112,7 @@ body::after{
     border: var(--blue-border);
     border-top: none;
     border-bottom: none;
-    background: var(--light-blue);
+    background: rgb(239, 239, 239);
 }
 
 .flex-start{
@@ -423,6 +423,7 @@ body::after{
 }
 
 .button-container .secondary-title{
+    color: white;
     font-family: 'Work Sans', sans-serif;
     text-align: center;
     display: inline-block;
@@ -461,8 +462,6 @@ body::after{
     position: relative;
     height: 270px;
     width: 270px;
-    border: var(--blue-border);
-    border-radius: 50%;
     background-image: url(../images/placeholder2.jpg);
     background-size: 270px;
     background-repeat: no-repeat;
@@ -470,18 +469,34 @@ body::after{
     box-shadow: var(--shadow);
 }
 
-.img-container .img:after{
+.img-container .img:before{
     content: "";
     position: absolute;
     z-index: 3;
-    width: 101%;
-    height: 101%;
+    width: 100%;
+    height: 100%;
+    top: -4px;
+    left: -4px;
+    border: var(--blue-border);
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgba(17,114,177,1) 0%, rgba(23,121,184,1) 40%, rgba(47,152,217,1) 51%, rgba(50,156,221,1) 59%, rgba(59,168,234,1) 75%);
+    opacity: .8;
+}
+
+.img-container .img:after{
+    content: "";
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
     top: -0.5%;
     left: -0.5%;
     border-radius: 50%;
-    background: linear-gradient(45deg, rgba(17,114,177,1) 0%, rgba(23,121,184,1) 40%, rgba(47,152,217,1) 51%, rgba(50,156,221,1) 59%, rgba(59,168,234,1) 75%);
-    opacity: .8;
-    pointer-events: none;
+    opacity: .5;
+    background-image: url(../images/spark.gif);
+    background-size: 50%;
+    background-repeat: repeat-x;
+    background-position: 5%;
 }
 
 
@@ -586,7 +601,7 @@ body::after{
 }
 
 .portfolio-card{
-    background: var(--blue-gradient);
+    background: var(--light-blue);
     border: var(--blue-border);
     border-radius: 0px 0px 10px 10px;
     cursor: default;
@@ -617,7 +632,6 @@ body::after{
     margin: .7em 0;
     width: 100%;
     padding: .3em 0;
-    background: var(--blue-gradient);
     border-top: var(--blue-border);
     border-bottom: var(--blue-border);
 }
@@ -654,13 +668,12 @@ body::after{
 /* CONTACT */
 
 .contact-card{
-    background: var(--secondary-gray);
-    border: var(--border);
-    border-radius: 4px;
+    background: var(--light-blue);
+    border: var(--blue-border);
+    border-radius: 0 0 10px 10px;
     width: 85%;
     padding: 1em 2em; 
     margin: .8em 0;
-    transition: var(--transition-03s);
     display: flex;
     flex-flow: column;
 }
@@ -678,49 +691,41 @@ body::after{
 .contact-card input,
 .contact-card textarea{
     width: 100%;
-    background: none;
-    color: var(--white);
-    border: var(--border);
-    border-radius: 4px;
+    background: white;
+    border: 2px solid var(--dark-blue);
     display: block;
     padding: .2em;
     margin: .5em 0;
     resize: none;
-    transition: var(--transition-03s);
-}
-
-::placeholder{ 
-    color: var(--gray-typography)!important;
-  }
-
-.contact-card input:focus,
-.contact-card textarea:focus{
-    -webkit-box-shadow:0px 0px 21px 3px rgba(49,191,230,0.68);
-    -moz-box-shadow: 0px 0px 21px 3px rgba(49,191,230,0.68);
-    box-shadow: 0px 0px 21px 3px rgba(49,191,230,0.68);
-    border: var(--border);
-    border-radius: 4px;
-    transition: var(--transition-03s);
 }
 
 .contact-card input:focus-visible,
 .contact-card textarea:focus-visible{
-    outline: .1em solid var(--blue);
+    outline: 1px solid var(--dark-blue);
 }
 
 input:focus + label,
 textarea:focus + label{
-    color: var(--white);
-    transition: var(--transition-03s);
+    text-decoration: underline;
 }
 
 .contact-card .btn-custom{
-    align-self: flex-end;
+    align-self: center;
 }
 
+footer{
+    padding-bottom: .3em;
+    flex-flow: column;
+}
 
 footer p{
     font-size: .8em;
+}
+
+footer .footer-icons .btn-custom{
+    width: 110px;
+    display: inline-block;
+    text-align: center;
 }
 
 
@@ -827,7 +832,7 @@ footer p{
     }
 
     .img-container .img{
-        height: 320px;
+        height: 200px;
         width: 320px;
         background-size: 320px;
     }
@@ -859,6 +864,7 @@ footer p{
     .portfolio{
         width: 35%;
         min-width: 290px;
+        padding: 0 .5em;
         flex-flow: column;
         align-items: flex-end;
     }
@@ -870,9 +876,8 @@ footer p{
         min-width: 290px;
         box-shadow: none;
         border-radius: 0;
-        border: none;
-        border-left: var(--blue-border);
-        border-top: var(--blue-border);
+        border: var(--blue-border);
+        border-bottom: none;
     }
     
     .portfolio :last-child.portfolio-card{

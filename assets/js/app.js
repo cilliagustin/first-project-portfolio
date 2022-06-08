@@ -241,7 +241,7 @@ function setNineties() {
         <a href="https://github.com/cilliagustin?tab=repositories" target="_blank" class="btn-custom">Visit Github</a>
         <a href = "mailto:abc@example.com?subject=Contact information" target="_blank" class="btn-custom">Send Email</a>
     </div>`;
-}
+};
 
 function setTwoThousands() {
     resetHTML();
@@ -284,7 +284,12 @@ function setTwoThousands() {
         <a href="https://cilliagustin.github.io/ContadorDeCalorias/" class="btn-custom" target="_blank">Visit website</a>
         <a href="https://github.com/cilliagustin/ContadorDeCalorias/" class="btn-custom" target="_blank">Github repository</a>
     </div>`;
-}
+    footer.innerHTML=`<p>© 2022 Agustin Cilli</p>
+    <div class="footer-icons">
+        <a href="https://github.com/cilliagustin?tab=repositories" target="_blank" class="btn-custom">Visit Github</a>
+        <a href = "mailto:abc@example.com?subject=Contact information" target="_blank" class="btn-custom">Send Email</a>
+    </div>`;
+};
 
 function setPresent() {
     resetHTML();
@@ -351,5 +356,7 @@ function resetHTML(){
         <a href="https://github.com/cilliagustin?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href = "mailto:abc@example.com?subject=Contact information" target="_blank"><i class="fa-solid fa-envelope"></i></a>
     </div>`;
-    alert("reset");
+
 };
+
+
