@@ -657,11 +657,16 @@ footer .footer-icons a i:hover{
 
     /* .NAVBAR*/
 
+    #navbar{
+        padding-top: 3px;
+        padding-bottom: 0;
+    }
+
     .nav .hamb{
         display: none;
     }
 
-    .nav .menu,
+    /* .nav .menu,
     .side-menu:checked ~ .menu{
         position: relative;
         top: 0;
@@ -683,6 +688,48 @@ footer .footer-icons a i:hover{
         display: inline-block;
         padding-left: 1.2em;
         margin: 0;
+    } */
+
+    .nav .menu,
+    .side-menu:checked ~ .menu{
+        position: relative;
+        top: 0;
+        left: 0;
+        max-height: none;
+        width: 80%;
+        padding: 0;
+        height: auto;
+        background: rgb(97,122,177);
+        border-radius: 2px 2px 0 0;
+    }
+
+    .nav .menu ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        max-width: none;
+        padding: 0;
+        height: 100%;
+        padding-right: 8px;
+    }
+
+    .nav .menu ul li{
+        display: inline-block;
+        margin: 0;
+        width: auto;
+        margin: 0 2px;
+    }
+
+    .nav .menu ul li a{
+        color: white;
+        font-size: .8em;
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    .nav .menu ul li a br,
+    .nav .menu ul li a i{
+        display: none;
     }
 
     /* HOME */
