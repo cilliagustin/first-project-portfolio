@@ -142,6 +142,7 @@ nav{
 }
 
 .nav .logo{
+    font-size: 1.3em;
     margin-right: auto;
     text-decoration: none;
     color: inherit;
@@ -296,7 +297,7 @@ nav{
 }
 
 .img-text p{
-    font-size: .5em;
+    font-size: 5px;
 }
 
 .about-me-text{
