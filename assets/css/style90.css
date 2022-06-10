@@ -416,6 +416,7 @@ form :nth-child(5){
     align-self: center;
 }
 
+/* FOOTER */
 
 footer{
     flex-flow: column;
@@ -427,7 +428,6 @@ footer hr{
 }
 
 footer p{
-    font-size: .8em;
     padding: 0 .5em;
     margin-bottom: .2em;
 }
@@ -442,97 +442,31 @@ footer .btn-custom{
 
 @media (min-width: 768px) {
 
-    /* GENERAL STYLING */
-
-    .container{
-        padding: 15px 30px;
-    }
-
     /* NAVBAR*/
 
-    .nav .hamb{
-        display: none;
-    }
-
-    .nav .menu,
-    .side-menu:checked ~ .menu{
-        position: relative;
-        top: 0;
-        left: 0;
-        max-height: 100vh;
-        width: auto;
-        padding: 0;
-    }
-
-    .nav .menu ul,
-    .side-menu:checked ~ .menu ul{
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        padding-top:3px;
-        padding-bottom:3px;
+    #navbar .nav .menu ul,
+    #navbar .nav .side-menu:checked ~ .menu ul{
+        padding:3px 0;
         border: none;
         box-shadow: none;
     }
 
-    .nav .menu ul li,
+    #navbar .nav .menu ul li,
     .side-menu:checked ~ .menu ul li{
         display: inline-block;
-        padding: 1px 6px;
-        margin: 0 3px;
+        padding: 1px 2px;
+        margin: 0 0;
     }
 
-    .nav .menu ul li:active,
+    #navbar .nav .menu ul li:active,
     .side-menu:checked ~ .menu ul li:active{
         padding: 1.5px 5.5px .5px  6.5px;
     }
 
-    /* HOME */
-
-    .home{
-        display: flex;
-        flex-flow: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
-
-    /* ABOUT ME */
-    .about-me-content{
-        width: 88%;
-        flex-flow: row;
-        align-items: flex-start;
-    }
-
-    .img-container{
-        width: 40%;
-        margin-top: 2em;
-    }
-    
-    .img-container img,
-    .img-border{
-        width: 85%;
-    }
-
-    .about-me-text{
-        width: 60%;
-        padding: 1.2em 2em;
-        margin-top:5px
-    }
-
     /* MY WORK */
-
-    .my-work-container{
-        max-width: none;
-    }
-
 
     .portfolio-card{
         width: 340px;
-    }
-
-    /* CONTACT */
-    .contact-card{
-        width: 600px;
     }
 
     .contact-image :nth-child(3){

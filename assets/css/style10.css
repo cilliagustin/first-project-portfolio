@@ -11,6 +11,10 @@
     --transition-03s: .3s ease-in;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--background-gray);
     font-family: Helvetica, sans-serif;
@@ -506,12 +510,8 @@ footer .footer-icons a i:hover{
         padding-bottom: 0;
     }
 
-    .nav .hamb{
-        display: none;
-    }
-
-    /* .nav .menu,
-    .side-menu:checked ~ .menu{
+    #navbar .nav .menu,
+    #navbar .nav .side-menu:checked ~ .menu{
         position: relative;
         top: 0;
         left: 0;
@@ -520,35 +520,26 @@ footer .footer-icons a i:hover{
         padding: 0;
     }
 
-    .nav .menu ul,
-    .side-menu:checked ~ .menu ul{
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
+
+    #navbar .nav .menu ul li,
+    #navbar .nav .side-menu:checked ~ .menu ul li{
+        display: inline-block;
+        margin: 0;
     }
 
-    .nav .menu ul li,
-    .side-menu:checked ~ .menu ul li{
-        display: inline-block;
-        padding-left: 1.2em;
-        margin: 0;
-    } */
-
-    .nav .menu,
-    .side-menu:checked ~ .menu{
-        position: relative;
-        top: 0;
-        left: 0;
+    #navbar .nav .menu,
+    #navbar .nav .side-menu:checked ~ .menu{
         max-height: none;
         width: 80%;
-        padding: 0;
         height: auto;
         background: rgb(97,122,177);
         border-radius: 2px 2px 0 0;
     }
 
-    .nav .menu ul{
+
+    #navbar .nav .menu ul{
         flex-direction: row;
+        flex-wrap: nowrap;
         align-items: center;
         justify-content: flex-end;
         max-width: none;
@@ -557,22 +548,22 @@ footer .footer-icons a i:hover{
         padding-right: 8px;
     }
 
-    .nav .menu ul li{
+    #navbar .nav .menu ul li{
         display: inline-block;
         margin: 0;
         width: auto;
         margin: 0 2px;
     }
 
-    .nav .menu ul li a{
+    #navbar .nav .menu ul li a{
         color: white;
         font-size: .8em;
         width: 100%;
         padding: 5px 10px;
     }
 
-    .nav .menu ul li a br,
-    .nav .menu ul li a i{
+    #navbar .nav .menu ul li a br,
+    #navbar .nav .menu ul li a i{
         display: none;
     }
 

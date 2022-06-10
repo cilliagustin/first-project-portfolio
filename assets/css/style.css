@@ -262,3 +262,76 @@ body{
 .contact-card form button{
     margin: auto;
 }
+
+/* FOOTER */
+
+footer p{
+    font-size: .8em;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+    /* GENERAL STYLING */
+
+    .container{
+        padding: 15px 30px;
+    }
+
+    /* .NAVBAR*/
+
+    #navbar .nav .hamb{
+        display: none;
+    }
+
+    #navbar .nav .menu,
+    .side-menu:checked ~ .menu{
+        position: relative;
+        top: 0;
+        left: 0;
+        max-height: 100vh;
+        width: auto;
+        padding: 0;
+    }
+
+    #navbar .nav .menu ul,
+    #navbar .nav .side-menu:checked ~ .menu ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    /* ABOUT ME */
+    .about-me-content{
+        width: 88%;
+        flex-flow: row;
+        align-items: flex-start;
+    }
+
+    .img-container{
+        width: 40%;
+        margin-top: 2em;
+    }
+
+    .img-container img{
+        width: 85%;
+    }
+
+    .about-me-text{
+        width: 60%;
+        padding: 1.2em 2em;
+        margin-top:5px
+    }
+
+    /* MY WORK */
+
+    .my-work-container{
+        max-width: none;
+    }
+
+    /* CONTACT */
+    .contact-card{
+        width: 600px;
+    }
+}

@@ -289,12 +289,13 @@ textarea:focus + label{
     align-self: center;
 }
 
+/* FOOTER */
+
 footer{
     flex-flow: column;
 }
 
 footer p{
-    font-size: .8em;
     padding: 0 .5em;
     margin-bottom: .2em;
 }
@@ -310,36 +311,9 @@ footer .btn-custom{
 
 @media (min-width: 768px) {
 
-    /* GENERAL STYLING */
-
-    .container{
-        padding: 15px 30px;
-    }
-
     /* NAVBAR*/
 
-    .nav .hamb{
-        display: none;
-    }
-
-    .nav .menu,
-    .side-menu:checked ~ .menu{
-        position: relative;
-        top: 0;
-        left: 0;
-        max-height: 100vh;
-        width: auto;
-        padding: 0;
-    }
-
-    .nav .menu ul,
-    .side-menu:checked ~ .menu ul{
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
-    .nav .menu ul li,
+    #navbar .nav .menu ul li,
     .side-menu:checked ~ .menu ul li{
         display: inline-block;
         padding-left: 1.2em;
@@ -347,13 +321,6 @@ footer .btn-custom{
     }
 
     /* HOME */
-
-    .home{
-        display: flex;
-        flex-flow: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
 
     .main-title{
         font-size: 45px;
@@ -363,44 +330,12 @@ footer .btn-custom{
         font-size: 25px;
     }
 
-    /* ABOUT ME */
-    .about-me-content{
-        width: 88%;
-        flex-flow: row;
-        align-items: flex-start;
-    }
-
-    .img-container{
-        width: 40%;
-        margin-top: 2em;
-    }
-    
-    .img-container img,
-    .img-border{
-        width: 85%;
-    }
-
-    .about-me-text{
-        width: 60%;
-        padding: 1.2em 2em;
-        margin-top:5px
-    }
 
     /* MY WORK */
-
-    .my-work-container{
-        max-width: none;
-    }
 
     .portfolio-card{
         max-width: 330px;
         height: 330px;
-    }
-
-
-    /* CONTACT */
-    .contact-card{
-        width: 600px;
     }
 }
 
