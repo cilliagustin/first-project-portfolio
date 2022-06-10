@@ -1,5 +1,7 @@
 /* GENERAL STYLING */
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
 :root{
     --background-gray: rgb(40, 42, 54);
     --gray-typography:rgb(143, 154, 185);
@@ -11,9 +13,13 @@
     --transition-03s: .3s ease-in;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--background-gray);
-    font-family: Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
     color: var(--gray-typography);
 }
 
@@ -23,12 +29,14 @@ body{
 
 .section-title{
     color: var(--white);
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     letter-spacing: 2px;
 }
 
 .secondary-title{
     color: var(--white);
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin: .8em 0
 }
@@ -52,10 +60,10 @@ body{
 /* .NAVBAR */
 
 nav{
-    background: rgb(59,89,152);
+    background: var(--background-gray);
 }
 
-#navbar .nav .hamb .hamb-line {
+.nav .hamb .hamb-line {
     transition: all .4s ease;
 }
 
@@ -66,82 +74,32 @@ nav{
 
 #navbar .nav .menu{
     padding: 0 2em;
-    background: rgb(219,225,235);
-    width: 100%;
-}
-
-#navbar .nav .menu ul{
-    width: 100%;
-    max-width: 350px;
-    max-height: none;
-    padding: 0.5em 2em;
-    flex-flow: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-#navbar .nav .menu ul li{
-    margin: 3px;
-    width: 47%;
-    text-align: center;
+    transition: .3s;
 }
 
 #navbar .nav .menu ul li a{
-    display: block;
-    padding: 5px;
     transition: 0.3s ease;
-    font-size: 1.1em;
-    color: black;
 }
 
-#navbar .nav .menu ul li a i{
-    position: relative;
-    color: rgb(160,176,207);
-    font-size: 3em;
-    text-shadow: -1px 0 1px  rgb(104,126,171),
-    0 1px 1px  rgb(104,126,171),
-    1px 0 1px  rgb(104,126,171),
-    0 -1px 1px  rgb(104,126,171);
-    margin-bottom: 5px;
+#navbar .nav .menu ul li a:hover{
+    color: var(--blue);
 }
 
-#navbar .nav .menu ul li a i::after{
-    display: none;
-    content: "!";
+#navbar .nav .menu ul li a::before{
+    content: "";
     position: absolute;
-    color: white;
-    text-shadow: none;
-    top: -15%;
-    right: -15%;
-    background: linear-gradient(180deg, 
-    rgb(241,150,154) 0%, 
-    rgb(241,150,154) 27%, 
-    rgb(224,32,4) 64%, 
-    rgb(224,32,4) 100%);
-    z-index: 2;
-    border-radius: 50%;
-    font-size: 10px;
-    width: 10px;
-    height: 10px;
-    padding: 3px;
-    border: 2px solid white;
-}
-
-#navbar .nav .menu ul li a:hover i::after{
     display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blue);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
-
-/* TOGGLED .NAVBAR */
-
-#navbar .nav .side-menu:checked ~ .menu{
-    height: 100vh;
-    width: 100vw;
-    max-height: none;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
+#navbar .nav .menu ul li a:hover::before {
+    transform: scaleX(1);
+  }
 
 /* HOME */
 
@@ -151,23 +109,20 @@ nav{
 
 .main-title{
     color: var(--white);
+    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: clamp(45px, 8vw, 90px);
     text-transform: uppercase;
 }
 
 .subtitle{
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: clamp(30px, 8vw, 80px);
     padding-bottom: 0.5em;
 }
 
 /* ABOUT ME */
-
-.img-container img{
-    height: auto;
-    width: 58%;
-}
 
 .img-border{
     background: var(--blue-translucid);
@@ -224,15 +179,6 @@ nav{
     transition: transform 300ms ease-in;
 }
 
-.about-me-text ul li{
-    margin: 0 2em;
-}
-
-.about-me-list{
-    margin: 0.75em 0;
-    list-style: none;
-}
-
 .about-me-list li:before{
     content: "";
     border-color: transparent var(--blue);
@@ -249,28 +195,17 @@ nav{
 /* MY WORK */
 
 .my-work-container{
-    width: 100%;
     max-width: 345px;
-    flex-wrap: wrap;
 }
 
 .my-work-card{
     height: 200px;
     width: 127px;
     padding: 10px 0px 5px 0px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
     margin: 3px;
 }
 
-.glow{
-    transition: var(--transition-03s);
-}
-
-.icon-container{
+.my-work-card .icon .icon-container{
     width: 120px; 
     height: 120px;
     background-color: var(--blue);
@@ -283,19 +218,23 @@ nav{
 .my-work-card .icon .icon-container i{
     font-size: 50px;
     color: var(--white)!important;
-
 }
 
-.my-work-card-title{
+.my-work-card .my-work-card-title{
     color: var(--gray-typography);
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
     transition: var(--transition-03s);
 }
+
 .my-work-card:hover .my-work-card-title{
     color: var(--white);
     transition: var(--transition-03s);
 }
 
+.glow{
+    transition: var(--transition-03s);
+}
 .my-work-card:hover .glow{
     filter: drop-shadow(0px 0px 19px rgb(49, 191, 230));
     -webkit-filter: drop-shadow(0px 0px 19px rgb(49, 191, 230));
@@ -307,71 +246,63 @@ nav{
     margin-top: 1.3em;
 }
 
-.portfolio{
-    width: 100%;
-    flex-wrap: wrap;
-}
-
 .portfolio-card{
     background: var(--secondary-gray);
     border: var(--border);
     cursor: default;
     border-radius: 4px;
     max-width: 400px;
-    height: 350px;
+    height: auto;
     padding: 1em;
     margin: .8em;
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     transition: var(--transition-03s)
 }
 
-.portfolio-links{
+.portfolio-card .portfolio-links{
     width: 100%;
     margin-bottom: 1em;
 }
 
-.portfolio-links .btn-custom{
+.portfolio-card .portfolio-links .btn-custom{
     cursor: pointer;
     padding: 0.3em 0.6em;
     margin: 0;
     font-size: .9em;
 }
 
-.portfolio-links i{
+.portfolio-card .portfolio-links i{
     cursor: pointer;
     font-size: 2em;
     color: var(--gray-typography)!important;
 }
 
-.portfolio-bottom-info p{
-    margin: auto 0 0 0;
-    margin-left: auto;
-    padding: 0;
-    transition: var(--transition-03s);
-}
-
-.portfolio-title{
+.portfolio-card .portfolio-title{
     margin:1em 0;
     transition: var(--transition-03s);
 }
 
-.portfolio-text{
+.portfolio-card .portfolio-text{
     padding-right: 2.4em;
     transition: var(--transition-03s);
+    margin-bottom: 1.2em;
 }
 
-.portfolio-bottom-info{
+.portfolio-card .portfolio-bottom-info{
     margin-top: auto;
     width: 100%;
 }
 
-.portfolio-bottom-info i{
+.portfolio-card .portfolio-bottom-info i{
     color: var(--gray-typography)!important;
     font-size: 1.7em;
     margin-right: .8em;
+    transition: var(--transition-03s);
+}
+
+.portfolio-card .portfolio-bottom-info p{
+    margin: auto 0 0 0;
+    margin-left: auto;
+    padding: 0;
     transition: var(--transition-03s);
 }
 
@@ -383,7 +314,7 @@ nav{
     transition: var(--transition-03s);
 }
 
-.portfolio-card:hover p,
+.portfolio-card:hover .portfolio-text,
 .portfolio-card:hover .portfolio-links a i{
     color: var(--white)!important;
     transition: var(--transition-03s);
@@ -402,18 +333,14 @@ nav{
     background: var(--secondary-gray);
     border: var(--border);
     border-radius: 4px;
-    width: 85%;
     padding: 1em 2em; 
     margin: .8em 0;
     transition: var(--transition-03s);
-    display: flex;
-    flex-flow: column;
 }
 
 .contact-card form{
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 2.5em;
+    justify-content: flex-start;
+    margin-bottom: .5em;
 }
 
 .contact-card form label{
@@ -422,15 +349,11 @@ nav{
 
 .contact-card input,
 .contact-card textarea{
-    width: 100%;
-    background: none;
     color: var(--white);
     border: var(--border);
     border-radius: 4px;
-    display: block;
     padding: .2em;
     margin: .5em 0;
-    resize: none;
     transition: var(--transition-03s);
 }
 
@@ -457,7 +380,7 @@ nav{
 }
 .contact-card input:focus-visible,
 .contact-card textarea:focus-visible{
-    outline: .1em solid var(--blue);
+    outline: .5px solid var(--blue);
 }
 
 input:focus + label,
@@ -467,7 +390,7 @@ textarea:focus + label{
 }
 
 .contact-card .btn-custom{
-    align-self: flex-end;
+    margin-top: 3em;
 }
 
 
@@ -501,16 +424,11 @@ footer .footer-icons a i:hover{
 
     /* .NAVBAR*/
 
-    #navbar{
-        padding-top: 3px;
-        padding-bottom: 0;
-    }
-
     .nav .hamb{
         display: none;
     }
 
-    /* .nav .menu,
+    .nav .menu,
     .side-menu:checked ~ .menu{
         position: relative;
         top: 0;
@@ -525,6 +443,7 @@ footer .footer-icons a i:hover{
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
+        max-width: none;
     }
 
     .nav .menu ul li,
@@ -532,47 +451,10 @@ footer .footer-icons a i:hover{
         display: inline-block;
         padding-left: 1.2em;
         margin: 0;
-    } */
-
-    .nav .menu,
-    .side-menu:checked ~ .menu{
-        position: relative;
-        top: 0;
-        left: 0;
-        max-height: none;
-        width: 80%;
-        padding: 0;
-        height: auto;
-        background: rgb(97,122,177);
-        border-radius: 2px 2px 0 0;
     }
 
-    .nav .menu ul{
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        max-width: none;
-        padding: 0;
-        height: 100%;
-        padding-right: 8px;
-    }
-
-    .nav .menu ul li{
-        display: inline-block;
-        margin: 0;
-        width: auto;
-        margin: 0 2px;
-    }
-
-    .nav .menu ul li a{
-        color: white;
-        font-size: .8em;
-        width: 100%;
-        padding: 5px 10px;
-    }
-
-    .nav .menu ul li a br,
-    .nav .menu ul li a i{
+    .nav .menu ul li a i,
+    .side-menu:checked ~ .menu ul li a i{
         display: none;
     }
 
@@ -620,6 +502,7 @@ footer .footer-icons a i:hover{
 
     .portfolio-card{
         width: 320px;
+        height: 370px;
     }
 
     /* CONTACT */

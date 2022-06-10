@@ -10,14 +10,7 @@
     --border:1px solid var(--secondary-green);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
-    overflow-x: hidden;
     background-color: var(--background-green);
     font-family: 'Share Tech Mono', monospace;
     color: var(--typography-green);
@@ -37,42 +30,6 @@ body::after {
     pointer-events: none;
   }
 
-.container{
-    width: 100%;
-    padding: 10px 20px;
-}
-
-.flex-start{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.flex-between{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.flex-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.flex-column-start {
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.flex-column-center {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .highlight{
     color: var(--white);
     text-decoration: underline;
@@ -83,8 +40,6 @@ body::after {
     letter-spacing: 2px;
     color: var(--background-green);
     background: var(--typography-green);
-    display: inline-block;
-    width: 100%;
     margin: .8em 0;
     padding: .2em .7em;
     position: relative;
@@ -102,8 +57,6 @@ body::after {
 .secondary-title{
     color: var(--white);
     font-family: 'Press Start 2P', monospace;
-    display: inline-block;
-    width: 100%;
     margin: .8em 0;
     text-align: center;
 }
@@ -126,125 +79,27 @@ body::after {
 /* NAVBAR */
 
 nav{
-    width: 100%;
-    padding: .8em 1.2em;
     background: var(--background-green);
-    position: fixed;
-    z-index: 20;
 }
 
-.nav {
-    width: 100%;
-    background: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.nav .logo{
+#navbar .nav .logo{
     font-size: 1.3em;
-    margin-right: auto;
-    text-decoration: none;
-    color: inherit;
 }
 
-.nav .hamb{
-    cursor: pointer;
-}
-
-.nav .hamb .hamb-line {
+#navbar .nav .hamb .hamb-line {
     background: var(--secondary-green);
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 24px;
 }
 
-.nav .hamb .hamb-line::before,
-.nav .hamb .hamb-line::after{
+#navbar .nav .hamb .hamb-line::before,
+#navbar .nav .hamb .hamb-line::after{
     background: var(--secondary-green);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    width: 100%;
 }
 
-.nav .hamb .hamb-line::before{
-    top: 5px;
-}
-
-.nav .hamb .hamb-line::after{
-    top: -5px;
-}
-
-.nav .side-menu{
-    display: none;
-}
-
-.nav .menu{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 220px;
-    width: 40%;
-    height: auto;
-    max-height: 0;
-    overflow: hidden;
-    background: inherit;
-}
-
-.nav .menu ul{
-    display: flex;
-    flex-direction: column;
-}
-
-.nav .menu ul li{
-    list-style: none;
-    margin: .5em 0;
-}
-
-.nav .menu ul li a{
-    color: inherit;
-    position: relative;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.3s ease;
-}
-
-.nav .menu ul li a:hover{
+#navbar .nav .menu ul li a:hover{
     text-decoration: underline;
 }
 
-
-/* TOGGLED NAVBAR */
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-    transform: rotate(-90deg);
-}
-
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-135deg);
-    top:0;
-}
-
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(135deg);
-    top:0;
-}
-
-.side-menu:checked ~ .menu{
-    height: auto;
-    max-height: 100vw;
-    padding: .5em 2em;
-}
-
 /* HOME */
-
-.home-container{
-    margin-top: 2em;
-    width: 100%;
-}
 
 .main-title{
     color: var(--background-green);
@@ -264,8 +119,6 @@ nav{
 }
 
 .home-container p{
-    padding-right: 1.2em;
-    padding-bottom: 1.2em;
     font-size: 1.1em;
     border: var(--border);
     border-radius: 2px;
@@ -273,21 +126,13 @@ nav{
 }
 
 .button-container{
-    width: 100%;
     margin-top:10px;
-    flex-wrap: wrap;
 }
 
 /* ABOUT ME */
 
 .about-me-content{
-    width: 100%;
-    margin-bottom:15px;
-}
-
-.img-container{
-    width: 100%;
-    position: relative;
+    margin-top:0px;
 }
 
 .img-text{
@@ -298,29 +143,6 @@ nav{
 
 .img-text p{
     font-size: 5px;
-}
-
-.about-me-text{
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top:10px;
-}
-
-.about-me-text p{
-    padding-bottom: 1em;
-}
-
-.about-me-text ul{
-    display: inline-block;
-}
-.about-me-text ul li{
-    margin: 0 2em;
-}
-
-.about-me-list{
-    margin: 0.75em 0;
-    list-style: none;
 }
 
 .about-me-list li:before{
@@ -336,9 +158,7 @@ nav{
 /* MY WORK */
 
 .my-work-container{
-    flex-wrap: wrap;
     max-width: 380px;
-    width: 100%;
 }
 
 .my-work-card{
@@ -346,11 +166,6 @@ nav{
     width: 170px;
     margin: 3px;
     padding: 0.2em 0;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
     border: var(--border);
     border-radius: 2px;
 }
@@ -378,9 +193,7 @@ nav{
 
 
 .portfolio{
-    width: 100%;
     padding: 1em 0;
-    flex-wrap: wrap;
 }
 
 .portfolio-card{
@@ -388,56 +201,53 @@ nav{
     cursor: default;
     border-radius: 4px;
     max-width: 400px;
-    height: 350px;
+    height: auto;
     padding: 1em;
-    margin: .8em;
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    margin: 5px;
 }
 
-.portfolio-links{
-    width: 100%;
-    margin-top: auto;
-}
-
-.portfolio-links .btn-custom{
-    cursor: pointer;
-    padding: 0.3em 0.6em;
-    margin: 0;
-    font-size: .9em;
-}
-
-.portfolio-bottom-info p{
-    padding-right: 0.5em;
-}
-
-.portfolio-bottom-info :last-child{
-    margin-left: auto;
-}
-
-.portfolio-title{
+.portfolio-card .portfolio-title{
     font-family: 'Press Start 2P', monospace;
     text-align: center;
     width: 100%;
     background: var(--typography-green);
     color: var(--background-green);
-    margin-bottom: auto;
     padding: 0.2em 0;
     font-size: 1.3em;
     border: var(--border);
 }
 
-.portfolio-text{
+.portfolio-card .portfolio-text{
+    margin: .5em 0;
     text-align: justify;
     padding: .2em;
     border: var(--border);
 }
 
-.portfolio-bottom-info{
+.portfolio-card .portfolio-bottom-info{
     width: 100%;
-    margin: auto;
+    bottom:.5em ;
+    margin-top: auto;
+}
+
+.portfolio-card .portfolio-bottom-info p{
+    padding-right: 0.5em;
+    font-size: .8em;
+}
+
+.portfolio-card .portfolio-bottom-info :last-child{
+    margin-left: auto;
+}
+
+.portfolio-card .portfolio-links{
+    width: 100%;
+}
+
+.portfolio-card .portfolio-links .btn-custom{
+    cursor: pointer;
+    padding: 0.3em 0.6em;
+    margin: 0;
+    font-size: .9em;
 }
 
 /* CONTACT */
@@ -445,17 +255,8 @@ nav{
 .contact-card{
     border: var(--border);
     border-radius: 2px;
-    width: 85%;
     padding: 1em 2em; 
     margin: .8em 0;
-    display: flex;
-    flex-flow: column;
-}
-
-.contact-card form{
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 2.5em;
 }
 
 .contact-card form label{
@@ -466,15 +267,11 @@ nav{
 
 .contact-card input,
 .contact-card textarea{
-    width: 100%;
-    background: none;
     color: var(--typography-green);
     border: var(--border);
     border-radius: 2px;
-    display: block;
     padding: .2em;
     margin: .5em 0;
-    resize: none;
 }
 
 .contact-card input:focus-visible,
@@ -593,6 +390,11 @@ footer .btn-custom{
 
     .my-work-container{
         max-width: none;
+    }
+
+    .portfolio-card{
+        max-width: 330px;
+        height: 330px;
     }
 
 

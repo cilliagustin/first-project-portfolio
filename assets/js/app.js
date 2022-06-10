@@ -3,8 +3,9 @@ let eighties = document.getElementById("80s");
 let nineties = document.getElementById("90s");
 let twoThousands = document.getElementById("00s");
 let twentyTen = document.getElementById("10s");
-let present = document.getElementById("present");
+let twentyTwenty = document.getElementById("20s");
 let logo = document.getElementById("logo");
+let menu = document.getElementById("menu");
 let imgContainer = document.getElementById("img-container");
 let iconResponsive = document.getElementById("icon-responsive");
 let iconNavegate = document.getElementById("icon-navegate");
@@ -18,7 +19,8 @@ let footer = document.getElementById("footer");
 eighties.addEventListener(("click"), setEighties);
 nineties.addEventListener(("click"), setNineties);
 twoThousands.addEventListener(("click"), setTwoThousands);
-present.addEventListener(("click"), setPresent);
+twentyTen.addEventListener(("click"), setTwentyTen);
+twentyTwenty.addEventListener(("click"), setTwentyTwenty);
 
 function setEighties() {
     resetHTML();
@@ -306,14 +308,35 @@ function setTwoThousands() {
     </div>`;
 };
 
-function setPresent() {
+function setTwentyTen() { 
     resetHTML();
-    cssFile.setAttribute("href", "assets/css/style.css");
+    cssFile.setAttribute("href", "assets/css/style10.css");
+    menu.innerHTML= `
+    <ul>
+        <li><a href="#home"><i class="fa-solid fa-house"></i><br>home</a></li>
+        <li><a href="#about-me"><i class="fa-solid fa-user"></i><br>about me</a></li>
+        <li><a href="#my-work"><i class="fa-solid fa-briefcase"></i><br>my work</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-phone"></i><br>contact</a></li>    
+    </ul>
+    `;
+};
+
+function setTwentyTwenty() {
+    resetHTML();
+    cssFile.setAttribute("href", "assets/css/style20.css");
 };
 
 function resetHTML(){
     imgContainer.innerHTML =   `<img src="assets/images/placeholder.webp" alt="">
                                 <div class="img-border"></div>`;
+    menu.innerHTML=`
+    <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about-me">about me</a></li>
+        <li><a href="#my-work">my work</a></li>
+        <li><a href="#contact">contact</a></li>    
+    </ul>
+    `;
     iconResponsive.innerHTML = `<div class="glow">
     <div class="icon-container">
         <i class="fa-solid fa-mobile-screen-button"></i>

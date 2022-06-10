@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6037b4c484.js" crossorigin="anonymous"></script>
-    <link id="style" rel="stylesheet" href="assets/css/style10.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link id="style" rel="stylesheet" href="assets/css/style20.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,12 +16,12 @@
             <a  href="#" id="logo" class="logo">LOGO</a>
             <input class="side-menu" type="checkbox" name="side-menu" id="side-menu">
             <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-            <div class="menu">
+            <div id="menu" class="menu">
                 <ul>
-                    <li><a href="#home"><i class="fa-solid fa-house"></i><br>home</a></li>
-                    <li><a href="#about-me"><i class="fa-solid fa-user"></i><br>about me</a></li>
-                    <li><a href="#my-work"><i class="fa-solid fa-briefcase"></i><br>my work</a></li>
-                    <li><a href="#contact"><i class="fa-solid fa-phone"></i><br>contact</a></li>    
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about-me">about me</a></li>
+                    <li><a href="#my-work">my work</a></li>
+                    <li><a href="#contact">contact</a></li>    
                 </ul>
             </div>
         </div>  
@@ -42,7 +43,7 @@
             <button type="button" id="90s" class="btn-custom">90´s</button>
             <button type="button" id="00s" class="btn-custom">00´s</button>
             <button type="button" id="10s" class="btn-custom">2010´s</button>
-            <button type="button" id="present" class="btn-custom">Present Day</button>
+            <button type="button" id="20s" class="btn-custom">2020´s</button>
           </div>
     </header>
     <!-- ABOUT ME -->
@@ -53,8 +54,25 @@
                 <img src="assets/images/placeholder.webp" alt="">
                 <div class="img-border"></div>
             </div>
+            
             <div class="about-me-text">
-                <p>Hi there! My name is <span class="highlight">Agustin</span> (Ah-goos-TEEN), don´t worry if you can´t pronounce correctly my name, many people can´t but I swear it´s a pretty popular name in Argentina.<br>Here are some of my unpopular opinions: <span class="highlight">The Leftovers</span> is better than <span class="highlight">Game of Thrones</span>, <span class="highlight">Mr Bungle</span> is better than <span class="highlight">Faith no More</span>, <span class="highlight">Bojack Horseman</span> is better than <span class="highlight">Rick and Morty</span>, <span class="highlight">Better call Saul</span> is as good as <span class="highlight">Breaking Bad</span> and <span class="highlight">The Binding of Isaac</span> is better than many of the video-games out there.<br>Anyway... I used to work in hospitality,but as many people, <span class="highlight">2020</span> was a year that forced me to re-think my carrer and I ended up learning to code <span class="highlight">HTML</span> <span class="highlight">CSS</span> and <span class="highlight">JS</span> on <span class="highlight">Youtube</span>. A couple years, courses and experimentation later here I am.<br>Here are some of the technologies and Frameworks I work with (More comming soon...):</p>
+                <p>
+                    Hi there! My name is <span class="highlight">Agustin</span> (Ah-goos-TEEN), 
+                    don´t worry if you can´t pronounce correctly my name, many people can´t but I swear it´s a 
+                    pretty popular name in Argentina.<br>Here are some of my unpopular opinions: 
+                    <span class="highlight">The Leftovers</span> is better than 
+                    <span class="highlight">Game of Thrones</span>, <span class="highlight">Mr Bungle</span> 
+                    is better than <span class="highlight">Faith no More</span>, 
+                    <span class="highlight">Bojack Horseman</span> is better than 
+                    <span class="highlight">Rick and Morty</span>, <span class="highlight">Better call Saul</span>
+                    is as good as <span class="highlight">Breaking Bad</span> and 
+                    <span class="highlight">The Binding of Isaac</span> is better than many of the video-games out there.
+                    <br>Anyway... I used to work in hospitality,but as many people, <span class="highlight">2020</span>
+                     was a year that forced me to re-think my carrer and I ended up learning to code 
+                     <span class="highlight">HTML</span> <span class="highlight">CSS</span> and 
+                     <span class="highlight">JS</span> on <span class="highlight">Youtube</span>. 
+                     A couple years, courses and experimentation later here I am.<br>Here are some of the technologies and Frameworks I work with (More comming soon...):
+                </p>
                 <ul class="about-me-list">
                     <li>HTML5</li>
                     <li>CSS3</li>
@@ -73,7 +91,7 @@
     <section id="my-work" id="my-work" class="container flex-column-center">
         <h2 class="section-title">My work</h2>
         <div class="my-work-container flex-center">
-            <div class="my-work-card">
+            <div class="my-work-card flex-column-center">
                 <span id="icon-responsive" class="icon">
                     <div class="glow">
                     <div class="icon-container">
@@ -83,7 +101,7 @@
                 </span>
                 <h4 class="my-work-card-title">Responsive</h4>
             </div>
-            <div class="my-work-card">
+            <div class="my-work-card flex-column-center">
                 <span id="icon-navegate" class="icon">
                     <div class="glow">
                        <div class="icon-container">
@@ -93,7 +111,7 @@
                 </span>
                 <h4 class="my-work-card-title">Easy to navigate</h4>
             </div>
-            <div class="my-work-card">
+            <div class="my-work-card flex-column-center">
                 <span id="icon-modern" class="icon">
                     <div class="glow">
                         <div class="icon-container">
@@ -103,7 +121,7 @@
                 </span>
                 <h4 class="my-work-card-title">Modern</h4>
             </div>
-            <div class="my-work-card">
+            <div class="my-work-card flex-column-center">
                 <span id="icon-fast" class="icon">
                     <div class="glow">
                         <div class="icon-container">
@@ -116,7 +134,7 @@
         </div>
         <div class="portfolio flex-center">
             <h3 class="secondary-title">Portfolio</h3>
-            <div id="minimal-coffee" class="portfolio-card">
+            <div id="minimal-coffee" class="portfolio-card flex-column-start">
                 <div class="portfolio-links flex-between">
                     <a href="https://cilliagustin.github.io/minimalcoffee/" class="btn-custom" target="_blank">Visit website</a>
                     <a href="https://github.com/cilliagustin/minimalcoffee" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -130,7 +148,7 @@
                     <p>Lang: SP</p>
                 </div>
             </div>
-            <div id="contador-calorias" class="portfolio-card">
+            <div id="contador-calorias" class="portfolio-card flex-column-start">
                 <div class="portfolio-links flex-between">
                     <a href="https://github.com/cilliagustin/ContadorDeCalorias/" class="btn-custom" target="_blank">Visit website</a>
                     <a href="https://cilliagustin.github.io/ContadorDeCalorias/" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -151,6 +169,7 @@
         <h2 class="section-title">Contact</h2>
         <div id="contact-form" class="contact-card">
             <form action="" method="post">
+                <button class="btn-custom">Send</button>
                 <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Anything else I should know?..."></textarea>
                 <label for="comments">Message</label>
                 <input type="email" id="email" name="email" placeholder="Write your email address please">
@@ -158,7 +177,6 @@
                 <input type="text" id="fullname" name="fullname" placeholder="Write your full name please">
                 <label for="fullname">Full name</label>
             </form>
-            <button class="btn-custom">Send</button>
         </div>
     </section>
     <!-- FOOTER -->

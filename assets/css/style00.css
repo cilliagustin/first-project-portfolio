@@ -64,18 +64,9 @@
     100%{background: var(--blue-gradient);}
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
     position: relative;
-    overflow-x: hidden;
     font-family: 'Mali', cursive;
-
 }
 
 body::before{
@@ -106,6 +97,7 @@ body::after{
 }
 
 .container{
+    padding: 0;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -115,45 +107,12 @@ body::after{
     background: rgb(239, 239, 239);
 }
 
-.flex-start{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.flex-between{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.flex-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.flex-column-start {
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.flex-column-center {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .highlight{
     font-weight: bolder;
 }
 
 .section-title{
-    display: inline-block;
     padding-left: 20px;
-    width: 100%;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     letter-spacing: 2px;
@@ -163,8 +122,6 @@ body::after{
 .secondary-title{
     font-family: 'Work Sans', sans-serif;
     text-align: center;
-    display: inline-block;
-    width: 100%;
     margin: .8em 0;
     text-transform: capitalize;
 }
@@ -193,25 +150,19 @@ body::after{
 #navbar{
     border-radius: 0%;
     border: none;
-    width: 100%;
     min-height: 32px;
-    position: fixed;
     top: 0;
-    z-index: 20;
     background: rgb(75, 128, 201);
+    padding: 0;
     padding-top: 5px;
 }
 
-.nav {
-    background: inherit;
-    width: 100%;
-    display: flex;
-    align-items: center;
+#navbar .nav {
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.nav .logo{
+#navbar .nav .logo{
     background: linear-gradient(180deg, 
     var(--light-blue) 0%,  
     rgba(35,101,160,1) 35%, 
@@ -221,49 +172,25 @@ body::after{
     border-bottom: none;
     border-radius:3px 3px 0 0;
     text-align: center;
-    text-decoration: none;
+    margin-right: 0;
 }
 
-.nav .hamb{
-    cursor: pointer;
-    background-color: red;
-    border: 2px solid blue;
-}
-
-.nav .hamb .hamb-line {
+#navbar .nav .hamb .hamb-line {
     background: var(--dark-orange);
-    display: block;
-    height: 2px;
+    transition: all .4s ease;
+}
+
+#navbar .nav .hamb .hamb-line::before,
+#navbar .nav .hamb .hamb-line::after{
+    background: var(--dark-orange);
+    transition: all .4s ease;
+}
+
+#navbar .nav .menu{
     position: relative;
-    width: 24px;
-    transition: all .4s ease;
-}
-
-.nav .hamb .hamb-line::before,
-.nav .hamb .hamb-line::after{
-    background: var(--dark-orange);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .4s ease;
+    max-height: none;
     width: 100%;
-}
-
-.nav .hamb .hamb-line::before{
-    top: 5px;
-}
-
-.nav .hamb .hamb-line::after{
-    top: -5px;
-}
-
-.nav .side-menu{
-    display: none;
-}
-
-.nav .menu{
-    width: 100%;
+    height: 9px;
     border-top: 1px solid var(--dark-blue);
     border-bottom: 1px solid var(--dark-blue);
     background:linear-gradient(180deg, 
@@ -271,9 +198,6 @@ body::after{
     rgba(35,101,160,1) 5px,
     rgba(35,101,160,1) 10px, 
     var(--light-blue) 39px);
-    overflow: hidden;
-    height: 9px;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -281,8 +205,7 @@ body::after{
     transition: .3s ease-in;
 }
 
-.nav .menu ul{
-    display: flex;
+#navbar .nav .menu ul{
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
@@ -290,8 +213,8 @@ body::after{
     border-top: 1px solid var(--dark-blue);
 }
 
-.nav .menu ul li{
-    list-style: none;
+#navbar .nav .menu ul li{
+    margin: 0;
     background: linear-gradient(180deg, 
     rgba(35,101,160,1) 0px,  
     rgba(35,101,160,1) 8px, 
@@ -304,42 +227,26 @@ body::after{
     text-align: center;
 }
 
-.nav .menu ul li a{
+#navbar .nav .menu ul li a{
     display: inline-block;
     width: 100%;
     height: 100%;
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
     color: white;
-    text-decoration: none;
-    text-transform: capitalize;
     font-size: 13px;
 }
 
-.nav .menu ul li:hover{
+#navbar .nav .menu ul li:hover{
     height: 24px;
 }
 
 
 /* TOGGLED .NAVBAR */
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-    transform: rotate(-90deg);
-    transform-origin: top;
-}
 
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-135deg);
-    top:0;
-}
-
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(135deg);
-    top:0;
-}
-
-.side-menu:checked ~ .menu{
+#navbar .nav .side-menu:checked ~ .menu{
     height: 35px;
+    padding: .5em 0 0 0;
 }
 
 /* HOME */
@@ -350,6 +257,11 @@ body::after{
     overflow: hidden;
     border-top: var(--blue-border);
     border-radius: 10px 0 0 0;
+}
+
+.home-container{
+    width: auto;
+    margin-top: 0;
 }
 
 .home-title{
@@ -406,8 +318,6 @@ body::after{
 }
 
 .home-container p{
-    padding-right: 1.2em;
-    padding-bottom: 1.2em;
     padding: .5em;
     text-align: justify;
 }
@@ -415,7 +325,7 @@ body::after{
 .button-container{
     align-self: center;
     margin: 0.5em 3em;
-    flex-wrap: wrap;
+    width: auto;
     border: var(--blue-border);
     background: white;
     border-radius: 0px 0px 10px 10px;
@@ -445,16 +355,8 @@ body::after{
     padding: 10px 0;
 }
 
-.about-me-content{
-    width: 100%;
-    margin-top:15px;
-    margin-bottom:15px;
-}
-
 .img-container{
-    width: 100%;
-    max-width: 300px;
-    position: relative;
+    width: 300px;
     height:300px;
 }
 
@@ -499,36 +401,19 @@ body::after{
     background-position: 5%;
 }
 
-
-.about-me-text{
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top:10px;
-}
-
-.about-me-text p{
-    padding-bottom: 1em;
-}
-
-.about-me-text ul{
-    display: inline-block;
-}
 .about-me-text ul li{
     margin: 0 .8em;
 }
 
-.about-me-list{
-    margin: 0.75em 0;
+.about-me-text .about-me-list{
+    list-style: disc;
 }
 
 
 /* MY WORK */
 
 .my-work-container{
-    width: 100%;
     max-width: 345px;
-    flex-wrap: wrap;
 }
 
 .my-work-card{
@@ -538,15 +423,11 @@ body::after{
     border: var(--blue-border);
     box-shadow: var(--shadow);
     border-radius: 0 0 10px 10px;
-    display: flex;
     flex-flow: column-reverse;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
     margin: 5px;
 }
 
-.my-work-card-title{
+.my-work-card .my-work-card-title{
     font-family: 'Work Sans', sans-serif;
     border-bottom: var(--blue-border);
     font-size: 1.2em;
@@ -558,7 +439,7 @@ body::after{
     animation-iteration-count: infinite;
 }
 
-.icon-container{
+.my-work-card .icon .icon-container{
     width: 100px; 
     height: 100px;
     position: relative;
@@ -571,33 +452,27 @@ body::after{
     background: var(--blue-gradient);
 }
 
-.my-work-card:hover .icon-container{
+.my-work-card:hover .icon  .icon-container{
     background: var(--red-gradient);
 }
 
-.icon-container img{
+.my-work-card .icon .icon-container img{
     width: 90%;
     filter: invert(97%) sepia(2%) saturate(150%) hue-rotate(49deg) brightness(117%) contrast(100%);
 }
 
-#icon-responsive .icon-container :first-child{
+.my-work-card #icon-responsive .icon-container :first-child{
     width: 76%;
     position: absolute;
     top: 15%;
     left: 11%;
 }
 
-#icon-responsive .icon-container :last-child{
+.my-work-card #icon-responsive .icon-container :last-child{
     width: 39%;
     position: absolute;
     top: 39%;
     right: 3%;
-}
-
-
-.portfolio{
-    width: 100%;
-    flex-wrap: wrap;
 }
 
 .portfolio-card{
@@ -606,29 +481,25 @@ body::after{
     border-radius: 0px 0px 10px 10px;
     cursor: default;
     max-width: 400px;
-    height: 350px;
+    height: auto;
     margin: .8em;
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
     align-items: center;
     box-shadow: var(--shadow);
 }
 
-.portfolio-title{
-    margin-bottom: 1em;
+.portfolio-card .portfolio-title{
     border-bottom: var(--blue-border);
     width: 100%;
     text-align: center;
     background: var(--blue-gradient);
 }
 
-.portfolio-text{
+.portfolio-card .portfolio-text{
+    margin: .7em 0;
     padding: 0 .8em;
-    height: 191px;
 }
 
-.portfolio-bottom-info{
+.portfolio-card .portfolio-bottom-info{
     margin: .7em 0;
     width: 100%;
     padding: .3em 0;
@@ -636,22 +507,23 @@ body::after{
     border-bottom: var(--blue-border);
 }
 
-.portfolio-bottom-info p{
+.portfolio-card .portfolio-bottom-info p{
     padding-left: .3em;
+    font-size: .8em;
 }
 
-.portfolio-bottom-info :last-child{
+.portfolio-card .portfolio-bottom-info :last-child{
     margin-left: auto;
     padding-right: .3em;
 }
 
-.portfolio-links{
+.portfolio-card .portfolio-links{
     margin-top: auto;
     padding: 0 .3em .3em;
     width: 100%;
 }
 
-.portfolio-links .btn-custom{
+.portfolio-card .portfolio-links .btn-custom{
     text-align: center;
     width: 100px;
     height: 45px;
@@ -662,7 +534,7 @@ body::after{
   background: var(--red-gradient);
 }
 
-.portfolio-links .btn-custom:hover{
+.portfolio-card .portfolio-links .btn-custom:hover{
     background: var(--inverted-red-gradient);
 }
 /* CONTACT */
@@ -671,18 +543,10 @@ body::after{
     background: var(--light-blue);
     border: var(--blue-border);
     border-radius: 0 0 10px 10px;
-    width: 85%;
     padding: 1em 2em; 
     margin: .8em 0;
-    display: flex;
-    flex-flow: column;
 }
 
-.contact-card form{
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 2.5em;
-}
 
 .contact-card form label{
     transition: var(--transition-03s);
@@ -814,7 +678,7 @@ footer .footer-icons .btn-custom{
         margin: 0;
         position: absolute;
         right: 6%;
-        top: 244px;
+        top: 277px;
     }
 
     /* ABOUT ME */
