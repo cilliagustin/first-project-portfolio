@@ -443,6 +443,10 @@ footer .footer-icons a i:hover{
 
     /* MY WORK */
 
+    .my-work-container{
+        max-width: none;
+    }
+
     .portfolio-card{
         width: 320px;
         height: 370px;

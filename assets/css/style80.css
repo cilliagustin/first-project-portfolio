@@ -350,6 +350,10 @@ footer .btn-custom{
 
     /* MY WORK */
 
+    .my-work-container{
+        max-width: none;
+    }
+
     .portfolio-card{
         max-width: 330px;
         height: 330px;
