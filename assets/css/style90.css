@@ -25,11 +25,7 @@
     inset 2px 2px var(--secondary-gray);
     --border:.5px solid var(--background-gray);
     --gradient:linear-gradient(90deg,rgb(1, 1, 130),rgb(16, 132, 208));
-    --gray-typography:rgb(143, 154, 185);
     --white:rgb(235, 230, 230);
-    --blue: rgb(49, 191, 230);
-    --blue-translucid: rgba(49, 191, 230, .3);
-    --transition-03s: .3s ease-in;
 }
 
 body{
@@ -66,7 +62,8 @@ body{
     padding: 1px 12px 1px 12px;
     box-shadow: var(--raised-box);
     text-decoration: none;
-    color: var(--black);
+    color: var(--black); 
+    text-align: center;
 }
 
 .btn-custom:active{
@@ -120,7 +117,7 @@ body{
 }
 
 #navbar .nav .menu ul li a:active{
-    box-shadow: var(--engraved-box);
+    box-shadow: var(--sunken-box);
     padding: 2px 11px 0 13px;
 }
 /* TOGGLED NAVBAR */
@@ -248,10 +245,22 @@ body{
     box-shadow: var(--raised-box);
     cursor: default;
     width: 400px;
-    height: 390px;
+    height: auto;
     margin: 2px;
     padding: 2px;
     align-items: center;
+}
+
+.portfolio-card :nth-child(1):not(.portfolio-information > *):not(.portfolio-links > *){
+    order: 3;
+}
+
+.portfolio-card :nth-child(2):not(.portfolio-information > *):not(.portfolio-links > *){
+    order: 1;    
+}
+
+.portfolio-card :last-child:not(.portfolio-information > *):not(.portfolio-links > *){
+    order: 2;    
 }
 
 .portfolio-card .portfolio-title{
@@ -272,27 +281,30 @@ body{
     box-shadow: var(--engraved-box);
 }
 
-.portfolio-card .portfolio-text{
+.portfolio-card .portfolio-desc{
+    margin: 12px 8px 0;
     border: var(--border);
     box-shadow: var(--sunken-box);
     height: 180px;
-    padding: 3px;
+    padding: 9px;
     font-size: .8em;
     background: white;
     margin-bottom: 25px;
+
 }
 
-.portfolio-card .portfolio-bottom-info{
-    margin: 25px 0 15px;
+.portfolio-card .portfolio-information{
+    margin: 25px 8px 27px;
+    padding: 6px;
     width: 100%;
 }
 
-.portfolio-card .portfolio-bottom-info p{
+.portfolio-card .portfolio-information p{
     font-size: .8em;
     padding-right: .8em;
 }
 
-.portfolio-card .portfolio-bottom-info :last-child{
+.portfolio-card .portfolio-information :last-child{
     padding-right: 0;
     margin-left: auto;
 }
@@ -309,10 +321,14 @@ body{
     border: var(--border);
     box-shadow: var(--raised-box);
     padding: 2px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
 }
 
 .contact-card h3{
     color: white;
+    text-transform: capitalize;
     font-family: 'DotGothic16', monospace;
     background: var(--gradient);
     font-size: .8em;
@@ -376,7 +392,7 @@ body{
     padding:0 .5em;
     width: 80%;
     height: 315px;
-    flex-flow: column;
+    margin-bottom: 0;
 }
 
 .contact-card label{
@@ -397,8 +413,8 @@ form :nth-child(5){
     margin-top: .8em;
 }
 
-.contact-card input,
-.contact-card textarea{
+.contact-card form input,
+.contact-card form textarea{
     background: white;
     border: var(--border);
     box-shadow: var(--sunken-box);
@@ -408,12 +424,15 @@ form :nth-child(5){
 
 .contact-card input:focus-visible,
 .contact-card textarea:focus-visible{
-    outline: .1px solid black;
+    outline: .1px solid var(--background-gray);
+}
+
+.contact-card hr{
+    margin-top: 3em;
 }
 
 .contact-card .btn-custom{
-    margin: .5em 0;
-    align-self: center;
+    margin:.5em 0;
 }
 
 /* FOOTER */
@@ -472,6 +491,51 @@ footer .btn-custom{
     .contact-image :nth-child(3){
         top:29%;
         left: 17%;
+    }
+}
+
+/* CONTACT FORM IN VERY SMALL DEVICES */
+
+@media (max-width: 500px) {
+    .contact-image {
+        width: 100%;
+        height: 100px;
+    }
+
+    .contact-card form {
+        width: 100%;
+    }
+
+    .contact-image img{
+        width: 45px;
+        position: absolute;
+    }
+    
+    .contact-image :first-child{
+        width: 45px;
+        transform: scaleX(-1);
+        top:7%;
+        left: 11%;
+    }
+    
+    .contact-image :nth-child(2){
+        top:46%;
+        left: 33%;
+    }
+    
+    .contact-image :nth-child(3){
+        top:52%;
+        left: 37%;
+    }
+    
+    .contact-image :nth-child(4){
+        top:10%;
+        right: 34%;
+    }
+    
+    .contact-image :nth-child(5){
+        top:50%;
+        left: 73%;
     }
 }
 

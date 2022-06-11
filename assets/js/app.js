@@ -11,6 +11,8 @@ let iconLink = Array.from(document.querySelectorAll(".icon-link"));
 let btnLink = Array.from(document.querySelectorAll(".btn-link"));
 let portInfoIcon = Array.from(document.querySelectorAll(".portfolio-info-icon"));
 let portInfoText = Array.from(document.querySelectorAll(".portfolio-info-text"));
+let portfolioText = Array.from(document.querySelectorAll(".portfolio-text"));
+let portfolioInfo = Array.from(document.querySelectorAll(".portfolio-bottom-info"));
 
 //80s variables
 let eightiesAboutImg = document.getElementById("80aboutImg");
@@ -19,12 +21,24 @@ let eightiesIconNavegate = document.getElementById("80iconNavegate");
 let eightiesIconModern = document.getElementById("80iconModern");
 let eightiesIconFast = document.getElementById("80iconFast");
 
-let eightiesElements = [eightiesAboutImg, eightiesIconResponsive, eightiesIconNavegate, eightiesIconModern, eightiesIconFast, btnLink, portInfoText];
-
 //90s variables
 let ninetiesAboutImg = document.getElementById("90aboutImg");
+let ninetiesIconResponsive = document.getElementById("90iconResponsive");
+let ninetiesIconNavegate = document.getElementById("90iconNavegate");
+let ninetiesIconModern = document.getElementById("90iconModern");
+let ninetiesIconFast = document.getElementById("90iconFast");
+let ninetiesportfolio = Array.from(document.querySelectorAll(".portfolio-content"));
+let ninetiesContactTitle = document.getElementById("contact-title");
+let ninetiesContactImg = document.getElementById("contact-img");
+let ninetiesHr = Array.from(document.querySelectorAll("hr"));
 
-let ninetiesElements = [ninetiesAboutImg];
+//2000s variables
+let twoThousandsAboutImg = document.getElementById("2000aboutImg");
+let twoThousandsIconResponsive = document.getElementById("2000iconResponsive");
+let twoThousandsIconNavegate = document.getElementById("2000iconNavegate");
+let twoThousandsIconModern = document.getElementById("2000iconModern");
+let twoThousandsIconFast = document.getElementById("2000iconFast");
+
 
 //2020 variables
 let twentyTwentyAboutImg = document.getElementById("2020aboutImg");
@@ -37,16 +51,14 @@ let twentyTwentyIconFast = document.getElementById("2020iconFast");
 
 
 
-
-
-
 eighties.addEventListener(("click"), setEighties);
 nineties.addEventListener(("click"), setNineties);
-// twoThousands.addEventListener(("click"), setTwoThousands);
+twoThousands.addEventListener(("click"), setTwoThousands);
 // twentyTen.addEventListener(("click"), setTwentyTen);
-// twentyTwenty.addEventListener(("click"), setTwentyTwenty);
+twentyTwenty.addEventListener(("click"), setTwentyTwenty);
 
 function setEighties() {
+    let eightiesElements = [eightiesAboutImg, eightiesIconResponsive, eightiesIconNavegate, eightiesIconModern, eightiesIconFast, btnLink, portInfoText, portfolioText, portfolioInfo];
     cssFile.setAttribute("href", "assets/css/style80.css");
     hideAll();
     eightiesElementsFlat = eightiesElements.flat();
@@ -56,6 +68,7 @@ function setEighties() {
 }
 
 function setNineties() {
+    let ninetiesElements = [ninetiesAboutImg, ninetiesIconResponsive, ninetiesIconNavegate, ninetiesIconModern, ninetiesIconFast, btnLink, portInfoText, ninetiesportfolio,ninetiesContactTitle, ninetiesContactImg, ninetiesHr];
     cssFile.setAttribute("href", "assets/css/style90.css");
     hideAll();
     ninetiesElementsFlat = ninetiesElements.flat();
@@ -64,441 +77,46 @@ function setNineties() {
     });
 }
 
-
-
-//hides all elements
-function hideAll(){
-    eightiesAboutImg.classList.add("hide");
-    eightiesIconResponsive.classList.add("hide");
-    eightiesIconNavegate.classList.add("hide");
-    eightiesIconModern.classList.add("hide");
-    eightiesIconFast.classList.add("hide");
-
-    ninetiesAboutImg.classList.add("hide");
-
-    twentyTwentyAboutImg.classList.add("hide");
-    twentyTwentyAboutBorder.classList.add("hide");
-    twentyTwentyIconResponsive.classList.add("hide");
-    twentyTwentyIconNavegate.classList.add("hide");
-    twentyTwentyIconModern.classList.add("hide");
-    twentyTwentyIconFast.classList.add("hide");
-
-
-
-    iconLink.forEach(function(el) {
-        el.classList.add("hide")
-    });
-    portInfoIcon.forEach(function(el) {
-        el.classList.add("hide")
-    });
-    btnLink.forEach(function(el) {
-        el.classList.add("hide")
-    });
-    portInfoText.forEach(function(el) {
-        el.classList.add("hide")
+function setTwoThousands() {
+    let twoThousandsElements = [twoThousandsAboutImg, twoThousandsIconResponsive, twoThousandsIconNavegate, twoThousandsIconModern, twoThousandsIconFast,
+    btnLink, portInfoText, portfolioText, portfolioInfo];
+    cssFile.setAttribute("href", "assets/css/style00.css");
+    hideAll();
+    twoThousandsElementsFlat = twoThousandsElements.flat();
+    twoThousandsElementsFlat.forEach(function(el) {
+        el.classList.remove("hide")
     });
 }
 
+function setTwentyTwenty() {
+    let TwentyTwentyElements = [twentyTwentyAboutImg, twentyTwentyAboutBorder, twentyTwentyIconResponsive, twentyTwentyIconNavegate, twentyTwentyIconModern, twentyTwentyIconFast, iconLink, portInfoIcon, portfolioText, portfolioInfo];
+    cssFile.setAttribute("href", "assets/css/style20.css");
+    hideAll();
+    TwentyTwentyElementsFlat = TwentyTwentyElements.flat();
+    TwentyTwentyElementsFlat.forEach(function(el) {
+        el.classList.remove("hide")
+    });
+}
 
+//hides all elements
+function hideAll(){
+    let allElements = [
+        
+        eightiesAboutImg, eightiesIconResponsive, eightiesIconNavegate, eightiesIconModern, eightiesIconFast, 
+    
+        ninetiesAboutImg, ninetiesIconResponsive, ninetiesIconNavegate, ninetiesIconModern, ninetiesIconFast, ninetiesportfolio, ninetiesContactImg, ninetiesContactTitle, ninetiesHr,
 
+        twoThousandsAboutImg, twoThousandsIconResponsive, twoThousandsIconNavegate, twoThousandsIconModern, twoThousandsIconFast,
+        
+        twentyTwentyAboutImg, twentyTwentyAboutBorder, twentyTwentyIconResponsive, twentyTwentyIconNavegate, twentyTwentyIconModern, twentyTwentyIconFast,
+    
+        iconLink, btnLink, portInfoIcon, portInfoText, portfolioText, portfolioInfo
+    
+    ];
+    
+    allElementsFlat = allElements.flat();
+    allElementsFlat.forEach(function(el) {
+        el.classList.add("hide")
+    });
 
-
-
-
-
-
-
-
-
-// let logo = document.getElementById("logo");
-// let menu = document.getElementById("menu");
-// let imgContainer = document.getElementById("img-container");
-// let iconResponsive = document.getElementById("icon-responsive");
-// let iconNavegate = document.getElementById("icon-navegate");
-// let iconModern = document.getElementById("icon-modern");
-// let iconFast = document.getElementById("icon-fast");
-// let minimalCoffee = document.getElementById("minimal-coffee");
-// let contador = document.getElementById("contador-calorias");
-// let contactForm = document.getElementById("contact-form");
-// let footer = document.getElementById("footer");
-
-
-
-                                                                                                                    // function setEighties() {
-                                                                                                                    //     resetHTML();
-                                                                                                                    //     cssFile.setAttribute("href", "assets/css/style80.css");
-                                                                                                                    //     logo.innerHTML= `&ltAC&gt`;
-                                                                                                                    //     imgContainer.innerHTML= `<div class="img-text flex-center">
-                                                                                                                    //     <p>
-                                                                                                                    // ..........................................................................................<br>
-                                                                                                                    // .............................@@@@@...............@@@@@@@@@@@@@............................<br>
-                                                                                                                    // ............................@@@@@@@............@@@@.........@@@@..........................<br>
-                                                                                                                    // ..............@@@@@........@@@@.@@@@.........@@@@............@@@@....@@@@@................<br>
-                                                                                                                    // ........@@@@@@@@..........@@@@...@@@@........@@@........................@@@@@@@@..........<br>
-                                                                                                                    // ...@@@@@@................@@@@.....@@@@......@@@@..............................@@@@@@......<br>
-                                                                                                                    // ...@@@@@@@...............@@@.......@@@@.....@@@@.............................@@@@@@@......<br>
-                                                                                                                    // .........@@@@@@@........@@@@@@@@@@@@@@@@.....@@@..............@@@......@@@@@@@............<br>
-                                                                                                                    // ...............@@@@....@@@...........@@@@.....@@@@...........@@@@....@@@@.................<br>
-                                                                                                                    // ......................@@@.............@@@@.....@@@@@@.....@@@@@...........................<br>
-                                                                                                                    // .....................@@@...............@@@@.......@@@@@@@@@@..............................<br>
-                                                                                                                    // ..........................................................................................<br>
-                                                                                                                    //     </p>
-                                                                                                                    // </div>`;
-                                                                                                                    //     iconResponsive.innerHTML= `<div class="icon-container">
-                                                                                                                    //     <p>
-                                                                                                                    // .................................................<br>
-                                                                                                                    // .................................................<br>
-                                                                                                                    // .................................................<br>
-                                                                                                                    // ..@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@..<br>
-                                                                                                                    // .@@___________________________________________@@.<br>
-                                                                                                                    // .@@___________________________________________@@.<br>
-                                                                                                                    // .@@___________________________________________@@.<br>
-                                                                                                                    // .@@____________@@@@@@@@@@@@@@@@@@@____________@@.<br>
-                                                                                                                    // .@@___________@@-----------------@@___________@@.<br>
-                                                                                                                    // .@@_____@@@@@@@@@@@--------------@@___________@@.<br>
-                                                                                                                    // .@@____@@/////////@@-------------@@___________@@.<br>
-                                                                                                                    // .@@____@@/////////@@-------------@@___________@@.<br>
-                                                                                                                    // .@@@@@.@@/////////@@-------------@@.@@@@@@@@@@@@.<br>
-                                                                                                                    // .@@@@@.@@/////////@@-------------@@.@@@@@@@@@@@@.<br>
-                                                                                                                    // ..@@@@.@@/////////@@-------------@@.@@@@@@@@@@@..<br>
-                                                                                                                    // .......@@/////////@@-------------@@..............<br>
-                                                                                                                    // .......@@@@@@@@@@@@@-------------@@..............<br>
-                                                                                                                    // .......@@@@@@@@@@@@@.@@@@@@@@@@@@@@.@@@@.........<br>
-                                                                                                                    // ..............@@@@@@@@@..@@@@@@@@@@..............<br>
-                                                                                                                    // ...............@@@@@@@@@@@@@@@@@@@...............<br>
-                                                                                                                    // .................................................<br>
-                                                                                                                    // .................................................<br>
-                                                                                                                    // .................................................<br>
-                                                                                                                    // .................................................<br>
-                                                                                                                    //     </p>
-                                                                                                                    // </div> `;
-                                                                                                                    //     iconNavegate.innerHTML= `<div class="icon-container">
-                                                                                                                    //     <p>
-                                                                                                                    // .......................@@@.......................<br>
-                                                                                                                    // ..............@@@@@@@@@@@@@@@@@@@@@..............<br>
-                                                                                                                    // ...........@@@@@@@@@@@@@@@@@@@@@@@@@@@...........<br>
-                                                                                                                    // ........@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@........<br>
-                                                                                                                    // ......@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@......<br>
-                                                                                                                    // .....@@@@@@@@@@@@@@...........@@@@@@@@@@@@@@.....<br>
-                                                                                                                    // ....@@@@@@@@@@@@.................@@@@@@@@@@@@....<br>
-                                                                                                                    // ...@@@@@@@@@@@@...................@@@@@@@@@@@@...<br>
-                                                                                                                    // ...@@@@@@@@@@@.....................@@@@@@@@@@@...<br>
-                                                                                                                    // ...@@@@@@@@@@@.....................@@@@@@@@@@@...<br>
-                                                                                                                    // ...@@@@@@@@@@@.....................@@@@@@@@@@@...<br>
-                                                                                                                    // ....@@@@@@@@@@@...................@@@@@@@@@@@....<br>
-                                                                                                                    // .....@@@@@@@@@@@@@.............@@@@@@@@@@@@@.....<br>
-                                                                                                                    // ......@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@......<br>
-                                                                                                                    // .......@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@........<br>
-                                                                                                                    // .........@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.........<br>
-                                                                                                                    // ..........@@@@@@@@@@@@@@@@@@@@@@@@@@@@@..........<br>
-                                                                                                                    // ............@@@@@@@@@@@@@@@@@@@@@@@@@............<br>
-                                                                                                                    // ..............@@@@@@@@@@@@@@@@@@@@@..............<br>
-                                                                                                                    // ...............@@@@@@@@@@@@@@@@@@@...............<br>
-                                                                                                                    // .................@@@@@@@@@@@@@@@.................<br>
-                                                                                                                    // ...................@@@@@@@@@@@...................<br>
-                                                                                                                    // .....................@@@@@@@.....................<br>
-                                                                                                                    // .......................@@@.......................<br>
-                                                                                                                    //     </p>
-                                                                                                                    // </div> `;
-                                                                                                                    //     iconModern.innerHTML= `
-                                                                                                                    // <div class="icon-container">
-                                                                                                                    //     <p>
-                                                                                                                    //         .................................................<br>
-                                                                                                                    //         .................................................<br>
-                                                                                                                    //         ......................@@.........................<br>
-                                                                                                                    //         ..................@@@@@@@@@@.....................<br>
-                                                                                                                    //         .................@@@@@@@@@@@@....................<br>
-                                                                                                                    //         .................@@@@@@@@@@@@....................<br>
-                                                                                                                    //         ..................@@@@@@@@@@@....................<br>
-                                                                                                                    //         ..................@@@@....@@@@@..................<br>
-                                                                                                                    //         .................@@@@........@@@@................<br>
-                                                                                                                    //         ................@@.............@@@@@.............<br>
-                                                                                                                    //         ...............@@................@@@@@...........<br>
-                                                                                                                    //         ..............@@....................@@@@@@@@@@...<br>
-                                                                                                                    //         ............@@@.......................@@@@@@@@@@.<br>
-                                                                                                                    //         ...........@@@.......................@@@@@@@@@@@@<br>
-                                                                                                                    //         ..........@@@.....................@@@@@@@@@@@@@@.<br>
-                                                                                                                    //         .........@@@................@@@@@@@@@..@@@@@@@...<br>
-                                                                                                                    //         ........@@@...........@@@@@@@@@..................<br>
-                                                                                                                    //         .....@@@@@......@@@@@@@@@........................<br>
-                                                                                                                    //         .@@@@@@@@@@@@@@@@@@..............................<br>
-                                                                                                                    //         @@@@@@@@@@@@@....................................<br>
-                                                                                                                    //         @@@@@@@@@@@@.....................................<br>
-                                                                                                                    //         .@@@@@@@@........................................<br>
-                                                                                                                    //         .................................................<br>
-                                                                                                                    //         .................................................<br>
-                                                                                                                    //     </p>
-                                                                                                                    // </div>`;
-                                                                                                                    //     iconFast.innerHTML= `
-                                                                                                                    // <div class="icon-container">
-                                                                                                                    //     <p>
-                                                                                                                    //         .................................................<br>
-                                                                                                                    //         ..........................@@@@@@@@@@@@@@@@.......<br>
-                                                                                                                    //         .........................@@@@@@@@@@@@@@@.........<br>
-                                                                                                                    //         ........................@@@@@@@@@@@@@@@..........<br>
-                                                                                                                    //         .......................@@@@@@@@@@@@@@............<br>
-                                                                                                                    //         ......................@@@@@@@@@@@@@@.............<br>
-                                                                                                                    //         .....................@@@@@@@@@@@@@@..............<br>
-                                                                                                                    //         ....................@@@@@@@@@@@@@................<br>
-                                                                                                                    //         ...................@@@@@@@@@@@@@.................<br>
-                                                                                                                    //         ..................@@@@@@@@@@@@...................<br>
-                                                                                                                    //         .................@@@@@@@@@@@@....................<br>
-                                                                                                                    //         ................@@@@@@@@@@@@@@@@@@@..............<br>
-                                                                                                                    //         ...............@@@@@@@@@@@@@@@@@@@...............<br>
-                                                                                                                    //         .....................@@@@@@@@@@@@................<br>
-                                                                                                                    //         ....................@@@@@@@@@@@..................<br>
-                                                                                                                    //         ...................@@@@@@@@@@....................<br>
-                                                                                                                    //         ..................@@@@@@@@@......................<br>
-                                                                                                                    //         .................@@@@@@@@........................<br>
-                                                                                                                    //         ...............@@@@@@@...........................<br>
-                                                                                                                    //         ..............@@@@@..............................<br>
-                                                                                                                    //         .............@@@@................................<br>
-                                                                                                                    //         ...........@@@...................................<br>
-                                                                                                                    //         ..........@@.....................................<br>
-                                                                                                                    //         .................................................<br>
-                                                                                                                    //     </p>
-                                                                                                                    // </div>`;
-                                                                                                                    //     minimalCoffee.innerHTML= `<h4 class="portfolio-title">Minimal<br>Coffee</h4>
-                                                                                                                    //     <p class="portfolio-text">A website for a fake coffee franchise located in Argentina.<br>The website is divided in 5 pages: <span class="highlight">Inicio</span> (Home), <span class="highlight">Nosotros</span> (About us), <span class="highlight">Menu</span>, <span class="highlight">Sucursales</span> (Locations), <span class="highlight">Contacto</span> (Contact). <br>The goal of this website is to show a correct use of the <span class="highlight">SEO</span> and <span class="highlight">front end tools</span>.</p>
-                                                                                                                    //     <div class="portfolio-bottom-info flex-start">
-                                                                                                                    //         <p>HTML</p>
-                                                                                                                    //         <p>CSS</p>
-                                                                                                                    //         <p>Bootstrap</p>
-                                                                                                                    //         <p>Lang: SP</p>
-                                                                                                                    //     </div>
-                                                                                                                    //     <div class="portfolio-links flex-between">
-                                                                                                                    //         <a href="https://cilliagustin.github.io/minimalcoffee/" class="btn-custom" target="_blank">Visit website</a>
-                                                                                                                    //         <a href="https://github.com/cilliagustin/minimalcoffee" target="_blank" class="btn-custom">Github repository</a>
-                                                                                                                    // </div>`;
-                                                                                                                    //     contador.innerHTML= `<h4 class="portfolio-title">Contador de calorías</h4>
-                                                                                                                    //     <p class="portfolio-text"><span class="highlight">Single page web app</span> made to keep record of the food you eat as well of the calories ingested. This website uses the <span class="highlight">materialize  framework</span> to provide the grid.<br>The website <span class="highlight">stores data in the browser</span> to keep control over the days.</p>
-                                                                                                                    //     <div class="portfolio-bottom-info flex-start">
-                                                                                                                    //         <p>HTML</p>
-                                                                                                                    //         <p>CSS</p>
-                                                                                                                    //         <p>JavaScript</p>
-                                                                                                                    //         <p>Lang: SP</p>
-                                                                                                                    //     </div>
-                                                                                                                    //     <div class="portfolio-links flex-between">
-                                                                                                                    //         <a href="https://github.com/cilliagustin/ContadorDeCalorias/" class="btn-custom" target="_blank">Visit website</a>
-                                                                                                                    //         <a href="https://cilliagustin.github.io/ContadorDeCalorias/" target="_blank"class="btn-custom">Github repository</a>
-                                                                                                                    // </div>`;
-                                                                                                                    //     footer.innerHTML= `<p>© 2022 Agustin Cilli</p>
-                                                                                                                    //     <div class="footer-icons">
-                                                                                                                    //         <a href="https://github.com/cilliagustin?tab=repositories" target="_blank" class="btn-custom">Visit Github</a>
-                                                                                                                    //         <a href = "mailto:abc@example.com?subject=Contact information" target="_blank" class="btn-custom">Send Email</a>
-                                                                                                                    // </div>`
-                                                                                                                    // };
-
-// function setNineties() {
-//     resetHTML();
-//     cssFile.setAttribute("href", "assets/css/style90.css");
-//     imgContainer.innerHTML= `<img src="assets/images/90splaceholder.png" alt="">`;
-//     iconResponsive.innerHTML= `<div class="icon-container">
-//     <img src="assets/images/computer90.png" alt="">
-//     <img src="assets/images/computer-small90.png" alt="">
-// </div>`;
-//     iconNavegate.innerHTML= `<div class="icon-container">
-//     <img src="assets/images/planet90.png" alt="">
-// </div>`;
-//     iconModern.innerHTML= `<div class="icon-container">
-//     <img src="assets/images/gears90.png" alt="">
-// </div>`;
-//     iconFast.innerHTML= `<div class="icon-container">
-//     <img src="assets/images/mouse-speed90.png" alt="">
-// </div>`;
-//     minimalCoffee.innerHTML= `<h4 class="portfolio-title">Minimal Coffee</h4>
-// <div class="portfolio-content">
-//     <p class="portfolio-text">A website for a fake coffee franchise located in Argentina.<br>The website is divided in 5 pages: <span class="highlight">Inicio</span> (Home), <span class="highlight">Nosotros</span> (About us), <span class="highlight">Menu</span>, <span class="highlight">Sucursales</span> (Locations), <span class="highlight">Contacto</span> (Contact). <br>The goal of this website is to show a correct use of the <span class="highlight">SEO</span> and <span class="highlight">front end tools</span>.</p>
-//     <hr>
-//     <div class="portfolio-bottom-info flex-start">
-//         <p>HTML</p>
-//         <p>CSS</p>
-//         <p>Bootstrap</p>
-//         <p>Lang: SP</p>
-//     </div>
-// </div>
-// <div class="portfolio-links flex-between">
-//     <a href="https://cilliagustin.github.io/minimalcoffee/" class="btn-custom" target="_blank">Visit website</a>
-//     <a href="https://github.com/cilliagustin/minimalcoffee" class="btn-custom" target="_blank">Github repository</a>
-// </div>`;
-//     contador.innerHTML= `<h4 class="portfolio-title">Contador de calorías</h4>
-// <div class="portfolio-content">
-//     <p class="portfolio-text"><span class="highlight">Single page web app</span> made to keep record of the food you eat as well of the calories ingested. This website uses the <span class="highlight">materialize  framework</span> to provide the grid.<br>The website <span class="highlight">stores data in the browser</span> to keep control over the days.</p>
-//     <hr>
-//     <div class="portfolio-bottom-info flex-start">
-//         <p>HTML</p>
-//         <p>CSS</p>
-//         <p>JavaScript</p>
-//         <p>Lang: SP</p>
-//     </div>
-// </div>
-// <div class="portfolio-links flex-between">
-//     <a href="https://github.com/cilliagustin/ContadorDeCalorias/" class="btn-custom" target="_blank">Visit website</a>
-//     <a href="https://cilliagustin.github.io/ContadorDeCalorias/" class="btn-custom" target="_blank">Github repository</a>
-// </div>`
-//     contactForm.innerHTML=` <h3>contact form</h3>
-// <div class="contact-info">
-//     <div class="contact-image">
-//         <img src="assets/images/computers90.png" alt="">
-//         <img src="assets/images/mail90.png" alt="">
-//         <img src="assets/images/mail90.png" alt="">
-//         <img src="assets/images/phone90.png" alt="">
-//         <img src="assets/images/msn90.png" alt="">
-//     </div>
-//     <form action="" method="post">
-//         <label for="fullname">Full name</label>
-//         <input type="text" id="fullname" name="fullname" placeholder="Write your full name please">
-//         <label for="email">Email address</label>
-//         <input type="email" id="email" name="email" placeholder="Write your email address please">
-//         <label for="comments">Message</label>
-//         <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Anything else I should know?..."></textarea>
-//     </form>
-// </div>
-// <hr>
-// <button class="btn-custom">Send</button>`;
-//     footer.innerHTML= `<hr>
-//     <p>© 2022 Agustin Cilli</p>
-//     <div class="footer-icons">
-//         <a href="https://github.com/cilliagustin?tab=repositories" target="_blank" class="btn-custom">Visit Github</a>
-//         <a href = "mailto:abc@example.com?subject=Contact information" target="_blank" class="btn-custom">Send Email</a>
-//     </div>`;
-// };
-
-// function setTwoThousands() {
-//     resetHTML();
-//     cssFile.setAttribute("href", "assets/css/style00.css");
-//     imgContainer.innerHTML= `<div class="img"></div>`;
-//     iconResponsive.innerHTML=`<div class="icon-container">
-//     <img src="assets/images/computer00.svg" alt="">
-//     <img src="assets/images/phone00.svg" alt="">
-// </div>`;
-//     iconNavegate.innerHTML=`<div class="icon-container">
-//     <img src="assets/images/location00.svg" alt="">
-// </div>`;
-//     iconModern.innerHTML=`<div class="icon-container">
-//     <img src="assets/images/chip00.svg" alt="">
-// </div>`;
-//     iconFast.innerHTML=`<div class="icon-container">
-//     <img src="assets/images/bolt00.svg" alt="">
-// </div>`;
-//     minimalCoffee.innerHTML= `<h4 class="portfolio-title">Minimal Coffee</h4>
-//     <p class="portfolio-text">A website for a fake coffee franchise located in Argentina.<br>The website is divided in 5 pages: <span class="highlight">Inicio</span> (Home), <span class="highlight">Nosotros</span> (About us), <span class="highlight">Menu</span>, <span class="highlight">Sucursales</span> (Locations), <span class="highlight">Contacto</span> (Contact). <br>The goal of this website is to show a correct use of the <span class="highlight">SEO</span> and <span class="highlight">front end tools</span>.</p>
-//     <div class="portfolio-bottom-info flex-start">
-//         <p>HTML</p>
-//         <p>Css</p>
-//         <p>Bootstrap</p>
-//         <p>Lang: SP</p>
-//     </div>
-//     <div class="portfolio-links flex-between">
-//         <a href="https://cilliagustin.github.io/minimalcoffee/" class="btn-custom" target="_blank">Visit website</a>
-//         <a href="https://github.com/cilliagustin/minimalcoffee" class="btn-custom" target="_blank">Github repository</a>
-//     </div>`;
-//     contador.innerHTML= `<h4 class="portfolio-title">Contador de calorías</h4>
-//     <p class="portfolio-text"><span class="highlight">Single page web app</span> made to keep record of the food you eat as well of the calories ingested. This website uses the <span class="highlight">materialize  framework</span> to provide the grid.<br>The website <span class="highlight">stores data in the browser</span> to keep control over the days.</p>
-//     <div class="portfolio-bottom-info flex-start">
-//         <p>HTML</p>
-//         <p>Css</p>
-//         <p>JavaScript</p>
-//         <p>Lang: SP</p>
-//     </div>
-//     <div class="portfolio-links flex-between">
-//         <a href="https://cilliagustin.github.io/ContadorDeCalorias/" class="btn-custom" target="_blank">Visit website</a>
-//         <a href="https://github.com/cilliagustin/ContadorDeCalorias/" class="btn-custom" target="_blank">Github repository</a>
-//     </div>`;
-//     footer.innerHTML=`<p>© 2022 Agustin Cilli</p>
-//     <div class="footer-icons">
-//         <a href="https://github.com/cilliagustin?tab=repositories" target="_blank" class="btn-custom">Visit Github</a>
-//         <a href = "mailto:abc@example.com?subject=Contact information" target="_blank" class="btn-custom">Send Email</a>
-//     </div>`;
-// };
-
-// function setTwentyTen() {
-//     resetHTML();
-//     cssFile.setAttribute("href", "assets/css/style10.css");
-//     menu.innerHTML= `
-//     <ul>
-//         <li><a href="#home"><i class="fa-solid fa-house"></i><br>home</a></li>
-//         <li><a href="#about-me"><i class="fa-solid fa-user"></i><br>about me</a></li>
-//         <li><a href="#my-work"><i class="fa-solid fa-briefcase"></i><br>my work</a></li>
-//         <li><a href="#contact"><i class="fa-solid fa-phone"></i><br>contact</a></li>
-//     </ul>
-//     `;
-// };
-
-// function setTwentyTwenty() {
-//     resetHTML();
-//     cssFile.setAttribute("href", "assets/css/style20.css");
-// };
-
-// function resetHTML(){
-//     imgContainer.innerHTML =   `<img src="assets/images/placeholder.webp" alt="">
-//                                 <div class="img-border"></div>`;
-//     menu.innerHTML=`
-//     <ul>
-//         <li><a href="#home">home</a></li>
-//         <li><a href="#about-me">about me</a></li>
-//         <li><a href="#my-work">my work</a></li>
-//         <li><a href="#contact">contact</a></li>
-//     </ul>
-//     `;
-//     iconResponsive.innerHTML = `<div class="glow">
-//     <div class="icon-container">
-//         <i class="fa-solid fa-mobile-screen-button"></i>
-//     </div>`;
-//     iconNavegate.innerHTML = `<div class="glow">
-//     <div class="icon-container">
-//          <i class="fa-solid fa-route"></i>
-//      </div>
-//  </div>`;
-//     iconModern.innerHTML = `<div class="glow">
-//     <div class="icon-container">
-//         <i class="fa-solid fa-circle-nodes"></i>
-//     </div>
-// </div>`;
-//     iconFast.innerHTML = `<div class="glow">
-//     <div class="icon-container">
-//         <i class="fa-solid fa-gauge-simple-high"></i>
-//     </div>
-// </div>`;
-//     minimalCoffee.innerHTML= `<div class="portfolio-links flex-between">
-//     <a href="https://cilliagustin.github.io/minimalcoffee/" class="btn-custom" target="_blank">Visit website</a>
-//     <a href="https://github.com/cilliagustin/minimalcoffee" target="_blank"><i class="fa-brands fa-github"></i></a>
-// </div>
-// <h4 class="portfolio-title">Minimal Coffee</h4>
-// <p class="portfolio-text">A website for a fake coffee franchise located in Argentina.<br>The website is divided in 5 pages: <span class="highlight">Inicio</span> (Home), <span class="highlight">Nosotros</span> (About us), <span class="highlight">Menu</span>, <span class="highlight">Sucursales</span> (Locations), <span class="highlight">Contacto</span> (Contact). <br>The goal of this website is to show a correct use of the <span class="highlight">SEO</span> and <span class="highlight">front end tools</span>.</p>
-// <div class="portfolio-bottom-info flex-start">
-//     <i class="fa-brands fa-html5" alt="HTML icon"></i>
-//     <i class="fa-brands fa-css3-alt" alt="CSS icon"></i>
-//     <i class="fa-brands fa-bootstrap" alt="Bootstrap icon"></i>
-//     <p>Lang: SP</p>
-// </div>`;
-//     contador.innerHTML= `<div class="portfolio-links flex-between">
-//     <a href="https://github.com/cilliagustin/ContadorDeCalorias/" class="btn-custom" target="_blank">Visit website</a>
-//     <a href="https://cilliagustin.github.io/ContadorDeCalorias/" target="_blank"><i class="fa-brands fa-github"></i></a>
-// </div>
-// <h4 class="portfolio-title">Contador de calorías</h4>
-// <p class="portfolio-text"><span class="highlight">Single page web app</span> made to keep record of the food you eat as well of the calories ingested. This website uses the <span class="highlight">materialize  framework</span> to provide the grid.<br>The website <span class="highlight">stores data in the browser</span> to keep control over the days.</p>
-// <div class="portfolio-bottom-info flex-start">
-//     <i class="fa-brands fa-html5" alt="HTML icon"></i>
-//     <i class="fa-brands fa-css3-alt" alt="CSS icon"></i>
-//     <i class="fa-brands fa-js-square" alt="Javascript icon"></i>
-//     <p>Lang: SP</p>
-// </div>`;
-//     contactForm.innerHTML= `<form action="" method="post">
-//     <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Anything else I should know?..."></textarea>
-//     <label for="comments">Message</label>
-//     <input type="email" id="email" name="email" placeholder="Write your email address please">
-//     <label for="email">Email address</label>
-//     <input type="text" id="fullname" name="fullname" placeholder="Write your full name please">
-//     <label for="fullname">Full name</label>
-// </form>
-// <button class="btn-custom">Send</button>`;
-//     footer.innerHTML= `<p>© 2022 Agustin Cilli</p>
-//     <div class="footer-icons">
-//         <a href="https://github.com/cilliagustin?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
-//         <a href = "mailto:abc@example.com?subject=Contact information" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-//     </div>`;
-
-// };
-
-
+}
