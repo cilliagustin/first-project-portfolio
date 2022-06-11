@@ -619,3 +619,6 @@ footer .footer-icons a i:hover{
     }
 }
 
+.hide{
+    display: none;
+}

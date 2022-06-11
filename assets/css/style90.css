@@ -475,3 +475,6 @@ footer .btn-custom{
     }
 }
 
+.hide{
+    display: none!important;
+}

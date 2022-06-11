@@ -206,6 +206,22 @@ nav{
     margin: 5px;
 }
 
+.portfolio-card :nth-child(1):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
+    order: 4;
+}
+
+.portfolio-card :nth-child(2):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
+    order: 1;    
+}
+
+.portfolio-card :nth-child(3):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
+    order: 2;    
+}
+
+.portfolio-card :nth-child(4):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
+    order: 3;   
+}
+
 .portfolio-card .portfolio-title{
     font-family: 'Press Start 2P', monospace;
     text-align: center;
@@ -226,7 +242,7 @@ nav{
 
 .portfolio-card .portfolio-bottom-info{
     width: 100%;
-    bottom:.5em ;
+    margin-bottom:.5em ;
     margin-top: auto;
 }
 
@@ -337,5 +353,18 @@ footer .btn-custom{
         max-width: 330px;
         height: 330px;
     }
+
+    .portfolio-card .portfolio-title{
+        height: 52px;
+        padding: 5px;
+    }
+
+    .portfolio-card .portfolio-text{
+        height: 172px;
+    }
+}
+
+.hide{
+    display: none!important;
 }
 
