@@ -139,6 +139,11 @@ body{
     text-transform: capitalize;
 }
 
+#navbar .nav .menu ul li a i,
+#navbar .nav .menu ul li a br{
+    display: none;
+}
+
 /* TOGGLED NAVBAR */
 
 #navbar .nav .side-menu:checked ~ .hamb .hamb-line {
