@@ -220,6 +220,10 @@ nav{
     color: var(--white)!important;
 }
 
+.my-work-card .icon .icon-container :nth-child(2){
+    font-size: 20px;
+    margin-top: 40%;
+}
 .my-work-card .my-work-card-title{
     color: var(--gray-typography);
     font-family: 'Montserrat', sans-serif;

@@ -10,6 +10,7 @@
     0 1px 1px  rgb(104,126,171),
     1px 0 1px  rgb(104,126,171),
     0 -1px 1px  rgb(104,126,171);
+    --gray:rgb(83, 83, 83);
 
 
     --background-gray: rgb(40, 42, 54);
@@ -30,7 +31,7 @@ body{
     background-color: var(--bg-blue);
     font-family: Helvetica, sans-serif;
     font-size: 14px;
-    color: rgb(83, 83, 83);
+    color: var(--gray);
 }
 
 .container{
@@ -81,6 +82,10 @@ body{
     top: 0;
     box-shadow: none;
     border-radius: 0;
+}
+
+#navbar .nav > a .logo{
+    border: 1px solid white;
 }
 
 #navbar .nav .hamb .hamb-line {
@@ -216,7 +221,8 @@ body{
     max-width: 370px;
     order: -1;
     padding: 1px;
-    background: pink;
+    max-height: 370px;
+    overflow: hidden;
 }
 
 .profile-pic img{
@@ -227,7 +233,6 @@ body{
 /* ABOUT ME */
 
 .img-container{
-    background: pink;
     width: 90%;
     padding: 1px;
 }
@@ -279,7 +284,7 @@ body{
     width:100%; 
     padding: 5px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
@@ -291,6 +296,10 @@ body{
     font-size: 65px;
     color: var(--blue-icon)!important;
     text-shadow: var(--icon-border);
+}
+
+#icon-responsive .icon-container :last-child{
+    font-size: 30px;
 }
 
 .my-work-card .my-work-card-title{
@@ -305,178 +314,169 @@ body{
     margin-top: 1.3em;
 }
 
+.portfolio{
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
 .portfolio-card{
-    background: var(--secondary-gray);
-    border: var(--border);
-    cursor: default;
-    border-radius: 4px;
-    max-width: 400px;
     height: auto;
-    padding: 1em;
-    margin: .8em;
-    transition: var(--transition-03s)
+    flex-flow: row;
+    flex-wrap: wrap;
 }
 
-.portfolio-card .portfolio-links{
-    width: 100%;
-    margin-bottom: 1em;
+.portfolio-card :nth-child(1):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
+    order: 4;
 }
 
-.portfolio-card .portfolio-links .btn-custom{
-    cursor: pointer;
-    padding: 0.3em 0.6em;
-    margin: 0;
-    font-size: .9em;
+.portfolio-card :nth-child(2):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
+    order: 1;    
 }
 
-.portfolio-card .portfolio-links i{
-    cursor: pointer;
-    font-size: 2em;
-    color: var(--gray-typography)!important;
+.portfolio-card :nth-child(3):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
+    order: 2;    
+}
+
+.portfolio-card :nth-child(4):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
+    order: 3;   
 }
 
 .portfolio-card .portfolio-title{
     margin:1em 0;
-    transition: var(--transition-03s);
+    color: var(--title);
 }
 
 .portfolio-card .portfolio-text{
     padding-right: 2.4em;
-    transition: var(--transition-03s);
     margin-bottom: 1.2em;
-}
-
-.portfolio-card .portfolio-bottom-info{
-    margin-top: auto;
     width: 100%;
 }
 
-.portfolio-card .portfolio-bottom-info i{
-    color: var(--gray-typography)!important;
-    font-size: 1.7em;
-    margin-right: .8em;
-    transition: var(--transition-03s);
+.portfolio-card .portfolio-bottom-info{
+    width: auto;
+    margin-top: auto;
+}
+
+.portfolio-card .portfolio-bottom-info i,
+.portfolio-card .portfolio-bottom-info p{
+    margin:0;
+    padding-right: .3em;
+    color: rgb(139, 139, 139);
 }
 
 .portfolio-card .portfolio-bottom-info p{
-    margin: auto 0 0 0;
-    margin-left: auto;
+    font-size: 10px;
+}
+
+.portfolio-card .portfolio-links{
+    width: auto;
+    margin-top: .8em;
+    align-items: flex-end;
+}
+
+.portfolio-card .portfolio-links .btn-custom{
+    background: none;
+    color: var(--blue-link);
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 1em;
     padding: 0;
-    transition: var(--transition-03s);
 }
 
-.portfolio-card:hover{
-    background: rgb(58, 64, 88);
-    -webkit-box-shadow:0px 0px 21px 3px rgba(49,191,230,0.68);
-    -moz-box-shadow: 0px 0px 21px 3px rgba(49,191,230,0.68);
-    box-shadow: 0px 0px 21px 3px rgba(49,191,230,0.68);
-    transition: var(--transition-03s);
+.portfolio-card .portfolio-links i{
+    cursor: pointer;
+    font-size: 1.5em;
+    color: var(--blue-main);
 }
 
-.portfolio-card:hover .portfolio-text,
-.portfolio-card:hover .portfolio-links a i{
-    color: var(--white)!important;
-    transition: var(--transition-03s);
-}
-
-.portfolio-card:hover .portfolio-title,
-.portfolio-card:hover .portfolio-bottom-info i,
-.portfolio-card .portfolio-links a i:hover{
-    color: var(--blue)!important;
-    transition: var(--transition-03s);
-}
 
 /* CONTACT */
 
 .contact-card{
-    background: var(--secondary-gray);
-    border: var(--border);
-    border-radius: 4px;
-    padding: 1em 2em; 
-    margin: .8em 0;
-    transition: var(--transition-03s);
+    width: 100%;
 }
 
 .contact-card form{
     justify-content: flex-start;
-    margin-bottom: .5em;
+    margin: 0;
 }
 
 .contact-card form label{
-    transition: var(--transition-03s);
+    color: var(--title);
 }
 
 .contact-card input,
 .contact-card textarea{
-    color: var(--white);
-    border: var(--border);
-    border-radius: 4px;
+    border: 1px solid var(--gray);
+    border-radius: 3px;
     padding: .2em;
     margin: .5em 0;
     transition: var(--transition-03s);
 }
-
-::placeholder{ 
-    color: var(--gray-typography)!important;
-  }
-
-.contact-card:hover{
-    background: rgb(58, 64, 88);
-    -webkit-box-shadow:0px 0px 21px 3px rgba(49,191,230,0.68);
-    -moz-box-shadow: 0px 0px 21px 3px rgba(49,191,230,0.68);
-    box-shadow: 0px 0px 21px 3px rgba(49,191,230,0.68);
-
-}
-
-.contact-card input:focus,
-.contact-card textarea:focus{
-    -webkit-box-shadow:0px 0px 21px 3px rgba(49,191,230,0.68);
-    -moz-box-shadow: 0px 0px 21px 3px rgba(49,191,230,0.68);
-    box-shadow: 0px 0px 21px 3px rgba(49,191,230,0.68);
-    border: var(--border);
-    border-radius: 4px;
-    transition: var(--transition-03s);
-}
+  
 .contact-card input:focus-visible,
 .contact-card textarea:focus-visible{
-    outline: .5px solid var(--blue);
+    outline: .5px solid var(--gray);
 }
 
 input:focus + label,
 textarea:focus + label{
-    color: var(--white);
-    transition: var(--transition-03s);
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .contact-card .btn-custom{
-    margin-top: 3em;
+    margin-top: 2em;
+    min-width: 160px;
+    width: 50%;
+    max-width: 300px;
 }
 
 /* FOOTER */
 
+#footer{
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    background: var(--blue-main);
+    color: white;
+}
+
 footer .footer-icons a i{
     padding-left: 1em;
     font-size: 2em;
-    color: var(--gray-typography)!important;
-    transition: var(--transition-03s);
-}
-
-footer .footer-icons a i:hover{
-    padding-left: 1em;
-    font-size: 2em;
-    color: var(--blue)!important;
-    transition: var(--transition-03s);
+    color: white;
 }
 
 /* DESKTOP */
 
 @media (min-width: 768px) {
 
+    body{
+        background: white;
+    }
+
+    .container{
+        width: 80%;
+        margin:0;
+        margin-left: auto;
+        margin-right: 2vw;
+        border-radius: 0;
+        box-shadow: none;
+        border-left: 1px solid rgb(198, 198, 198);
+        border-right: 1px solid rgb(198, 198, 198);
+    }
+
     /* .NAVBAR*/
 
     #navbar{
+        padding: 0;
         padding-top: 3px;
-        padding-bottom: 0;
+    }
+
+    #navbar .nav > a {
+        margin-left: 2vw;
     }
 
     #navbar .nav .menu,
@@ -484,9 +484,13 @@ footer .footer-icons a i:hover{
         position: relative;
         top: 0;
         left: 0;
-        max-height: 100vh;
-        width: auto;
         padding: 0;
+        max-height: none;
+        width: 80%;
+        margin-right: 2vw;
+        height: auto;
+        background: rgb(97,122,177);
+        border-radius: 2px 2px 0 0;
     }
 
 
@@ -496,14 +500,6 @@ footer .footer-icons a i:hover{
         margin: 0;
     }
 
-    #navbar .nav .menu,
-    #navbar .nav .side-menu:checked ~ .menu{
-        max-height: none;
-        width: 80%;
-        height: auto;
-        background: rgb(97,122,177);
-        border-radius: 2px 2px 0 0;
-    }
 
 
     #navbar .nav .menu ul{
@@ -538,11 +534,59 @@ footer .footer-icons a i:hover{
 
     /* HOME */
 
+    #home{
+        position: relative;
+    }
+
     .home-container{
-        width: 70%;
+        width: 78%;
+    }
+
+    .button-container{
+        position: fixed;
+        width: 17vw;
+        top: 9%;
+        right: 2vw;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .button-container .secondary-title{
+        margin-top: 0;
+    }
+    
+    .button-container .btn-custom{
+        width: 100%;
+    }
+
+    .profile-pic{
+        position: fixed;
+        top: 9%;
+        left: 0;
+        width: 17.6vw;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .profile-pic img{
+        width: 100px;
+        border-radius: 0;
     }
 
     /* ABOUT ME */
+
+    #about-me{
+        align-items: flex-start;
+    }
+
+    .about-me-content{
+        width: 78%;
+        flex-flow: column;
+    }
+
+    .about-me-content .about-me-text{
+        padding: 0;
+    }
     
     .img-container .img-border{
         width: 85%;
@@ -550,13 +594,33 @@ footer .footer-icons a i:hover{
 
     /* MY WORK */
 
-    .my-work-container{
-        max-width: none;
+    #my-work{
+        align-items: flex-start;
     }
 
-    .portfolio-card{
-        width: 320px;
-        height: 370px;
+    .my-work-container{
+        width: 78%;
+    }
+
+    .portfolio{
+        width: 78%;
+    }
+
+    /* CONTACT */
+
+    #contact{
+        align-items: flex-start;
+    }
+
+    .contact-card{
+        width: 78%;
+    }
+
+    /* FOOTER */
+
+    #footer{
+        position: relative;
+        z-index: 2;
     }
 }
 

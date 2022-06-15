@@ -1,5 +1,6 @@
 //CSS file and buttons
 let cssFile = document.getElementById("style");
+let logo = document.getElementById("logo");
 let eighties = document.getElementById("80s");
 let nineties = document.getElementById("90s");
 let twoThousands = document.getElementById("00s");
@@ -39,6 +40,14 @@ let twoThousandsIconNavegate = document.getElementById("2000iconNavegate");
 let twoThousandsIconModern = document.getElementById("2000iconModern");
 let twoThousandsIconFast = document.getElementById("2000iconFast");
 
+//2010s variables
+let twentyTenProfilePic = document.getElementById("2010profilePic");
+let twentyTenAboutImg = document.getElementById("2010aboutImg");
+let twentyTenIconResponsive = document.getElementById("2010iconResponsive");
+let twentyTenIconNavegate = document.getElementById("2010iconNavegate");
+let twentyTenIconModern = document.getElementById("2010iconModern");
+let twentyTenIconFast = document.getElementById("2010iconFast");
+
 
 //2020 variables
 let twentyTwentyAboutImg = document.getElementById("2020aboutImg");
@@ -54,12 +63,13 @@ let twentyTwentyIconFast = document.getElementById("2020iconFast");
 eighties.addEventListener(("click"), setEighties);
 nineties.addEventListener(("click"), setNineties);
 twoThousands.addEventListener(("click"), setTwoThousands);
-// twentyTen.addEventListener(("click"), setTwentyTen);
+twentyTen.addEventListener(("click"), setTwentyTen);
 twentyTwenty.addEventListener(("click"), setTwentyTwenty);
 
 function setEighties() {
     let eightiesElements = [eightiesAboutImg, eightiesIconResponsive, eightiesIconNavegate, eightiesIconModern, eightiesIconFast, btnLink, portInfoText, portfolioText, portfolioInfo];
     cssFile.setAttribute("href", "assets/css/style80.css");
+    logo.setAttribute("src", "assets/images/2020logowhite.png");
     hideAll();
     eightiesElementsFlat = eightiesElements.flat();
     eightiesElementsFlat.forEach(function(el) {
@@ -70,6 +80,7 @@ function setEighties() {
 function setNineties() {
     let ninetiesElements = [ninetiesAboutImg, ninetiesIconResponsive, ninetiesIconNavegate, ninetiesIconModern, ninetiesIconFast, btnLink, portInfoText, ninetiesportfolio,ninetiesContactTitle, ninetiesContactImg, ninetiesHr];
     cssFile.setAttribute("href", "assets/css/style90.css");
+    logo.setAttribute("src", "assets/images/1990logo.png");
     hideAll();
     ninetiesElementsFlat = ninetiesElements.flat();
     ninetiesElementsFlat.forEach(function(el) {
@@ -81,6 +92,7 @@ function setTwoThousands() {
     let twoThousandsElements = [twoThousandsAboutImg, twoThousandsIconResponsive, twoThousandsIconNavegate, twoThousandsIconModern, twoThousandsIconFast,
     btnLink, portInfoText, portfolioText, portfolioInfo];
     cssFile.setAttribute("href", "assets/css/style00.css");
+    logo.setAttribute("src", "assets/images/2000logo.png");
     hideAll();
     twoThousandsElementsFlat = twoThousandsElements.flat();
     twoThousandsElementsFlat.forEach(function(el) {
@@ -88,9 +100,21 @@ function setTwoThousands() {
     });
 }
 
+function setTwentyTen() {
+    let twentyTenElements = [twentyTenProfilePic, twentyTenAboutImg, twentyTenIconResponsive, twentyTenIconNavegate, twentyTenIconModern, twentyTenIconFast, iconLink, portInfoIcon, portfolioText, portfolioInfo]
+    cssFile.setAttribute("href", "assets/css/style10.css");
+    logo.setAttribute("src", "assets/images/2010logo.png");
+    hideAll();
+    twentyTenElementsFlat = twentyTenElements.flat();
+    twentyTenElementsFlat.forEach(function(el) {
+        el.classList.remove("hide")
+    });
+}
+
 function setTwentyTwenty() {
     let TwentyTwentyElements = [twentyTwentyAboutImg, twentyTwentyAboutBorder, twentyTwentyIconResponsive, twentyTwentyIconNavegate, twentyTwentyIconModern, twentyTwentyIconFast, iconLink, portInfoIcon, portfolioText, portfolioInfo];
     cssFile.setAttribute("href", "assets/css/style20.css");
+    logo.setAttribute("src", "assets/images/2020logo.png");
     hideAll();
     TwentyTwentyElementsFlat = TwentyTwentyElements.flat();
     TwentyTwentyElementsFlat.forEach(function(el) {
@@ -101,17 +125,17 @@ function setTwentyTwenty() {
 //hides all elements
 function hideAll(){
     let allElements = [
-        
         eightiesAboutImg, eightiesIconResponsive, eightiesIconNavegate, eightiesIconModern, eightiesIconFast, 
     
         ninetiesAboutImg, ninetiesIconResponsive, ninetiesIconNavegate, ninetiesIconModern, ninetiesIconFast, ninetiesportfolio, ninetiesContactImg, ninetiesContactTitle, ninetiesHr,
 
         twoThousandsAboutImg, twoThousandsIconResponsive, twoThousandsIconNavegate, twoThousandsIconModern, twoThousandsIconFast,
+
+        twentyTenProfilePic, twentyTenAboutImg, twentyTenIconResponsive, twentyTenIconNavegate, twentyTenIconModern, twentyTenIconFast,
         
         twentyTwentyAboutImg, twentyTwentyAboutBorder, twentyTwentyIconResponsive, twentyTwentyIconNavegate, twentyTwentyIconModern, twentyTwentyIconFast,
     
         iconLink, btnLink, portInfoIcon, portInfoText, portfolioText, portfolioInfo
-    
     ];
     
     allElementsFlat = allElements.flat();

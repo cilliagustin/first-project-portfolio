@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6037b4c484.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link id="style" rel="stylesheet" href="assets/css/style10.css">
+    <link id="style" rel="stylesheet" href="assets/css/style20.css">
     <title>Document</title>
 </head>
 <body>
     <!-- NAVBAR -->
     <nav id="navbar" class="container flex-center">
         <div class="nav">
-            <a  href="#" id="logo" class="logo">LOGO</a>
+            <a href="index.html">
+                <img id="logo" class="logo" src="assets/images/2020logo.png" alt="Agustin Cilli Logo">
+            </a>
             <input class="side-menu" type="checkbox" name="side-menu" id="side-menu">
             <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
             <div id="menu" class="menu">
@@ -45,8 +47,8 @@
             <button type="button" id="10s" class="btn-custom">2010´s</button>
             <button type="button" id="20s" class="btn-custom">2020´s</button>
           </div>
-        <div class="profile-pic">
-            <img src="assets/images/placeholder.webp" alt="">
+        <div id="2010profilePic" class="profile-pic hide">
+            <img src="assets/images/photogreen.jpg" alt="photo in a museum">
         </div>
     </header>
     <!-- ABOUT ME -->
@@ -54,8 +56,8 @@
         <h2 class="section-title">About me</h2>
         <div class="about-me-content flex-column-center">
             <div id="img-container" class="img-container flex-center">
-                <img id="2020aboutImg" class="hide" src="assets/images/placeholder.webp" alt="">
-                <div id="2020aboutBorder" class="img-border hide"></div>
+                <img id="2020aboutImg" src="assets/images/photoCity.jpg" alt="photo in Copenhagen">
+                <div id="2020aboutBorder" class="img-border"></div>
                 <div id="80aboutImg" class="img-text flex-center hide">
                     <p>
                     ..........................................................................................<br> 
@@ -72,9 +74,9 @@
                     ..........................................................................................<br>
                     </p>
                 </div>
-                <img id="90aboutImg" class="hide" src="assets/images/90splaceholder.png" alt="">
+                <img id="90aboutImg" class="hide" src="assets/images/PhotoCityPixelated.png" alt="pixelated photo in Copenhagen">
                 <div id="2000aboutImg" class="img hide"></div>
-                <img id="2010aboutImg"  src="assets/images/placeholder2010.png" alt="">
+                <img id="2010aboutImg" class="hide"  src="assets/images/photoTree.jpg" alt="photo in the beach">
             </div>           
             <div class="about-me-text">
                 <p>
@@ -111,9 +113,10 @@
         <h2 class="section-title">My work</h2>
         <div class="my-work-container flex-center">
             <div class="my-work-card flex-column-center">
-                <span id="icon-responsive" class="icon">
-                    <div id="2020iconResponsive" class="glow hide">
+                <div id="icon-responsive" class="icon">
+                    <div id="2020iconResponsive" class="glow">
                         <div class="icon-container">
+                            <i class="fa-solid fa-display"></i>
                             <i class="fa-solid fa-mobile-screen-button"></i>
                         </div>
                     </div>
@@ -153,15 +156,16 @@
                         <img src="assets/images/computer00.svg" alt="">
                         <img src="assets/images/phone00.svg" alt="">
                     </div>
-                    <div id="2010iconResponsive" class="icon-container">
+                    <div id="2010iconResponsive" class="icon-container hide">
+                        <i class="fa-solid fa-desktop"></i>
                         <i class="fa-solid fa-mobile-screen-button"></i>
                     </div>
-                </span>
+                </div>
                 <h4 class="my-work-card-title">Responsive</h4>
             </div>
             <div class="my-work-card flex-column-center">
-                <span id="icon-navegate" class="icon">
-                    <div id="2020iconNavegate" class="glow hide">
+                <div id="icon-navegate" class="icon">
+                    <div id="2020iconNavegate" class="glow">
                        <div class="icon-container">
                             <i class="fa-solid fa-route"></i>
                         </div> 
@@ -200,15 +204,15 @@
                     <div id="2000iconNavegate" class="icon-container hide">
                         <img src="assets/images/location00.svg" alt="">
                     </div>
-                    <div id="2010iconNavegate" class="icon-container">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    <div id="2010iconNavegate" class="icon-container hide">
+                        <i class="fa-solid fa-location-arrow"></i>
                     </div>   
-                </span>
+                </div>
                 <h4 class="my-work-card-title">Easy to navigate</h4>
             </div>
             <div class="my-work-card flex-column-center">
-                <span id="icon-modern" class="icon">
-                    <div id="2020iconModern" class="glow hide">
+                <div id="icon-modern" class="icon">
+                    <div id="2020iconModern" class="glow">
                         <div class="icon-container">
                             <i class="fa-solid fa-circle-nodes"></i>
                         </div>
@@ -247,15 +251,15 @@
                     <div id="2000iconModern" class="icon-container hide">
                         <img src="assets/images/chip00.svg" alt="">
                     </div>
-                    <div id="2010iconModern" class="icon-container">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    <div id="2010iconModern" class="icon-container hide">
+                        <i class="fa-solid fa-microchip"></i>
                     </div> 
-                </span>
+                </div>
                 <h4 class="my-work-card-title">Modern</h4>
             </div>
             <div class="my-work-card flex-column-center">
-                <span id="icon-fast" class="icon">
-                    <div id="2020iconFast" class="glow hide">
+                <div id="icon-fast" class="icon">
+                    <div id="2020iconFast" class="glow">
                         <div class="icon-container">
                             <i class="fa-solid fa-gauge-simple-high"></i>
                         </div>
@@ -294,10 +298,10 @@
                     <div id="2000iconFast" class="icon-container hide">
                         <img src="assets/images/bolt00.svg" alt="">
                     </div>
-                    <div id="2010iconFast" class="icon-container">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    <div id="2010iconFast" class="icon-container hide">
+                        <i class="fa-solid fa-bolt"></i>
                     </div> 
-                </span>
+                </div>
                 <h4 class="my-work-card-title">Fast</h4>
             </div> 
         </div>

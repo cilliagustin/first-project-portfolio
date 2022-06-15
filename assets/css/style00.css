@@ -138,17 +138,13 @@ body::after{
     background: none;
 }
 
-#navbar .nav .logo{
-    background: linear-gradient(180deg, 
-    var(--light-blue) 0%,  
-    rgba(35,101,160,1) 35%, 
-    var(--light-blue) 100%);
-    width: 66px;
-    border: 1px solid var(--dark-blue);
-    border-bottom: none;
-    border-radius:3px 3px 0 0;
-    text-align: center;
-    margin-right: 0;
+#navbar .nav > a{
+    margin: 0;
+    margin-right: .5em;
+}
+
+#navbar .nav a .logo{
+    height: 20px;
 }
 
 #navbar .nav .hamb .hamb-line {
@@ -340,25 +336,13 @@ body::after{
     position: relative;
     height: 270px;
     width: 270px;
-    background-image: url(../images/placeholder2.jpg);
-    background-size: 270px;
+    background-image: url(../images/photoTree.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: var(--shadow);
-}
-
-.img-container .img:before{
-    content: "";
-    position: absolute;
-    z-index: 3;
-    width: 100%;
-    height: 100%;
-    top: -4px;
-    left: -4px;
     border: var(--blue-border);
     border-radius: 5px;
-    background: linear-gradient(45deg, rgba(17,114,177,1) 0%, rgba(23,121,184,1) 40%, rgba(47,152,217,1) 51%, rgba(50,156,221,1) 59%, rgba(59,168,234,1) 75%);
-    opacity: .8;
 }
 
 .img-container .img:after{
@@ -606,8 +590,9 @@ footer .footer-icons .btn-custom{
     #navbar .nav{
         position: relative;
     }
-
-    #navbar .nav .logo{
+    
+    #navbar .nav a .logo{
+        margin-bottom:.2em;
         position: absolute;
         left: 5px;
         bottom: 0px;

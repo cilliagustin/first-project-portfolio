@@ -69,10 +69,12 @@ body{
     justify-content: flex-end;
 }
 
-#navbar .nav .logo{
+#navbar .nav > a{
     margin-right: auto;
-    text-decoration: none;
-    color: inherit;
+}
+
+#navbar .nav a .logo{
+    height: 25px;
 }
 
 #navbar .nav .hamb{
@@ -215,7 +217,7 @@ body{
 
 .about-me-text .about-me-list{
     display: inline-block;
-    margin: 0.75em 0;
+    margin: 0;
     list-style: none;
 }
 

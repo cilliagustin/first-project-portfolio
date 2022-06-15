@@ -172,7 +172,7 @@ nav{
 }
 
 .my-work-card .icon p{
-    font-size: 5px;
+    font-size: 6px;
     font-family: monospace;
     color: var(--typography-green);
 }
@@ -347,6 +347,16 @@ footer .btn-custom{
         font-size: 25px;
     }
 
+    /* ABOUT ME */
+
+    .about-me-content{
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .about-me-content .about-me-text{
+        width: 100%;
+    }
 
     /* MY WORK */
 
