@@ -43,7 +43,7 @@ body{
     box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 30%);
 }
 
-.highlight{
+mark{
     color: var(--blue-link)!important;
     font-weight: bold;
 }
@@ -321,57 +321,45 @@ body{
 }
 
 .portfolio-card{
+    position: relative;
     height: auto;
     flex-flow: row;
     flex-wrap: wrap;
 }
 
-.portfolio-card :nth-child(1):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
-    order: 4;
-}
-
-.portfolio-card :nth-child(2):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
-    order: 1;    
-}
-
-.portfolio-card :nth-child(3):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
-    order: 2;    
-}
-
-.portfolio-card :nth-child(4):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
-    order: 3;   
-}
-
 .portfolio-card .portfolio-title{
+    width: 100%;
     margin:1em 0;
     color: var(--title);
 }
 
-.portfolio-card .portfolio-text{
+.portfolio-card .portfolio-info .portfolio-text{
     padding-right: 2.4em;
     margin-bottom: 1.2em;
     width: 100%;
 }
 
-.portfolio-card .portfolio-bottom-info{
+.portfolio-card .portfolio-info .portfolio-characteristics{
     width: auto;
     margin-top: auto;
 }
 
-.portfolio-card .portfolio-bottom-info i,
-.portfolio-card .portfolio-bottom-info p{
+.portfolio-card .portfolio-info .portfolio-characteristics i,
+.portfolio-card .portfolio-info .portfolio-characteristics p{
     margin:0;
     padding-right: .3em;
     color: rgb(139, 139, 139);
 }
 
-.portfolio-card .portfolio-bottom-info p{
+.portfolio-card .portfolio-info .portfolio-characteristics p{
     font-size: 10px;
 }
 
 .portfolio-card .portfolio-links{
     width: auto;
-    margin-top: .8em;
+    position: absolute;
+    bottom: 0;
+    left: 95px;
     align-items: flex-end;
 }
 

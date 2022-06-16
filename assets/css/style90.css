@@ -34,7 +34,7 @@ body{
     color: var(--black);
 }
 
-.highlight{
+mark{
     text-decoration: underline;
 }
 
@@ -251,18 +251,6 @@ body{
     align-items: center;
 }
 
-.portfolio-card :nth-child(1):not(.portfolio-information > *):not(.portfolio-links > *){
-    order: 3;
-}
-
-.portfolio-card :nth-child(2):not(.portfolio-information > *):not(.portfolio-links > *){
-    order: 1;    
-}
-
-.portfolio-card :last-child:not(.portfolio-information > *):not(.portfolio-links > *){
-    order: 2;    
-}
-
 .portfolio-card .portfolio-title{
     color: white;
     font-family: 'DotGothic16', monospace;
@@ -274,14 +262,14 @@ body{
     padding-left: 10px;
 }
 
-.portfolio-card .portfolio-content{
+.portfolio-card .portfolio-info{
     margin: 12px 8px;
     padding: 6px;
     border: var(--border);
     box-shadow: var(--engraved-box);
 }
 
-.portfolio-card .portfolio-desc{
+.portfolio-card .portfolio-info .portfolio-text{
     margin: 12px 8px 0;
     border: var(--border);
     box-shadow: var(--sunken-box);
@@ -293,19 +281,18 @@ body{
 
 }
 
-.portfolio-card .portfolio-information{
+.portfolio-card .portfolio-info .portfolio-characteristics{
     margin: 25px 8px 27px;
     padding: 6px;
     width: 100%;
 }
 
-.portfolio-card .portfolio-information p{
+.portfolio-card .portfolio-info .portfolio-characteristics p{
     font-size: .8em;
     padding-right: .8em;
 }
 
-.portfolio-card .portfolio-information :last-child{
-    padding-right: 0;
+.portfolio-card .portfolio-info .portfolio-characteristics :last-child{
     margin-left: auto;
 }
 
@@ -437,7 +424,7 @@ form :nth-child(5){
 
 /* FOOTER */
 
-footer{
+footer .marquee{
     flex-flow: column;
 }
 

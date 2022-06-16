@@ -1,6 +1,6 @@
 //CSS file and buttons
 let cssFile = document.getElementById("style");
-let logo = document.getElementById("logo");
+let favicon = document.getElementById("favicon");
 let eighties = document.getElementById("80s");
 let nineties = document.getElementById("90s");
 let twoThousands = document.getElementById("00s");
@@ -8,12 +8,11 @@ let twentyTen = document.getElementById("10s");
 let twentyTwenty = document.getElementById("20s");
 
 //common variables
-let iconLink = Array.from(document.querySelectorAll(".icon-link"));
-let btnLink = Array.from(document.querySelectorAll(".btn-link"));
-let portInfoIcon = Array.from(document.querySelectorAll(".portfolio-info-icon"));
-let portInfoText = Array.from(document.querySelectorAll(".portfolio-info-text"));
-let portfolioText = Array.from(document.querySelectorAll(".portfolio-text"));
-let portfolioInfo = Array.from(document.querySelectorAll(".portfolio-bottom-info"));
+let logo = document.getElementById("logo");
+let iconLink = Array.from(document.querySelectorAll("[icon-link]"));
+let btnLink = Array.from(document.querySelectorAll("[btn-link]"));
+let portInfoIcon = Array.from(document.querySelectorAll("[portfolio-info-icon]"));
+let portInfoText = Array.from(document.querySelectorAll("[portfolio-info-text]"));
 
 //80s variables
 let eightiesAboutImg = document.getElementById("80aboutImg");
@@ -28,7 +27,6 @@ let ninetiesIconResponsive = document.getElementById("90iconResponsive");
 let ninetiesIconNavegate = document.getElementById("90iconNavegate");
 let ninetiesIconModern = document.getElementById("90iconModern");
 let ninetiesIconFast = document.getElementById("90iconFast");
-let ninetiesportfolio = Array.from(document.querySelectorAll(".portfolio-content"));
 let ninetiesContactTitle = document.getElementById("contact-title");
 let ninetiesContactImg = document.getElementById("contact-img");
 let ninetiesHr = Array.from(document.querySelectorAll("hr"));
@@ -67,7 +65,7 @@ twentyTen.addEventListener(("click"), setTwentyTen);
 twentyTwenty.addEventListener(("click"), setTwentyTwenty);
 
 function setEighties() {
-    let eightiesElements = [eightiesAboutImg, eightiesIconResponsive, eightiesIconNavegate, eightiesIconModern, eightiesIconFast, btnLink, portInfoText, portfolioText, portfolioInfo];
+    let eightiesElements = [eightiesAboutImg, eightiesIconResponsive, eightiesIconNavegate, eightiesIconModern, eightiesIconFast, btnLink, portInfoText];
     cssFile.setAttribute("href", "assets/css/style80.css");
     logo.setAttribute("src", "assets/images/2020logowhite.png");
     hideAll();
@@ -78,8 +76,9 @@ function setEighties() {
 }
 
 function setNineties() {
-    let ninetiesElements = [ninetiesAboutImg, ninetiesIconResponsive, ninetiesIconNavegate, ninetiesIconModern, ninetiesIconFast, btnLink, portInfoText, ninetiesportfolio,ninetiesContactTitle, ninetiesContactImg, ninetiesHr];
+    let ninetiesElements = [ninetiesAboutImg, ninetiesIconResponsive, ninetiesIconNavegate, ninetiesIconModern, ninetiesIconFast, btnLink, portInfoText,ninetiesContactTitle, ninetiesContactImg, ninetiesHr];
     cssFile.setAttribute("href", "assets/css/style90.css");
+    favicon.setAttribute("href", "assets/images/1990favicon.png");
     logo.setAttribute("src", "assets/images/1990logo.png");
     hideAll();
     ninetiesElementsFlat = ninetiesElements.flat();
@@ -90,8 +89,9 @@ function setNineties() {
 
 function setTwoThousands() {
     let twoThousandsElements = [twoThousandsAboutImg, twoThousandsIconResponsive, twoThousandsIconNavegate, twoThousandsIconModern, twoThousandsIconFast,
-    btnLink, portInfoText, portfolioText, portfolioInfo];
+    btnLink, portInfoText];
     cssFile.setAttribute("href", "assets/css/style00.css");
+    favicon.setAttribute("href", "assets/images/2000favicon.png");
     logo.setAttribute("src", "assets/images/2000logo.png");
     hideAll();
     twoThousandsElementsFlat = twoThousandsElements.flat();
@@ -101,8 +101,9 @@ function setTwoThousands() {
 }
 
 function setTwentyTen() {
-    let twentyTenElements = [twentyTenProfilePic, twentyTenAboutImg, twentyTenIconResponsive, twentyTenIconNavegate, twentyTenIconModern, twentyTenIconFast, iconLink, portInfoIcon, portfolioText, portfolioInfo]
+    let twentyTenElements = [twentyTenProfilePic, twentyTenAboutImg, twentyTenIconResponsive, twentyTenIconNavegate, twentyTenIconModern, twentyTenIconFast, iconLink, portInfoIcon]
     cssFile.setAttribute("href", "assets/css/style10.css");
+    favicon.setAttribute("href", "assets/images/2010logo.png");
     logo.setAttribute("src", "assets/images/2010logo.png");
     hideAll();
     twentyTenElementsFlat = twentyTenElements.flat();
@@ -112,8 +113,9 @@ function setTwentyTen() {
 }
 
 function setTwentyTwenty() {
-    let TwentyTwentyElements = [twentyTwentyAboutImg, twentyTwentyAboutBorder, twentyTwentyIconResponsive, twentyTwentyIconNavegate, twentyTwentyIconModern, twentyTwentyIconFast, iconLink, portInfoIcon, portfolioText, portfolioInfo];
+    let TwentyTwentyElements = [twentyTwentyAboutImg, twentyTwentyAboutBorder, twentyTwentyIconResponsive, twentyTwentyIconNavegate, twentyTwentyIconModern, twentyTwentyIconFast, iconLink, portInfoIcon];
     cssFile.setAttribute("href", "assets/css/style20.css");
+    favicon.setAttribute("href", "assets/images/2020favicon.png");
     logo.setAttribute("src", "assets/images/2020logo.png");
     hideAll();
     TwentyTwentyElementsFlat = TwentyTwentyElements.flat();
@@ -127,7 +129,7 @@ function hideAll(){
     let allElements = [
         eightiesAboutImg, eightiesIconResponsive, eightiesIconNavegate, eightiesIconModern, eightiesIconFast, 
     
-        ninetiesAboutImg, ninetiesIconResponsive, ninetiesIconNavegate, ninetiesIconModern, ninetiesIconFast, ninetiesportfolio, ninetiesContactImg, ninetiesContactTitle, ninetiesHr,
+        ninetiesAboutImg, ninetiesIconResponsive, ninetiesIconNavegate, ninetiesIconModern, ninetiesIconFast, ninetiesContactImg, ninetiesContactTitle, ninetiesHr,
 
         twoThousandsAboutImg, twoThousandsIconResponsive, twoThousandsIconNavegate, twoThousandsIconModern, twoThousandsIconFast,
 
@@ -135,7 +137,7 @@ function hideAll(){
         
         twentyTwentyAboutImg, twentyTwentyAboutBorder, twentyTwentyIconResponsive, twentyTwentyIconNavegate, twentyTwentyIconModern, twentyTwentyIconFast,
     
-        iconLink, btnLink, portInfoIcon, portInfoText, portfolioText, portfolioInfo
+        iconLink, btnLink, portInfoIcon, portInfoText
     ];
     
     allElementsFlat = allElements.flat();

@@ -23,7 +23,7 @@ body{
     color: var(--gray-typography);
 }
 
-.highlight{
+mark{
     color: var(--blue)!important;
 }
 
@@ -262,6 +262,18 @@ nav{
     transition: var(--transition-03s)
 }
 
+.portfolio-card :nth-child(1):not(.portfolio-links > *):not(.portfolio-characteristics > *){
+    order: 2;
+}
+
+.portfolio-card :nth-child(2):not(.portfolio-links > *):not(.portfolio-characteristics > *){
+    order: 3;    
+}
+
+.portfolio-card :nth-child(3):not(.portfolio-links > *):not(.portfolio-characteristics > *){
+    order: 1;    
+}
+
 .portfolio-card .portfolio-links{
     width: 100%;
     margin-bottom: 1em;
@@ -285,26 +297,25 @@ nav{
     transition: var(--transition-03s);
 }
 
-.portfolio-card .portfolio-text{
+.portfolio-card .portfolio-info .portfolio-text{
     padding-right: 2.4em;
     transition: var(--transition-03s);
     margin-bottom: 1.2em;
 }
 
-.portfolio-card .portfolio-bottom-info{
+.portfolio-card .portfolio-info .portfolio-characteristics{
     margin-top: auto;
     width: 100%;
 }
 
-.portfolio-card .portfolio-bottom-info i{
+.portfolio-card .portfolio-info .portfolio-characteristics i{
     color: var(--gray-typography)!important;
     font-size: 1.7em;
     margin-right: .8em;
     transition: var(--transition-03s);
 }
 
-.portfolio-card .portfolio-bottom-info p{
-    margin: auto 0 0 0;
+.portfolio-card .portfolio-info .portfolio-characteristics p{
     margin-left: auto;
     padding: 0;
     transition: var(--transition-03s);
@@ -318,14 +329,14 @@ nav{
     transition: var(--transition-03s);
 }
 
-.portfolio-card:hover .portfolio-text,
+.portfolio-card:hover .portfolio-info .portfolio-text,
 .portfolio-card:hover .portfolio-links a i{
     color: var(--white)!important;
     transition: var(--transition-03s);
 }
 
 .portfolio-card:hover .portfolio-title,
-.portfolio-card:hover .portfolio-bottom-info i,
+.portfolio-card:hover .portfolio-info .portfolio-characteristics i,
 .portfolio-card .portfolio-links a i:hover{
     color: var(--blue)!important;
     transition: var(--transition-03s);

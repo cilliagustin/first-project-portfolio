@@ -30,7 +30,7 @@ body::after {
     pointer-events: none;
   }
 
-.highlight{
+mark{
     color: var(--white);
     text-decoration: underline;
 }
@@ -207,22 +207,6 @@ nav{
     margin: 5px;
 }
 
-.portfolio-card :nth-child(1):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
-    order: 4;
-}
-
-.portfolio-card :nth-child(2):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
-    order: 1;    
-}
-
-.portfolio-card :nth-child(3):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
-    order: 2;    
-}
-
-.portfolio-card :nth-child(4):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
-    order: 3;   
-}
-
 .portfolio-card .portfolio-title{
     font-family: 'Press Start 2P', monospace;
     text-align: center;
@@ -234,25 +218,25 @@ nav{
     border: var(--border);
 }
 
-.portfolio-card .portfolio-text{
+.portfolio-card .portfolio-info .portfolio-text{
     margin: .5em 0;
     text-align: justify;
     padding: .2em;
     border: var(--border);
 }
 
-.portfolio-card .portfolio-bottom-info{
+.portfolio-card .portfolio-info .portfolio-characteristics{
     width: 100%;
     margin-bottom:.5em ;
     margin-top: auto;
 }
 
-.portfolio-card .portfolio-bottom-info p{
+.portfolio-card .portfolio-info .portfolio-characteristics p{
     padding-right: 0.5em;
     font-size: .8em;
 }
 
-.portfolio-card .portfolio-bottom-info :last-child{
+.portfolio-card .portfolio-info .portfolio-characteristics :last-child{
     margin-left: auto;
 }
 
@@ -308,7 +292,7 @@ textarea:focus + label{
 
 /* FOOTER */
 
-footer{
+footer .marquee{
     flex-flow: column;
 }
 

@@ -82,7 +82,7 @@ body::after{
     background: rgb(239, 239, 239);
 }
 
-.highlight{
+mark{
     font-weight: bolder;
 }
 
@@ -448,22 +448,6 @@ body::after{
     box-shadow: var(--shadow);
 }
 
-.portfolio-card :nth-child(1):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
-    order: 4;
-}
-
-.portfolio-card :nth-child(2):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
-    order: 1;    
-}
-
-.portfolio-card :nth-child(3):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
-    order: 2;    
-}
-
-.portfolio-card :nth-child(4):not(.portfolio-bottom-info > *):not(.portfolio-links > *){
-    order: 3;   
-}
-
 .portfolio-card .portfolio-title{
     color: white;
     border-bottom: var(--blue-border);
@@ -472,12 +456,12 @@ body::after{
     background: var(--blue-gradient);
 }
 
-.portfolio-card .portfolio-text{
+.portfolio-card .portfolio-info .portfolio-text{
     margin: .7em 0;
     padding: 0 .8em;
 }
 
-.portfolio-card .portfolio-bottom-info{
+.portfolio-card .portfolio-info .portfolio-characteristics{
     margin: .7em 0;
     width: 100%;
     padding: .3em 0;
@@ -485,12 +469,12 @@ body::after{
     border-bottom: var(--blue-border);
 }
 
-.portfolio-card .portfolio-bottom-info p{
+.portfolio-card .portfolio-info .portfolio-characteristics p{
     padding-left: .3em;
     font-size: .8em;
 }
 
-.portfolio-card .portfolio-bottom-info :last-child{
+.portfolio-card .portfolio-info .portfolio-characteristics :last-child{
     margin-left: auto;
     padding-right: .3em;
 }
@@ -557,15 +541,40 @@ textarea:focus + label{
 
 /* FOOTER */
 
-footer{
-    flex-flow: column;
+#footer{
+    padding: 0.5em 0;
+    background: rgb(75 128 201);
+    width: 100%;
+    border: none;
+    border-top: var(--blue-border);
+    position: relative;
+    height: 45px;
+    overflow: hidden;
 }
+
+#footer .marquee{
+    width: 355px;
+    position: absolute;
+    top: 0.5em;
+    height: 25px;
+    animation: marquee 7s linear infinite;
+}
+
+#footer:hover .marquee{
+    animation-play-state: paused;
+}
+
+@keyframes marquee{
+    0%{left:100%;}
+    100%{left:-43%;}
+}
+
 
 footer .footer-icons .btn-custom{
     width: 110px;
     display: inline-block;
     text-align: center;
-    margin-bottom: .3em;
+    margin-left: 3px;
 }
 
 /* DESKTOP */
