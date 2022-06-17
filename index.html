@@ -11,6 +11,10 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- LOADER -->
+    <div id="loader" class="loader hide flex-center">
+        <div class="ring"></div>
+    </div>
     <!-- NAVBAR -->
     <nav id="navbar" class="container flex-center">
         <div class="nav">
@@ -18,7 +22,7 @@
                 <img id="logo" class="logo" src="assets/images/2020logo.png" alt="Agustin Cilli Logo">
             </a>
             <input class="side-menu" type="checkbox" name="side-menu" id="side-menu">
-            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <label class="hamb" for="side-menu"><div class="hamb-container"><span class="hamb-line"></span></div></label>
             <div id="menu" class="menu">
                 <ul>
                     <li><a href="#home"><i class="fa-solid fa-house"></i><br>home</a></li>
@@ -406,8 +410,7 @@
         </div>
     </section>
     <!-- FOOTER -->
-    <footer id="footer" class="container">
-        <div class="marquee flex-center">
+    <footer id="footer" class="container flex-center">
             <hr class="hide">
             <p>© 2022 Agustin Cilli</p>
             <div class="footer-icons">
@@ -416,7 +419,6 @@
                 <a href="https://github.com/cilliagustin?tab=repositories" target="_blank" btn-link class="btn-custom hide">Visit GitHub</a>
                 <a href = "mailto:abc@example.com?subject=Contact information" target="_blank" btn-link class="btn-custom hide">Send Email</a>
             </div>
-        </div>
     </footer>
 
 

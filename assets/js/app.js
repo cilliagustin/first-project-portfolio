@@ -1,13 +1,12 @@
-//CSS file and buttons
+//common variables
 let cssFile = document.getElementById("style");
 let favicon = document.getElementById("favicon");
+let loader = document.getElementById("loader");
 let eighties = document.getElementById("80s");
 let nineties = document.getElementById("90s");
 let twoThousands = document.getElementById("00s");
 let twentyTen = document.getElementById("10s");
 let twentyTwenty = document.getElementById("20s");
-
-//common variables
 let logo = document.getElementById("logo");
 let iconLink = Array.from(document.querySelectorAll("[icon-link]"));
 let btnLink = Array.from(document.querySelectorAll("[btn-link]"));
@@ -65,6 +64,7 @@ twentyTen.addEventListener(("click"), setTwentyTen);
 twentyTwenty.addEventListener(("click"), setTwentyTwenty);
 
 function setEighties() {
+
     let eightiesElements = [eightiesAboutImg, eightiesIconResponsive, eightiesIconNavegate, eightiesIconModern, eightiesIconFast, btnLink, portInfoText];
     cssFile.setAttribute("href", "assets/css/style80.css");
     logo.setAttribute("src", "assets/images/2020logowhite.png");
@@ -76,6 +76,7 @@ function setEighties() {
 }
 
 function setNineties() {
+
     let ninetiesElements = [ninetiesAboutImg, ninetiesIconResponsive, ninetiesIconNavegate, ninetiesIconModern, ninetiesIconFast, btnLink, portInfoText,ninetiesContactTitle, ninetiesContactImg, ninetiesHr];
     cssFile.setAttribute("href", "assets/css/style90.css");
     favicon.setAttribute("href", "assets/images/1990favicon.png");
@@ -88,6 +89,7 @@ function setNineties() {
 }
 
 function setTwoThousands() {
+
     let twoThousandsElements = [twoThousandsAboutImg, twoThousandsIconResponsive, twoThousandsIconNavegate, twoThousandsIconModern, twoThousandsIconFast,
     btnLink, portInfoText];
     cssFile.setAttribute("href", "assets/css/style00.css");
@@ -101,6 +103,7 @@ function setTwoThousands() {
 }
 
 function setTwentyTen() {
+
     let twentyTenElements = [twentyTenProfilePic, twentyTenAboutImg, twentyTenIconResponsive, twentyTenIconNavegate, twentyTenIconModern, twentyTenIconFast, iconLink, portInfoIcon]
     cssFile.setAttribute("href", "assets/css/style10.css");
     favicon.setAttribute("href", "assets/images/2010logo.png");
@@ -113,6 +116,7 @@ function setTwentyTen() {
 }
 
 function setTwentyTwenty() {
+
     let TwentyTwentyElements = [twentyTwentyAboutImg, twentyTwentyAboutBorder, twentyTwentyIconResponsive, twentyTwentyIconNavegate, twentyTwentyIconModern, twentyTwentyIconFast, iconLink, portInfoIcon];
     cssFile.setAttribute("href", "assets/css/style20.css");
     favicon.setAttribute("href", "assets/images/2020favicon.png");
@@ -123,6 +127,12 @@ function setTwentyTwenty() {
         el.classList.remove("hide")
     });
 }
+
+//loader functions
+function displayLoader(){
+    loader.classList.remove("hide");
+};
+
 
 //hides all elements
 function hideAll(){

@@ -19,7 +19,7 @@ body{
 
 body::after {
     content: "";
-    z-index: 100;
+    z-index: 6;
     position: fixed;
     top: 0;
     left: 0;
@@ -80,19 +80,19 @@ mark{
 /* NAVBAR */
 
 nav{
-    background: var(--background-green);
+    background: red;
 }
 
 #navbar .nav .logo{
     font-size: 1.3em;
 }
 
-#navbar .nav .hamb .hamb-line {
+#navbar .nav .hamb .hamb-container .hamb-line {
     background: var(--secondary-green);
 }
 
-#navbar .nav .hamb .hamb-line::before,
-#navbar .nav .hamb .hamb-line::after{
+#navbar .nav .hamb .hamb-container .hamb-line::before,
+#navbar .nav .hamb .hamb-container .hamb-line::after{
     background: var(--secondary-green);
 }
 
@@ -292,7 +292,7 @@ textarea:focus + label{
 
 /* FOOTER */
 
-footer .marquee{
+footer{
     flex-flow: column;
 }
 

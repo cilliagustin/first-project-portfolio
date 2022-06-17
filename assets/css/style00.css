@@ -30,6 +30,11 @@
     --transition-03s: .3s ease-in;
 }
 
+@keyframes marquee{
+    0%{left: 100%;}
+    100%{left: -80%;}
+}
+
 @keyframes change-color{
     0%{background: var(--blue-gradient);}
     25%{background: var(--blue-gradient);}
@@ -147,13 +152,13 @@ mark{
     height: 20px;
 }
 
-#navbar .nav .hamb .hamb-line {
+#navbar .nav .hamb .hamb-container .hamb-line {
     background: white;
     transition: all .4s ease;
 }
 
-#navbar .nav .hamb .hamb-line::before,
-#navbar .nav .hamb .hamb-line::after{
+#navbar .nav .hamb .hamb-container .hamb-line::before,
+#navbar .nav .hamb .hamb-container .hamb-line::after{
     background: white;
     transition: all .4s ease;
 }
@@ -295,6 +300,7 @@ mark{
 }
 
 .button-container{
+    position: relative;
     align-self: center;
     margin: 0.5em 3em;
     width: auto;
@@ -446,14 +452,29 @@ mark{
     margin: .8em;
     align-items: center;
     box-shadow: var(--shadow);
+    overflow: hidden;
+    box-shadow: inset 0px 11px rgb(75 128 201), inset 0px 22px rgb(35 101 160);
+    position: relative;
+}
+
+.portfolio :last-child.portfolio-card{
+    border-bottom: var(--blue-border);
 }
 
 .portfolio-card .portfolio-title{
     color: white;
-    border-bottom: var(--blue-border);
-    width: 100%;
-    text-align: center;
-    background: var(--blue-gradient);
+    width: 119px;
+    position: absolute;
+    animation: marquee 4s  infinite;
+}
+
+#contador-calorias .portfolio-title{
+    width: 175px;
+}
+
+.portfolio-card .portfolio-info {
+    margin-top: 22px;
+    border-top: var(--blue-border);
 }
 
 .portfolio-card .portfolio-info .portfolio-text{
@@ -490,10 +511,6 @@ mark{
     width: 100px;
     height: 45px;
     background: var(--red-gradient);
-}
-
-.portfolio-card:hover .portfolio-title{
-  background: var(--red-gradient);
 }
 
 .portfolio-card .portfolio-links .btn-custom:hover{
@@ -542,33 +559,13 @@ textarea:focus + label{
 /* FOOTER */
 
 #footer{
-    padding: 0.5em 0;
+    padding-top: 0.5em;
     background: rgb(75 128 201);
     width: 100%;
     border: none;
     border-top: var(--blue-border);
-    position: relative;
-    height: 45px;
-    overflow: hidden;
+    flex-flow: column;
 }
-
-#footer .marquee{
-    width: 355px;
-    position: absolute;
-    top: 0.5em;
-    height: 25px;
-    animation: marquee 7s linear infinite;
-}
-
-#footer:hover .marquee{
-    animation-play-state: paused;
-}
-
-@keyframes marquee{
-    0%{left:100%;}
-    100%{left:-43%;}
-}
-
 
 footer .footer-icons .btn-custom{
     width: 110px;
@@ -723,7 +720,6 @@ footer .footer-icons .btn-custom{
         margin: 0;
         width: 100%;
         min-width: 290px;
-        box-shadow: none;
         border-radius: 0;
         border: var(--blue-border);
         border-bottom: none;
@@ -739,9 +735,3 @@ footer .footer-icons .btn-custom{
     }
 
 }
-
-.hide{
-    display: none!important;
-}
-
-

@@ -63,12 +63,12 @@ nav{
     background: var(--background-gray);
 }
 
-.nav .hamb .hamb-line {
+#navbar .nav .hamb .hamb-container .hamb-line {
     transition: all .4s ease;
 }
 
-#navbar .nav .hamb .hamb-line::before,
-#navbar .nav .hamb .hamb-line::after{
+#navbar .nav .hamb .hamb-container .hamb-line::before,
+#navbar .nav .hamb .hamb-container .hamb-line::after{
     transition: all .4s ease;
 }
 
@@ -464,8 +464,4 @@ footer .footer-icons a i:hover{
         width: 320px;
         height: 370px;
     }
-}
-
-.hide{
-    display: none!important;
 }

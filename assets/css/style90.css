@@ -85,12 +85,12 @@ mark{
     padding: .4em .6em;
 }
 
-#navbar .nav .hamb .hamb-line {
+#navbar .nav .hamb .hamb-container .hamb-line {
     background: var(--black);
 }
 
-#navbar .nav .hamb .hamb-line::before,
-#navbar .nav .hamb .hamb-line::after{
+#navbar .nav .hamb .hamb-container .hamb-line::before,
+#navbar .nav .hamb .hamb-container .hamb-line::after{
     background: var(--black);
 }
 
@@ -424,7 +424,7 @@ form :nth-child(5){
 
 /* FOOTER */
 
-footer .marquee{
+footer{
     flex-flow: column;
 }
 
@@ -528,8 +528,4 @@ footer .btn-custom{
         top:50%;
         left: 73%;
     }
-}
-
-.hide{
-    display: none!important;
 }

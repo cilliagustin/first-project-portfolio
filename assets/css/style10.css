@@ -88,12 +88,12 @@ mark{
     border: 1px solid white;
 }
 
-#navbar .nav .hamb .hamb-line {
+#navbar .nav .hamb .hamb-container .hamb-line {
     transition: all .4s ease;
 }
 
-#navbar .nav .hamb .hamb-line::before,
-#navbar .nav .hamb .hamb-line::after{
+#navbar .nav .hamb .hamb-container .hamb-line::before,
+#navbar .nav .hamb .hamb-container .hamb-line::after{
     transition: all .4s ease;
 }
 
@@ -610,8 +610,4 @@ footer .footer-icons a i{
         position: relative;
         z-index: 2;
     }
-}
-
-.hide{
-    display: none!important;
 }
