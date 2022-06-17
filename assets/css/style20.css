@@ -81,6 +81,7 @@ nav{
     transition: 0.3s ease;
 }
 
+#navbar .nav .menu ul li.active a,
 #navbar .nav .menu ul li a:hover{
     color: var(--blue);
 }
@@ -97,6 +98,8 @@ nav{
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
+
+#navbar .nav .menu ul li.active a::before,
 #navbar .nav .menu ul li a:hover::before {
     transform: scaleX(1);
   }
@@ -253,7 +256,6 @@ nav{
 .portfolio-card{
     background: var(--secondary-gray);
     border: var(--border);
-    cursor: default;
     border-radius: 4px;
     max-width: 400px;
     height: auto;

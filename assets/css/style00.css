@@ -214,6 +214,7 @@ mark{
     font-size: 13px;
 }
 
+#navbar .nav .menu ul li.active,
 #navbar .nav .menu ul li:hover{
     height: 24px;
 }
@@ -446,7 +447,6 @@ mark{
     background: var(--light-blue);
     border: var(--blue-border);
     border-radius: 0px 0px 10px 10px;
-    cursor: default;
     max-width: 400px;
     height: auto;
     margin: .8em;
@@ -633,7 +633,8 @@ footer .footer-icons .btn-custom{
         border-bottom: none;
         border-radius: 3px 3px 0 0;
     }
-
+    #navbar .nav .menu ul li.active,
+    #navbar .nav .side-menu:checked ~ .menu ul li.active,
     #navbar .nav .menu ul li:hover,
     #navbar .nav .side-menu:checked ~ .menu ul li:hover{
         height: 20px;

@@ -11,16 +11,6 @@
     1px 0 1px  rgb(104,126,171),
     0 -1px 1px  rgb(104,126,171);
     --gray:rgb(83, 83, 83);
-
-
-    --background-gray: rgb(40, 42, 54);
-    --gray-typography:rgb(143, 154, 185);
-    --secondary-gray: rgb(53, 56, 80);
-    --white:rgb(235, 230, 230);
-    --blue: rgb(49, 191, 230);
-    --blue-translucid: rgba(49, 191, 230, .3);
-    --border:1px solid var(--blue);
-    --transition-03s: .3s ease-in;
 }
 
 html{
@@ -163,6 +153,7 @@ mark{
     border: 2px solid white;
 }
 
+#navbar .nav .menu ul li.active a i::after,
 #navbar .nav .menu ul li a:hover i::after{
     display: block;
 }
@@ -513,6 +504,11 @@ footer .footer-icons a i{
         font-size: .8em;
         width: 100%;
         padding: 5px 10px;
+    }
+
+    #navbar .nav .menu ul li.active a,
+    #navbar .nav .menu ul li a:hover{
+        text-decoration: underline;
     }
 
     #navbar .nav .menu ul li a br,

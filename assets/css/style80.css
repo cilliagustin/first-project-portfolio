@@ -70,6 +70,7 @@ mark{
     margin:3px 5px;
     text-decoration: none;  
     text-align: center;
+    cursor: pointer;
 }
 
 .btn-custom:hover{
@@ -80,7 +81,7 @@ mark{
 /* NAVBAR */
 
 nav{
-    background: red;
+    background: var(--background-green);
 }
 
 #navbar .nav .logo{
@@ -96,6 +97,7 @@ nav{
     background: var(--secondary-green);
 }
 
+#navbar .nav .menu ul li.active a,
 #navbar .nav .menu ul li a:hover{
     text-decoration: underline;
 }
@@ -199,7 +201,6 @@ nav{
 
 .portfolio-card{
     border: var(--border);
-    cursor: default;
     border-radius: 4px;
     max-width: 400px;
     height: auto;
@@ -245,7 +246,6 @@ nav{
 }
 
 .portfolio-card .portfolio-links .btn-custom{
-    cursor: pointer;
     padding: 0.3em 0.6em;
     margin: 0;
     font-size: .9em;

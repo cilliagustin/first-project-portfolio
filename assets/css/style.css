@@ -57,7 +57,9 @@ mark{
 }
 
 .loader{
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: rgb(40, 42, 54);
     z-index: 7;
     width: 100vw;
