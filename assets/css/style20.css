@@ -264,15 +264,15 @@ nav{
     transition: var(--transition-03s)
 }
 
-.portfolio-card :nth-child(1):not(.portfolio-links > *):not(.portfolio-characteristics > *){
+.portfolio-card :nth-child(1):not(.portfolio-links > *):not(.portfolio-info > *):not(.portfolio-characteristics > *){
     order: 2;
 }
 
-.portfolio-card :nth-child(2):not(.portfolio-links > *):not(.portfolio-characteristics > *){
+.portfolio-card :nth-child(2):not(.portfolio-links > *):not(.portfolio-info > *):not(.portfolio-characteristics > *){
     order: 3;    
 }
 
-.portfolio-card :nth-child(3):not(.portfolio-links > *):not(.portfolio-characteristics > *){
+.portfolio-card :nth-child(3):not(.portfolio-links > *):not(.portfolio-info > *):not(.portfolio-characteristics > *){
     order: 1;    
 }
 
@@ -297,6 +297,12 @@ nav{
 .portfolio-card .portfolio-title{
     margin:1em 0;
     transition: var(--transition-03s);
+}
+
+.portfolio-card .portfolio-info {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
 }
 
 .portfolio-card .portfolio-info .portfolio-text{
