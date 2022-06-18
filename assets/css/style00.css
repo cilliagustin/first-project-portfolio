@@ -152,13 +152,13 @@ mark{
     height: 20px;
 }
 
-#navbar .nav .hamb .hamb-container .hamb-line {
+#navbar .nav .hamb .hamb-line {
     background: white;
     transition: all .4s ease;
 }
 
-#navbar .nav .hamb .hamb-container .hamb-line::before,
-#navbar .nav .hamb .hamb-container .hamb-line::after{
+#navbar .nav .hamb .hamb-line::before,
+#navbar .nav .hamb .hamb-line::after{
     background: white;
     transition: all .4s ease;
 }

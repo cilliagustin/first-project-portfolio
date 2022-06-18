@@ -14,3 +14,44 @@ To show all prevous projects created in a fun way that is engaging to the user a
 
 ### For the user (potential employeer)
 To see the creator´s capabilities in case he/she is looking for a new employee
+
+## UX
+### Skeleton
+
+### Design
+#### Design description
+
+#### Color
+
+#### Fonts
+
+#### Logos
+
+### Features
+#### Navbar
+
+#### Home
+
+#### About me
+
+#### My work
+
+#### Contact
+
+#### Footer
+
+## Testing
+### Validator
+
+### Unfixed Bugs
+
+## Technologies Used
+### Main Languages Used
+
+### Frameworks, Libraries & Programs Used
+
+## Deployment
+
+## Credits
+
+## Acknowledgements
