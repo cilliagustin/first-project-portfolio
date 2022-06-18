@@ -28,7 +28,7 @@ body{
     background: white;
     width: 97%;
     margin: 5px auto;
-    padding: 5px 8px;
+    padding: 5px 8px 3.5em 8px;
     border-radius: 3px;
     box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 30%);
 }
@@ -42,7 +42,7 @@ mark{
     font-weight: 700;
     letter-spacing: 2px;
     color: var(--title);
-    margin: 20px 0;
+    margin-bottom: 1.2em;
 }
 
 .secondary-title{
@@ -174,7 +174,7 @@ mark{
 /* HOME */
 
 #home{
-    margin-top: 3em;
+    padding-top: 3em;
 }
 
 .home-container{
@@ -196,7 +196,7 @@ mark{
 }
 
 .home-container p {
-    padding-right: 0;
+    padding: 0;
 }
 
 .button-container{
@@ -231,6 +231,7 @@ mark{
 .img-container{
     width: 90%;
     padding: 1px;
+    margin: 0;
 }
 .img-container img{
     width: 100%;
