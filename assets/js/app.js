@@ -9,11 +9,11 @@ let twentyTen = document.getElementById("10s");
 let twentyTwenty = document.getElementById("20s");
 let logo = document.getElementById("logo");
 let navLinks = document.querySelectorAll("#menu ul li");
-let iconLink = Array.from(document.querySelectorAll("[icon-link]"));
-let sections = document.querySelectorAll("[site-section]");
-let btnLink = Array.from(document.querySelectorAll("[btn-link]"));
-let portInfoIcon = Array.from(document.querySelectorAll("[portfolio-info-icon]"));
-let portInfoText = Array.from(document.querySelectorAll("[portfolio-info-text]"));
+let iconLink = Array.from(document.querySelectorAll(".icon-link"));
+let sections = document.querySelectorAll(".container");
+let btnLink = Array.from(document.querySelectorAll(".btn-link"));
+let portInfoIcon = Array.from(document.querySelectorAll(".portfolio-info-icon"));
+let portInfoText = Array.from(document.querySelectorAll(".portfolio-info-text"));
 
 //80s variables
 let eightiesAboutImg = document.getElementById("80aboutImg");

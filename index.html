@@ -34,7 +34,7 @@
         </div>  
     </nav>
     <!-- HOME -->
-    <header site-section id="home" class="container flex-column-start">
+    <header id="home" class="container flex-column-start">
         <div class="home-container">
             <div class="home-title">
                 <h1 class="main-title">Agustin Cilli</h1>
@@ -63,7 +63,7 @@
         </div>
     </header>
     <!-- ABOUT ME -->
-    <section site-section id="about-me" class="container flex-column-center">
+    <section id="about-me" class="container flex-column-center">
         <h2 class="section-title">About me</h2>
         <div class="about-me-content flex-column-center">
             <div id="img-container" class="img-container flex-center">
@@ -121,7 +121,7 @@
         </div>    
     </section>
     <!-- MY WORK -->
-    <section site-section id="my-work" id="my-work" class="container flex-column-center">
+    <section id="my-work" class="container flex-column-center">
         <h2 class="section-title">My work</h2>
         <div class="my-work-container flex-center">
             <div class="my-work-card flex-column-center">
@@ -330,12 +330,12 @@
                     <mark>SEO</mark> and <mark>front end tools</mark>.</p>
                     <hr class="hide">
                     <div class="portfolio-characteristics flex-start">
-                        <i class="fa-brands fa-html5" portfolio-info-icon alt="HTML icon"></i>
-                        <i class="fa-brands fa-css3-alt" portfolio-info-icon alt="CSS icon"></i>
-                        <i class="fa-brands fa-bootstrap" portfolio-info-icon alt="Bootstrap icon"></i>
-                        <p portfolio-info-text class="hide">HTML</p>
-                        <p portfolio-info-text class="hide">CSS</p>
-                        <p portfolio-info-text class="hide">Bootstrap</p>
+                        <i class="fa-brands fa-html5 portfolio-info-icon" ></i>
+                        <i class="fa-brands fa-css3-alt portfolio-info-icon" ></i>
+                        <i class="fa-brands fa-bootstrap portfolio-info-icon" ></i>
+                        <p class="portfolio-info-text hide">HTML</p>
+                        <p class="portfolio-info-text hide">CSS</p>
+                        <p class="portfolio-info-text hide">Bootstrap</p>
                         <p>Lang: SP</p>
                     </div>
                 </div>
@@ -343,10 +343,10 @@
                     <a href="https://cilliagustin.github.io/minimalcoffee/" class="btn-custom" target="_blank">
                         Visit website
                     </a>
-                    <a icon-link href="https://github.com/cilliagustin/minimalcoffee" target="_blank">
+                    <a class="icon-link" href="https://github.com/cilliagustin/minimalcoffee" target="_blank">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="https://github.com/cilliagustin/minimalcoffee" target="_blank" btn-link class="btn-custom hide">
+                    <a href="https://github.com/cilliagustin/minimalcoffee" target="_blank"  class="btn-custom btn-link hide">
                         GitHub repository
                     </a>
                 </div>
@@ -361,12 +361,12 @@
                         control over the days.</p>
                     <hr class="hide">
                     <div class="portfolio-characteristics flex-start">
-                        <i class="fa-brands fa-html5" portfolio-info-icon alt="HTML icon"></i>
-                        <i class="fa-brands fa-css3-alt" portfolio-info-icon alt="CSS icon"></i>
-                        <i class="fa-brands fa-js-square" portfolio-info-icon alt="Javascript icon"></i>
-                        <p portfolio-info-text class="hide">HTML</p>
-                        <p portfolio-info-text class="hide">CSS</p>
-                        <p portfolio-info-text class="hide">JavaScript</p>
+                        <i class="fa-brands fa-html5 portfolio-info-icon"></i>
+                        <i class="fa-brands fa-css3-alt portfolio-info-icon"></i>
+                        <i class="fa-brands fa-js-square portfolio-info-icon"></i>
+                        <p  class="portfolio-info-text hide">HTML</p>
+                        <p  class="portfolio-info-text hide">CSS</p>
+                        <p  class="portfolio-info-text hide">JavaScript</p>
                         <p>Lang: SP</p>
                     </div>
                 </div>
@@ -374,10 +374,10 @@
                     <a href="https://cilliagustin.github.io/ContadorDeCalorias/" class="btn-custom" target="_blank">
                         Visit website
                     </a>
-                    <a icon-link href="https://github.com/cilliagustin/ContadorDeCalorias" target="_blank">
+                    <a class="icon-link" href="https://github.com/cilliagustin/ContadorDeCalorias" target="_blank">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="https://github.com/cilliagustin/ContadorDeCalorias" target="_blank" btn-link class="btn-custom hide">
+                    <a href="https://github.com/cilliagustin/ContadorDeCalorias" target="_blank"  class="btn-custom btn-link hide">
                         GitHub repository
                     </a>
                 </div>
@@ -385,7 +385,7 @@
         </div>
     </section>
     <!-- CONTACT -->
-    <section site-section id="contact" class="container flex-column-center">
+    <section id="contact" class="container flex-column-center">
         <h2 class="section-title">Contact</h2>
         <div id="contact-form" class="contact-card">
             <h3 id="contact-title" class="hide">contact form</h3>
@@ -396,7 +396,7 @@
                 <img src="assets/images/phone90.png" alt="90s icon phone">
                 <img src="assets/images/msn90.png" alt="90s msn icon">
             </div>
-            <form action="">
+            <form action="post">
                 <button class="btn-custom">Send</button>
                 <hr class="hide">
                 <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Anything else I should know?..."></textarea>
@@ -409,14 +409,14 @@
         </div>
     </section>
     <!-- FOOTER -->
-    <footer id="footer" class="container flex-center">
+    <footer id="footer" class="flex-center">
             <hr class="hide">
             <p>© 2022 Agustin Cilli</p>
             <div class="footer-icons">
-                <a icon-link href="https://github.com/cilliagustin?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a icon-link href = "mailto:abc@example.com?subject=Contact information" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://github.com/cilliagustin?tab=repositories" target="_blank" btn-link class="btn-custom hide">Visit GitHub</a>
-                <a href = "mailto:abc@example.com?subject=Contact information" target="_blank" btn-link class="btn-custom hide">Send Email</a>
+                <a class="icon-link" href="https://github.com/cilliagustin?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a class="icon-link" href = "mailto:abc@example.com?subject=Contact" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/cilliagustin?tab=repositories" target="_blank"  class="btn-custom btn-link hide">Visit GitHub</a>
+                <a href = "mailto:abc@example.com?subject=Contact" target="_blank"  class="btn-custom btn-link hide">Send Email</a>
             </div>
     </footer>
 
