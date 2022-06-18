@@ -86,12 +86,12 @@ mark{
     padding: .4em .6em;
 }
 
-#navbar .nav .hamb .hamb-container .hamb-line {
+#navbar .nav .hamb .hamb-line {
     background: var(--black);
 }
 
-#navbar .nav .hamb .hamb-container .hamb-line::before,
-#navbar .nav .hamb .hamb-container .hamb-line::after{
+#navbar .nav .hamb .hamb-line::before,
+#navbar .nav .hamb .hamb-line::after{
     background: var(--black);
 }
 

@@ -88,12 +88,12 @@ nav{
     font-size: 1.3em;
 }
 
-#navbar .nav .hamb .hamb-container .hamb-line {
+#navbar .nav .hamb .hamb-line {
     background: var(--secondary-green);
 }
 
-#navbar .nav .hamb .hamb-container .hamb-line::before,
-#navbar .nav .hamb .hamb-container .hamb-line::after{
+#navbar .nav .hamb .hamb-line::before,
+#navbar .nav .hamb .hamb-line::after{
     background: var(--secondary-green);
 }
 

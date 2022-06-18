@@ -111,13 +111,12 @@ mark{
     cursor: pointer;
 }
 
-#navbar .nav .hamb .hamb-container{
+#navbar .nav .hamb {
     width: 28px;
     height: 18px;
-    position: relative;
 }
 
-#navbar .nav .hamb .hamb-container .hamb-line {
+#navbar .nav .hamb .hamb-line {
     background: white;
     display: block;
     height: 2px;
@@ -127,8 +126,8 @@ mark{
     left: 2px;
 }
 
-#navbar .nav .hamb .hamb-container .hamb-line::before,
-#navbar .nav .hamb .hamb-container .hamb-line::after{
+#navbar .nav .hamb .hamb-line::before,
+#navbar .nav .hamb .hamb-line::after{
     content: '';
     background: white;
     display: block;
@@ -138,11 +137,11 @@ mark{
     width: 100%;
 }
 
-#navbar .nav .hamb .hamb-container .hamb-line::before{
+#navbar .nav .hamb .hamb-line::before{
     top: 5px;
 }
 
-#navbar .nav .hamb .hamb-container .hamb-line::after{
+#navbar .nav .hamb .hamb-line::after{
     top: -5px;
 }
 

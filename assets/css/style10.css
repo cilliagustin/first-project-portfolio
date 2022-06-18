@@ -79,12 +79,12 @@ mark{
     border: 1px solid white;
 }
 
-#navbar .nav .hamb .hamb-container .hamb-line {
+#navbar .nav .hamb .hamb-line {
     transition: all .4s ease;
 }
 
-#navbar .nav .hamb .hamb-container .hamb-line::before,
-#navbar .nav .hamb .hamb-container .hamb-line::after{
+#navbar .nav .hamb .hamb-line::before,
+#navbar .nav .hamb .hamb-line::after{
     transition: all .4s ease;
 }
 
@@ -409,7 +409,7 @@ textarea:focus + label{
 
 .contact-card .btn-custom{
     margin-top: 2.3em;
-    margin-bottom: 2.8em;
+    margin-bottom: 2em;
     min-width: 160px;
     width: 50%;
     max-width: 300px;
