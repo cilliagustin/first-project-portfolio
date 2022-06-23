@@ -160,13 +160,9 @@ nav{
 
 /* MY WORK */
 
-.my-work-container{
-    max-width: 380px;
-}
-
 .my-work-card{
-    height: 215px;
-    width: 170px;
+    height: 230px;
+    width: 180px;
     margin: 3px;
     padding: 0.2em 0;
     border: var(--border);
@@ -362,6 +358,15 @@ footer .btn-custom{
         height: 172px;
     }
 }
+
+@media (max-width: 805px) {
+    /* MY WORK */
+
+    .my-work-container{
+        max-width: 380px;
+    }
+}
+
 
 .hide{
     display: none!important;

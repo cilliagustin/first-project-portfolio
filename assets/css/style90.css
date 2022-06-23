@@ -407,6 +407,8 @@ form :nth-child(5){
     box-shadow: var(--sunken-box);
     margin: .5em 0;
     padding: .2em;
+    border-radius: 0;
+    -webkit-appearance: none;
 }
 
 .contact-card input:focus-visible,

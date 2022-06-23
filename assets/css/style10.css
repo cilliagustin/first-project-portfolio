@@ -533,7 +533,7 @@ footer .footer-icons a i{
     .button-container{
         position: fixed;
         width: 17vw;
-        top: 9%;
+        top: 50px;
         right: 2vw;
         text-align: center;
         justify-content: center;
@@ -549,7 +549,7 @@ footer .footer-icons a i{
 
     .profile-pic{
         position: fixed;
-        top: 9%;
+        top: 50px;
         left: 0;
         width: 17.6vw;
         padding: 0;

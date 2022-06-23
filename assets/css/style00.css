@@ -463,13 +463,13 @@ mark{
 
 .portfolio-card .portfolio-title{
     color: white;
-    width: 119px;
+    width: 155px;
     position: absolute;
     animation: marquee 4s  infinite;
 }
 
 #contador-calorias .portfolio-title{
-    width: 175px;
+    width: 190px;
 }
 
 .portfolio-card .portfolio-info {

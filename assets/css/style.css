@@ -285,6 +285,10 @@ mark{
 
 /* CONTACT */
 
+#contact{
+    min-height: 90vh;
+}
+
 .contact-card{
     width: 85%
 }
