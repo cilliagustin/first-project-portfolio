@@ -60,14 +60,19 @@ The design was made with a mobile first aproach. Using flexbox and mediaqueries 
 
 #### Colour
 Each version has it´s own color palette that generates enough contrast and provides consistency through all the site, this were created taking inspiration from different sources which will be credited in the credit section.
+##### 2020 palette
 ![2020 Palette](documentation/2020-palette.png)
 
 <details>
 <summary>Other Palettes</summary>
 
+##### 2010 palette
 ![2010 Palette](documentation/2010-palette.png)
+##### 2000 palette
 ![2000 Palette](documentation/2000-palette.png)
+##### 1990 palette
 ![1990 Palette](documentation/1990-palette.png)
+##### 1980 palette
 ![1980 Palette](documentation/1980-palette.png)
 </details>
 
@@ -92,15 +97,39 @@ The home section consists of the Title, subtitle and introductory text for the w
 * 2010: This version provides an extra image (profile picture) which in the mobile version is located in the top of the header and in the desktop version is located with a fixed positioning at the left of the website (emulating the profile picture positioning in facebook) the same happens with the buttons that are located to the right the same way Facebook places some extra links or advertising.
 
 #### About me
+This section conists on an image, followed by a text that describes my experience. In the mobile version the text is located under the image and in bigger screen is sometimes located next to it.
 
 #### My work
+My work section consists first of 4 icons that describe some of the characteristics of my work (Responsive, easy to navigate, Modern and fast). followed by it is my current portfolio (two projects when this file was written) each portfolio card consists of the title of the website, the website description, a list of technologies used and language abvailable for the website and two links (one for the website and one for the GitHub repository) but the order of how this information is presenter changes through some versions.
 
 #### Contact
 
 #### Footer
+The footer consists on my name and 2 links, one for my github profile and one to automatically send me an Email. this always share the same styling as the navbar to provide consistency but is not fixed positioned.
 
 ## Testing
 ### Validator
+#### HTML
+Result from [W3C Markup Validation Service](https://validator.w3.org/):
+![HTML Validator](documentation/HTML-validator.png)
+   
+#### CSS
+Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/):
+![CSS Validator](documentation/CSS-validator.png)
+
+#### Lighthouse
+Result from [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=es):
+![Lighthouse](documentation/lighthouse.png)
+
+### Bugs
+* On Safari the inputs (text and textarea) did not accept the styling. This was fixed by explicitely adding a border-radius 0 and -webkit-appearance none.
+<details>
+<summary>See bug</summary>
+
+![1990 Bug](documentation/1990-bug-safari.png)
+</details>
+
+
 
 ### Unfixed Bugs
 
