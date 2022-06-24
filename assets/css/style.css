@@ -384,7 +384,11 @@ footer p{
     }
 }
 
-
 .hide{
     display: none!important;
+}
+
+/* CONFIRMATION.HTML */
+#navbar.confirmation-navbar{
+    position: relative;
 }
