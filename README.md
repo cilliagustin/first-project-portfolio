@@ -88,24 +88,168 @@ With the exception of the 2010 version, all fonts were provided by [Google Fonts
 With the exception of my own photos, all images were provided by external sources which will be credited in the corresponding section. Is important to be noticed though that all the images were chosen with the intention to give consistency with the site and the tools which were available in each decade.
 
 ### Features
+#### Loader
+in order to provide a smooth transition when the versions are changed a loader was created. this occupies 100% of the pages height and with and has a fixed positioning blocking all the screen while the new styling for the page is loaded.
+
 #### Navbar
-The navbar has a fixed positioning on the top of the website. In the mobile version it collapses into a hamburger menu, when pressed the hamburger it displays the navegation menu. The desktop version displays the navegation menu normally without the use of a hamburger.
+The navbar has a fixed positioning on the top of the website. In the mobile version it collapses into a hamburger menu, when pressed the hamburger it displays the navegation menu. The desktop version displays the navegation menu normally without the use of a hamburger. When the user scrolls, this triggers a function that acording to where the user is located gives the respective nav link the active class. There are 5 different logo images used in the Navbar depending on the decade.
+* The 2010 version on the mobile version when the Hamburger icon is pressed opens the menu, which occupied 100% of the width and height and displays icons next to the navbar links.
+##### 2020 Navbar
+###### Mobile
+![2020 Navbar Mobile](documentation/2020-navbar-mobile.png)
+###### Desktop
+![2020 Navbar Desktop](documentation/2020-navbar-desktop.png)
+<details>
+<summary>See other Navbars</summary>
+
+##### 2010 Navbar
+###### Mobile
+![2010 Navbar Mobile](documentation/2010-navbar-mobile.png)
+###### Desktop
+![2010 Navbar Desktop](documentation/2010-navbar-desktop.png)
+##### 2000 Navbar
+###### Mobile
+![2000 Navbar Mobile](documentation/2000-navbar-mobile.png)
+###### Desktop
+![2000 Navbar Desktop](documentation/2000-navbar-desktop.png)
+##### 1990 Navbar
+###### Mobile
+![1990 Navbar Mobile](documentation/1990-navbar-mobile.png)
+###### Desktop
+![1990 Navbar Desktop](documentation/1990-navbar-desktop.png)
+##### 1980 Navbar
+###### Mobile
+![1980 Navbar Mobile](documentation/1980-navbar-mobile.png)
+###### Desktop
+![1980 Navbar Desktop](documentation/1980-navbar-desktop.png)
+
+</details>
 
 #### Home
 The home section consists of the Title, subtitle and introductory text for the website. After this are located the 5 buttons which toggle the different website versions. Noticable changes in other versions:
 * 2000: The main title has a background image that acts like a hero image and in the desktop version has the buttons located next to the text intead of under them like in the other versions.
 * 2010: This version provides an extra image (profile picture) which in the mobile version is located in the top of the header and in the desktop version is located with a fixed positioning at the left of the website (emulating the profile picture positioning in facebook) the same happens with the buttons that are located to the right the same way Facebook places some extra links or advertising.
 
+#### Buttons
+This activate the main Javascript function that is the one that changes the css file, favicon and hides and shows the corresponding elements.
+##### 2020 Buttons
+![2020 Buttons Desktop](documentation/2020-buttons.png)
+<details>
+<summary>See other buttons</summary>
+
+##### 2010 Buttons
+![2010 Buttons Desktop](documentation/2010-buttons.png)
+##### 2000 Buttons
+![2000 Buttons Desktop](documentation/2000-buttons.png)
+##### 1990 Buttons
+![1990 Buttons Desktop](documentation/1990-buttons.png)
+##### 1980 Buttons
+![1980 Buttons Desktop](documentation/1980-buttons.png)
+
+</details>
+
 #### About me
 This section conists on an image, followed by a text that describes my experience. In the mobile version the text is located under the image and in bigger screen is sometimes located next to it.
+
+##### Mobile
+![2020 About Me Mobile](documentation/2020-aboutme-mobile.png)
+##### Desktop
+![2020 About Me Desktop](documentation/2020-aboutme-desktop.png)
+
+<details>
+<summary>See Other About Me versions</summary>
+<details>
+<summary>See 2010 Version</summary>
+
+##### There Are no noticable changes between desktop and mobile versions
+![2010 About Me](documentation/2010-aboutme.png)
+</details>
+
+<details>
+<summary>See 2000 Version</summary>
+
+##### Mobile
+![2000 About Me Mobile](documentation/2000-aboutme-mobile.png)
+##### Desktop
+![2000 About Me Desktop](documentation/2000-aboutme-desktop.png)
+</details>
+
+<details>
+<summary>See 1990 Version</summary>
+
+##### Mobile
+![1990 About Me Mobile](documentation/1990-aboutme-mobile.png)
+##### Desktop
+![1990 About Me Desktop](documentation/1990-aboutme-desktop.png)
+</details>
+
+<details>
+<summary>See 1980 Version</summary>
+
+##### There Are no noticable changes between desktop and mobile versions
+![1980 About Me](documentation/1980-aboutme.png)
+</details>
+
+</details>
 
 #### My work
 My work section consists first of 4 icons that describe some of the characteristics of my work (Responsive, easy to navigate, Modern and fast). followed by it is my current portfolio (two projects when this file was written) each portfolio card consists of the title of the website, the website description, a list of technologies used and language abvailable for the website and two links (one for the website and one for the GitHub repository) but the order of how this information is presenter changes through some versions.
 
+##### Work Icons
+![2020 Work Icons](documentation/2020-work-icons.png)
+##### Portfolio
+![2020 Portfolio](documentation/2020-portfolio.png)
+
+<details>
+<summary>See other my work versions</summary>
+<details>
+<summary>2010</summary>
+
+##### Work Icons
+![2010 Work Icons](documentation/2010-work-icons.png)
+##### Portfolio
+![2010 Portfolio](documentation/2010-portfolio.png)
+</details>
+
+<details>
+<summary>2000</summary>
+
+##### Work Icons
+![2000 Work Icons](documentation/2000-work-icons.png)
+##### Portfolio
+![2000 Portfolio](documentation/2000-portfolio.png)
+</details>
+
+<details>
+<summary>1990</summary>
+
+##### Work Icons
+![1990 Work Icons](documentation/1990-work-icons.png)
+##### Portfolio
+![1990 Portfolio](documentation/1990-portfolio.png)
+</details>
+
+<details>
+<summary>1980</summary>
+
+##### Work Icons
+![1980 Work Icons](documentation/1980-work-icons.png)
+##### Portfolio
+![1980 Portfolio](documentation/1980-portfolio.png)
+</details>
+
+</details>
+
+
 #### Contact
+The contact section consists of a form with redirect temporarily to a confitmation.html page. All the input displayed are mandatory. In the form all items are displayed in the revserse order and then have aplied a reverse column flex so the labels can be  stylized when the input are active.
+
 
 #### Footer
 The footer consists on my name and 2 links, one for my github profile and one to automatically send me an Email. this always share the same styling as the navbar to provide consistency but is not fixed positioned.
+
+#### ASCII Code
+As seen in the about me section and my work section, in the 1980 version there are no images used. Instead there is Ascii code art aplied in this section to provide the acompaning art.
 
 ## Testing
 ### Validator
