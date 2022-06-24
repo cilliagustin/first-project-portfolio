@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+
 //general variables
 let cssFile = document.getElementById("style");
 let favicon = document.getElementById("favicon");
@@ -78,7 +80,7 @@ function hideAll(){
         iconLink, btnLink, portInfoIcon, portInfoText].flat();
     
     allElements.forEach(function(el) {
-        el.classList.add("hide")
+        el.classList.add("hide");
     });
 
 }
@@ -87,14 +89,14 @@ function hideAll(){
 function displayLoader(){
     loader.classList.remove("hide");
     document.body.style.overflowY = "hidden";
-};
+}
 
 function blockLoader(){
     setTimeout(() => {
         loader.classList.add("hide");
         document.body.style.overflowY = "auto";
     }, 1500);
-};
+}
 
 //set decades functions
 
@@ -108,7 +110,7 @@ function setEighties() {
         eightiesIconNavegate, eightiesIconModern, eightiesIconFast, 
         btnLink, portInfoText].flat();
     eightiesElements.forEach(function(el) {
-        el.classList.remove("hide")
+        el.classList.remove("hide");
     });
     blockLoader();
 }
@@ -124,7 +126,7 @@ function setNineties() {
         btnLink, portInfoText,ninetiesContactTitle, ninetiesContactImg, 
         ninetiesHr].flat();
     ninetiesElements.forEach(function(el) {
-        el.classList.remove("hide")
+        el.classList.remove("hide");
     });
     blockLoader();
 }
@@ -139,7 +141,7 @@ function setTwoThousands() {
         twoThousandsIconNavegate, twoThousandsIconModern, twoThousandsIconFast,
         btnLink, portInfoText].flat();
     twoThousandsElements.forEach(function(el) {
-        el.classList.remove("hide")
+        el.classList.remove("hide");
     });
     blockLoader();
 }
@@ -152,9 +154,9 @@ function setTwentyTen() {
     hideAll();
     let twentyTenElements = [twentyTenProfilePic, twentyTenAboutImg, 
         twentyTenIconResponsive, twentyTenIconNavegate, twentyTenIconModern, 
-        twentyTenIconFast, iconLink, portInfoIcon].flat()
+        twentyTenIconFast, iconLink, portInfoIcon].flat();
     twentyTenElements.forEach(function(el) {
-        el.classList.remove("hide")
+        el.classList.remove("hide");
     });
     blockLoader();
 }
@@ -169,7 +171,7 @@ function setTwentyTwenty() {
         twentyTwentyIconResponsive, twentyTwentyIconNavegate, 
         twentyTwentyIconModern, twentyTwentyIconFast, iconLink, portInfoIcon].flat();
     TwentyTwentyElements.forEach(function(el) {
-        el.classList.remove("hide")
+        el.classList.remove("hide");
     });
     blockLoader();
 }
@@ -178,7 +180,8 @@ function setTwentyTwenty() {
 
 
 window.addEventListener("scroll", () => {
-    var current = "";
+    let current = "";
+    let pageYOffset;
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         if (pageYOffset >= sectionTop - 60) {
@@ -192,9 +195,3 @@ window.addEventListener("scroll", () => {
         }
       });
   });
-
-
-
-
-
-
