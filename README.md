@@ -139,6 +139,23 @@ Result from [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/bl
 ### Frameworks, Libraries & Programs Used
 
 ## Deployment
+​
+The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the [GitHub repository](https://github.com/cilliagustin/first-project-portfolio), navigate to the Settings tab 
+  - From the source section drop-down menu, select the **Main** Branch, then click "Save".
+  - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+​
+The live link can be found [here](https://cilliagustin.github.io/first-project-portfolio)
+​
+### Local Deployment
+​
+In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository:
+​
+- `git clone https://github.com/cilliagustin/first-project-portfolio.git`
+​
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+​
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/cilliagustin/first-project-portfolio)
 
 ## Credits
 
