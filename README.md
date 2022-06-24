@@ -252,30 +252,8 @@ The footer consists on my name and 2 links, one for my github profile and one to
 As seen in the about me section and my work section, in the 1980 version there are no images used. Instead there is Ascii code art aplied in this section to provide the acompaning art.
 
 ## Testing
-### Validator
-#### HTML
-Result from [W3C Markup Validation Service](https://validator.w3.org/):
-![HTML Validator](documentation/HTML-validator.png)
-   
-#### CSS
-Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/):
-![CSS Validator](documentation/CSS-validator.png)
 
-#### Lighthouse
-Result from [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=es):
-![Lighthouse](documentation/lighthouse.png)
-
-### Bugs
-* On Safari the inputs (text and textarea) did not accept the styling. This was fixed by explicitely adding a border-radius 0 and -webkit-appearance none.
-<details>
-<summary>See bug</summary>
-
-![1990 Bug](documentation/1990-bug-safari.png)
-</details>
-
-
-
-### Unfixed Bugs
+Testing information can be found in a separate testing [file](TESTING.md "Link to testing file")
 
 ## Technologies Used
 ### Main Languages Used
