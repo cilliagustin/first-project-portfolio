@@ -233,6 +233,7 @@ mark{
     padding: 1px;
     margin: 0;
 }
+
 .img-container img{
     width: 100%;
 }
@@ -371,9 +372,7 @@ mark{
     color: var(--blue-main);
 }
 
-
 /* CONTACT */
-
 
 .contact-card{
     width: 100%;
@@ -476,14 +475,11 @@ footer .footer-icons a i{
         border-radius: 2px 2px 0 0;
     }
 
-
     #navbar .nav .menu ul li,
     #navbar .nav .side-menu:checked ~ .menu ul li{
         display: inline-block;
         margin: 0;
     }
-
-
 
     #navbar .nav .menu ul{
         flex-direction: row;
@@ -556,6 +552,7 @@ footer .footer-icons a i{
         display: flex;
         justify-content: flex-end;
     }
+    
     .profile-pic img{
         width: 100px;
         border-radius: 0;

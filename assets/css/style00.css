@@ -219,7 +219,6 @@ mark{
     height: 24px;
 }
 
-
 /* TOGGLED .NAVBAR */
 
 #navbar .nav .side-menu:checked ~ .menu{
@@ -323,7 +322,6 @@ mark{
     animation-iteration-count: infinite;
 }
 
-
 .button-container button{
     margin: .2em;
 }
@@ -375,7 +373,6 @@ mark{
 .about-me-text .about-me-list{
     list-style: disc;
 }
-
 
 /* MY WORK */
 
@@ -516,6 +513,7 @@ mark{
 .portfolio-card .portfolio-links .btn-custom:hover{
     background: var(--inverted-red-gradient);
 }
+
 /* CONTACT */
 
 .contact-card{
@@ -525,7 +523,6 @@ mark{
     padding: 1em 2em; 
     margin: .8em 0;
 }
-
 
 .contact-card form label{
     transition: var(--transition-03s);
@@ -633,6 +630,7 @@ footer .footer-icons .btn-custom{
         border-bottom: none;
         border-radius: 3px 3px 0 0;
     }
+
     #navbar .nav .menu ul li.active,
     #navbar .nav .side-menu:checked ~ .menu ul li.active,
     #navbar .nav .menu ul li:hover,
@@ -692,7 +690,6 @@ footer .footer-icons .btn-custom{
         display: inline;
         float: left;
     }
-    
 
     /* MY WORK */
 
@@ -715,7 +712,6 @@ footer .footer-icons .btn-custom{
         flex-flow: column;
         align-items: flex-end;
     }
-
     
     .portfolio-card{
         margin: 0;
@@ -734,5 +730,4 @@ footer .footer-icons .btn-custom{
         width: 40%;
         max-width: 200px;
     }
-
 }

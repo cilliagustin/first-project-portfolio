@@ -190,7 +190,6 @@ nav{
     color: var(--background-green);
 }
 
-
 .portfolio{
     padding: 1em 0;
 }
@@ -303,7 +302,6 @@ footer .btn-custom{
     margin: 0;
 }
 
-
 /* DESKTOP */
 
 @media (min-width: 768px) {
@@ -371,4 +369,3 @@ footer .btn-custom{
 .hide{
     display: none!important;
 }
-

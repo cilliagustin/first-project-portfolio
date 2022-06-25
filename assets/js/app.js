@@ -82,7 +82,6 @@ function hideAll(){
     allElements.forEach(function(el) {
         el.classList.add("hide");
     });
-
 }
 
 //loader functions

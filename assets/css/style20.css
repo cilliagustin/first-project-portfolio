@@ -102,7 +102,7 @@ nav{
 #navbar .nav .menu ul li.active a::before,
 #navbar .nav .menu ul li a:hover::before {
     transform: scaleX(1);
-  }
+}
 
 /* HOME */
 
@@ -382,7 +382,7 @@ nav{
 
 ::placeholder{ 
     color: var(--gray-typography)!important;
-  }
+}
 
 .contact-card:hover{
     background: rgb(58, 64, 88);
@@ -401,6 +401,7 @@ nav{
     border-radius: 4px;
     transition: var(--transition-03s);
 }
+
 .contact-card input:focus-visible,
 .contact-card textarea:focus-visible{
     outline: .5px solid var(--blue);
