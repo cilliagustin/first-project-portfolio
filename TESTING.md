@@ -87,3 +87,6 @@ This was fixed by adding a specific height rule for the text area only on Firefo
 
 ## Unfixed Bugs
 There are no remaining bugs that I am aware of.
+
+## Version Control
+During my conversations with my mentor he called to my atention the fact that I was not correctly commiting my updates to the website (I added very few commits with long texts and many changes). After he informed me this and reminded me the correct way to aproach this I quickly changed my way of working but most of the website was with a wrong aproach to commits.
