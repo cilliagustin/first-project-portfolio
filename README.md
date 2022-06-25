@@ -339,4 +339,10 @@ I took inspiration from many sources to create the diferent versions of my websi
     * This version takes inspiration from the [Windows 98](https://en.wikipedia.org/wiki/Windows_98) operating system. [Jordan Scales](https://github.com/jdan) has a [project](https://jdan.github.io/98.css/) where he designed a website recreating this operating system, I took most of the color palette and how the buttons work from here.
 * 1980
     * For this versions I took inspiration from [Chris Coyier´s](https://github.com/chriscoyier) [tutorial](https://css-tricks.com/old-timey-terminal-styling/) and from [Michael Micallef´s](https://codepen.io/michaelmicallef) [project](https://codepen.io/michaelmicallef/pen/ZpNRVZ)
+
+### Code
+* Nav-link's to active as you scroll through sections - [dev-to](https://dev.to/areeburrub/change-nav-link-s-style-as-you-scroll-4p62)
+* Marquee Effect in HTML and CSS - [Youtube](https://www.youtube.com/watch?v=hOkPZOEIAh4&ab_channel=RyanWebTech)
+* Creating a responsive mobile menu with CSS without JavaScript (this was changed in order to use flexbox instead of floats) - [LogRocket](https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/)
+
 ## Acknowledgements
