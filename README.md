@@ -251,6 +251,12 @@ The footer consists on my name and 2 links, one for my github profile and one to
 #### ASCII Code
 As seen in the about me section and my work section, in the 1980 version there are no images used. Instead there is Ascii code art aplied in this section to provide the acompaning art.
 
+#### JavaScript
+The websites uses 2 functions:
+  * The first one activates when the buttons are pressed. this chyanges the css file, hides all unnecesary elements and displays the elements necesary for that version. 
+  * The second one activates when scrolling and detects where the user is standing and changes the active class to the corresponding nav link.
+On my first project call my mentor pointed out that I was not correctly working on my JS file. I originally deleted the elements instead of hiding them and created new with inner-HTML, after the call i put all the HTML elements on the HTML file and used the js only to hide them and show them when necesary.
+
 ## Testing
 Testing information can be found in a separate testing [file](TESTING.md "Link to testing file")
 
@@ -283,12 +289,14 @@ I aplied for the website some technologies that are beyond the scope of what Cod
 -   [JSHint](https://jshint.com/)
     - Used to validate Javascript.
 -   [Microsoft Paint](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H?hl=en-us&gl=US)
+-   [TinyPNG](https://tinypng.com/)
+    - Used to compress the size of my images.
     - Used edit screenshots for README file.
 -   [Coolors](https://coolors.co/)
       - Used to display palettes used for README file.
 -   [Am I Responsive?](https://ui.dev/amiresponsive)
       - Used to provide responsive screenshots used at the begining of the README file.
--   [Adobe](https://www.adobe.com/products/illustrator.html?promoid=RYGDN24L&mv=other)
+-   [Adobe Illustrator](https://www.adobe.com/products/illustrator.html?promoid=RYGDN24L&mv=other)
       - Used to create the Logos located in the Navbar.
 -   [The Wayback Macxhine](https://archive.org/web/)
       - Used to visualize websites earlier versions for inspiration.
@@ -346,3 +354,6 @@ I took inspiration from many sources to create the diferent versions of my websi
 * Creating a responsive mobile menu with CSS without JavaScript (this was changed in order to use flexbox instead of floats) - [LogRocket](https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/)
 
 ## Acknowledgements
+* To my Wife, Milagros, who designed and illustrated all the Logos for the website.
+* To my mentor, that not only guided me to archive the website that I had in mind but also pointed out ways to improve it and make a cleaner and structured code removing all the duplicated code I originally had.
+* To [Rebecca Rayner](https://github.com/Irishbecky91) from who I took inspiration for my README file from her [project](https://github.com/Irishbecky91/survival-guild/blob/main/README.md).
