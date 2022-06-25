@@ -262,6 +262,10 @@ Testing information can be found in a separate testing [file](TESTING.md "Link t
 
 ## Technologies Used
 ### Main Languages Used
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
 
 ### Frameworks, Libraries & Programs Used
 
