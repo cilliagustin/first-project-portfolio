@@ -34,7 +34,7 @@ The website consists in a landing page divided in 4 sections:
 In the home section is a container with 5 different buttons, this can be pressed and toggle the different versions of the website. Changing, without refreshing, the site.
 
 ### Skeleton
-The wireframes were created with the first version (the 2020 version) in mind. The other versions used most of the same structures but had some changes that differ from the original one. The wireframes were drawn using a desktop version of [Balsamiq](https://balsamiq.com/), the key for this aplication was provided by [Code Institute](https://codeinstitute.net/global/).
+The wireframes were created with the first version (the 2020 version) in mind. The other versions used most of the same structures but had some changes that differ from the original one. The wireframes were drawn using [Balsamiq](https://balsamiq.com/), the key for this aplication was provided by [Code Institute](https://codeinstitute.net/global/).
 #### Mobile Wireframe
 <details>
 <summary>Wireframe</summary>
@@ -52,8 +52,8 @@ The wireframes were created with the first version (the 2020 version) in mind. T
 ### Design
 #### Design description
 The design was made with a mobile first aproach. Using flexbox and mediaqueries to create the positioning for mobile and desktop versions.
-* The 2020 version is a design created taking inspiration from varios web developer portfolio. the concept is a minimalistic and futuristic aproach of web design. This uses thin lines and a box-shadow to give elements a led effect when necesary.
-* The 2010 version is inspired on the 2010 [facebook](https://www.facebook.com/) wall. All the information is displayed as if it were Facebook posts with the exception of the profile picture and the buttons for toggeling the versions that in the desktop version are fix positioned to look like asides.
+* The 2020 version is a design created taking inspiration from various web developer portfolios. the concept is a minimalistic and futuristic aproach of web design. This uses thin lines and a box-shadow to give elements a led effect when necessary.
+* The 2010 version is inspired on the 2010 [facebook](https://www.facebook.com/) wall. All the information is displayed as if they were Facebook posts with the exception of the profile picture and the buttons for toggeling the versions that in the desktop version are fix positioned to look like asides.
 * The 2000 version takes inspiration for the websites used in the beginning of the millennium. The Main title was stylised to look similar to the Microsoft Word´s WordArt. Floats were used so the text can wrap an image and there are plenty of effects (blink, marquee) applied to catch the user´s eye.
 * The 1990 version takes it´s aesthetic from Microsoft´s Windows 98 operating system. Many of the elements were stylized to look like they were engraved in the screen and some look like they actually raise. All buttons have an effect when pressed that look like they are being sunken. The Photo displayed has a pixelated effect to intentionally lower the resolution.
 * The 1980 version looks like an 80´s terminal. The site aplies a text shadow and is covered by an after pseudo element which apllies a filter that makes the whole screen look like a 1980´s computer monitor. This is the only version that does not use images (since it would interfear with the desired aesthetic) Intead in this cases uses ASCII code art to represent the pictures.
@@ -90,6 +90,11 @@ With the exception of my own photos, all images were provided by external source
 ### Features
 #### Loader
 in order to provide a smooth transition when the versions are changed a loader was created. this occupies 100% of the pages height and with and has a fixed positioning blocking all the screen while the new styling for the page is loaded.
+<details>
+<summary>Loader</summary>
+
+![Loader](documentation/loader.png)
+</details>
 
 #### Navbar
 The navbar has a fixed positioning on the top of the website. In the mobile version it collapses into a hamburger menu, when pressed the hamburger it displays the navegation menu. The desktop version displays the navegation menu normally without the use of a hamburger. When the user scrolls, this triggers a function that acording to where the user is located gives the respective nav link the active class. There are 5 different logo images used in the Navbar depending on the decade.
