@@ -1,8 +1,29 @@
 # Testing
-    "Click to return back to the [README.md](README.md)"
+"Click to return back to the [README.md](README.md)"
 
 ## Browser Compatibility
-    you must showcase proof with screenshots that you've tested the finished project on various browsers, such as Chrome, Firefox, Edge, Safari, Brave, etc.
+The site was tested to work correctly in Google Chrome, Mozilla Firefox and Safari. here are some screenshots of the site in the diferent browsers.
+<details>
+<summary>Google Chrome</summary>
+
+![2020 Chrome](documentation/screenshot-2020-chrome.png)
+![2010 Chrome](documentation/screenshot-2010-chrome.png)
+</details>
+
+<details>
+<summary>Firefox</summary>
+
+![2020 Firefox](documentation/screenshot-2000-firefox.png)
+![2010 Firefox](documentation/screenshot-1990-firefox.png)
+</details>
+
+<details>
+<summary>Safari</summary>
+
+![2020 Safari](documentation/screenshot-2020-safari.png)
+![2010 Safari](documentation/screenshot-1980-safari.png)
+</details>
+
 ## Code Validation
 
 ### HTML
@@ -34,15 +55,35 @@ Result from [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/bl
 ![Lighthouse](documentation/lighthouse.png)
 
 ## Responsiveness
-    you must showcase proof with screenshots that you've tested the finished project on different device sizes, such as mobile, tablet, desktop.
+Here are screenshots of the website on the desktop and mobile version. The breakpoint for this is at 768px of width. There is no comparisson provided for the 1980 and 1990 versions since their main structure is very similar to the 2020´s one. There are though comparisions provided for the 2000 and 2010 since they structure varies a little bit more from the 2020 version.
+<details>
+<summary>2020</summary>
+
+![2020 Desktop](documentation/screenshot-2020-desktop.png)
+![2020 Mobile](documentation/screenshot-2020-chrome.png)
+</details>
+<details>
+<summary>2010</summary>
+
+![2010 Desktop](documentation/screenshot-2010-desktop.png)
+![2010 Mobile](documentation/screenshot-2010-chrome.png)
+</details>
+<details>
+<summary>2000</summary>
+
+![2000 Desktop](documentation/screenshot-2000-desktop.png)
+![2000 Mobile](documentation/screenshot-2000-firefox.png)
+</details>
 
 ## Bugs
-* On Safari the inputs (text and textarea) did not accept the styling. This was fixed by explicitely adding a border-radius 0 and -webkit-appearance none.
+* On the 1990 version there was a problem with the inputs in the Form. On Firefox the text area has a bigger size than on other browsers and in Safari both text inputs and the textarea did not accept the styling rules.
+This was fixed by adding a specific height rule for the text area only on Firefox and the bug with safari required a "-webkit-appearance none" rule and setting a specific border radius.
+
 <details>
 <summary>See bug</summary>
 
-![1990 Bug](documentation/1990-bug-safari.png)
+![1990 Bug](documentation/contact-bug.png)
 </details>
 
 ## Unfixed Bugs
-There are no remaining bugs that I am aware of
+There are no remaining bugs that I am aware of.
