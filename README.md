@@ -266,8 +266,33 @@ Testing information can be found in a separate testing [file](TESTING.md "Link t
 * [CSS](https://en.wikipedia.org/wiki/CSS)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
+### Other technologies Used
+I aplied for the website some technologies that are beyond the scope of what Code institute teaches:
+* Flexbox
+* Root variables
 
 ### Frameworks, Libraries & Programs Used
+-   [Google Fonts](https://fonts.google.com/)
+    - Used to import fonts
+-   [Font Awesome](https://fontawesome.com/)
+    - Used to add icons in the 2020 and 2010 versions
+-   [Balsamiq](https://balsamiq.com/)
+    - Used to create the wireframes.
+-   [Git](https://git-scm.com/)
+    - Used to deploy through the Gitpod terminal.
+-   [GitHub](https://github.com/)
+    - Used the GitHub pages to deploy the website.
+-   [W3C Markup Validation Service](https://validator.w3.org/)
+    - Used to validate HTML.
+-   [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+    - Used to validate CSS.
+-   [JSHint](https://jshint.com/)
+    - Used to validate Javascript.
+-   [Microsoft Paint](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H?hl=en-us&gl=US)
+    - Used edit screenshots for README file.
+-   [Coolors](https://coolors.co/)
+      - Used to display palettes used for README file.
+    
 
 ## Deployment
 ​
