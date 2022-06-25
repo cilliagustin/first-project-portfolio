@@ -411,6 +411,12 @@ form :nth-child(5){
     -webkit-appearance: none;
 }
 
+@supports (-moz-appearance:none) {
+    .contact-card form textarea { 
+        height: 80px;
+    } 
+}
+
 .contact-card input:focus-visible,
 .contact-card textarea:focus-visible{
     outline: .1px solid var(--background-gray);
