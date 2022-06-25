@@ -292,6 +292,31 @@ I aplied for the website some technologies that are beyond the scope of what Cod
     - Used edit screenshots for README file.
 -   [Coolors](https://coolors.co/)
       - Used to display palettes used for README file.
+-   [Am I Responsive?](https://ui.dev/amiresponsive)
+      - Used to provide responsive screenshots used at the begining of the README file.
+-   [Adobe](https://www.adobe.com/products/illustrator.html?promoid=RYGDN24L&mv=other)
+      - Used to create the Logos located in the Navbar.
+-   [The Wayback Macxhine](https://archive.org/web/)
+      - Used to visualize websites earlier versions for inspiration.
+-   [Many Tools](https://manytools.org/hacker-tools/convert-images-to-ascii-art/)
+      - Used for creating the ASCII code desplayed on the 1980 version.
+-   [Windows 98 Icons by Alex Meub](https://win98icons.alexmeub.com/)
+      - Used to provide the icons used on the 1990 version.
+-   [Gif Cities](https://gifcities.org/)
+      - Provides the gif file used on the 2000 version.
+-   [Pexels](https://www.pexels.com/)
+      - Used to provide the free licensing image used on the 2000 banner.
+-   [Free SVG](https://freesvg.org/)
+      - Used to provide some the SVG images used on the 2000 version.
+-   []()
+      - Used .
+-   []()
+      - Used .
+-   []()
+      - Used .
+-   []()
+      - Used .
+
     
 
 ## Deployment
