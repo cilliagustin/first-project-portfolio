@@ -342,7 +342,7 @@ I took inspiration from many sources to create the diferent versions of my websi
     * For this version both structure and color scheme was taken from he 2010 version of the [facebook](https://www.facebook.com/) wall. [This](https://techcrunch.com/wp-content/uploads/2010/12/fbprofile3.png) is the image I took as reference for the Desktop version and the inspiration for the mobile versions are [this](https://techcrunch.com/wp-content/uploads/2010/06/aaa2.png) and [this](https://newsfeed.org/wp-content/uploads/mobile-facebook-ads-1260x840.jpg).
 * 2000
     * In this version I used [The Wayback Macxhine](https://archive.org/web/) to see old versions of websites which help me decide the correct structure. The Navbar is inspired by the [2001 Apple](https://web.archive.org/web/20010701002920/http://www.apple.com/) Navbar and the background by the [2003 Britney Spears](https://web.archive.org/web/20040901074530/http://www.britneyspears.com/) website.
-    * For the main title I took inspiration for the early 2000´s (Microsoft WordArt)[https://support.microsoft.com/en-us/office/wordart-tools-eb0e6ddc-d9ff-4d4a-859f-fa28e5ad2d00#__toc261522512]
+    * For the main title I took inspiration for the early 2000´s [Microsoft WordArt](https://support.microsoft.com/en-us/office/wordart-tools-eb0e6ddc-d9ff-4d4a-859f-fa28e5ad2d00#__toc261522512)
 * 1990
     * This version takes inspiration from the [Windows 98](https://en.wikipedia.org/wiki/Windows_98) operating system. [Jordan Scales](https://github.com/jdan) has a [project](https://jdan.github.io/98.css/) where he designed a website recreating this operating system, I took most of the color palette and how the buttons work from here.
 * 1980
