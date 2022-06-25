@@ -1,13 +1,13 @@
 # First Project Portfolio
-![2020 screenshot](documentation/20-screenshot-responsive.png)
+![2020 screenshot](documentation/testing/20-screenshot-responsive.png)
 
 <details>
 <summary>Other versions</summary>
 
-![2010 screenshot](documentation/10-screenshot-responsive.png)
-![2000 screenshot](documentation/00-screenshot-responsive.png)
-![1990 screenshot](documentation/90-screenshot-responsive.png)
-![1980 screenshot](documentation/80-screenshot-responsive.png)
+![2010 screenshot](documentation/testing/10-screenshot-responsive.png)
+![2000 screenshot](documentation/testing/00-screenshot-responsive.png)
+![1990 screenshot](documentation/testing/90-screenshot-responsive.png)
+![1980 screenshot](documentation/testing/80-screenshot-responsive.png)
 
 </details>
 
@@ -38,13 +38,13 @@ The wireframes were created with the first version (the 2020 version) in mind. T
 <details>
 <summary>Mobile Wireframe</summary>
 
-![Mobile Wireframe](documentation/mobile-wireframe.png)
+![Mobile Wireframe](documentation/wireframes/mobile-wireframe.png)
 </details>
 
 <details>
 <summary>Desktop Wireframe</summary>
 
-![Desktop Wireframe](documentation/desktop-wireframe.png)
+![Desktop Wireframe](documentation/wireframes/desktop-wireframe.png)
 </details>
 
 ### Design
@@ -59,18 +59,18 @@ The design was made with a mobile first aproach. Using flexbox and mediaqueries 
 #### Colour
 Each version has it´s own color palette that generates enough contrast and provides consistency through all the site, this were created taking inspiration from different sources which will be credited in the credit section.
 ##### 2020 palette
-![2020 Palette](documentation/2020-palette.png)
+![2020 Palette](documentation/testing/2020-palette.png)
 <details>
 <summary>Other Palettes</summary>
 
 ##### 2010 palette
-![2010 Palette](documentation/2010-palette.png)
+![2010 Palette](documentation/testing/2010-palette.png)
 ##### 2000 palette
-![2000 Palette](documentation/2000-palette.png)
+![2000 Palette](documentation/testing/2000-palette.png)
 ##### 1990 palette
-![1990 Palette](documentation/1990-palette.png)
+![1990 Palette](documentation/testing/1990-palette.png)
 ##### 1980 palette
-![1980 Palette](documentation/1980-palette.png)
+![1980 Palette](documentation/testing/1980-palette.png)
 </details>
 
 #### Typography
@@ -90,7 +90,7 @@ in order to provide a smooth transition when the versions are changed a loader w
 <details>
 <summary>See loader</summary>
 
-![Loader](documentation/loader.png)
+![Loader](documentation/testing/loader.png)
 </details>
 
 #### Navbar
@@ -99,32 +99,32 @@ The navbar has a fixed positioning on the top of the website. In the mobile vers
 
 ##### 2020 Navbar
 ###### Mobile
-![2020 Navbar Mobile](documentation/2020-navbar-mobile.png)
+![2020 Navbar Mobile](documentation/testing/2020-navbar-mobile.png)
 ###### Desktop
-![2020 Navbar Desktop](documentation/2020-navbar-desktop.png)
+![2020 Navbar Desktop](documentation/testing/2020-navbar-desktop.png)
 <details>
 <summary>See other Navbars</summary>
 
 ##### 2010 Navbar
 ###### Mobile
-![2010 Navbar Mobile](documentation/2010-navbar-mobile.png)
+![2010 Navbar Mobile](documentation/testing/2010-navbar-mobile.png)
 ###### Desktop
-![2010 Navbar Desktop](documentation/2010-navbar-desktop.png)
+![2010 Navbar Desktop](documentation/testing/2010-navbar-desktop.png)
 ##### 2000 Navbar
 ###### Mobile
-![2000 Navbar Mobile](documentation/2000-navbar-mobile.png)
+![2000 Navbar Mobile](documentation/testing/2000-navbar-mobile.png)
 ###### Desktop
-![2000 Navbar Desktop](documentation/2000-navbar-desktop.png)
+![2000 Navbar Desktop](documentation/testing/2000-navbar-desktop.png)
 ##### 1990 Navbar
 ###### Mobile
-![1990 Navbar Mobile](documentation/1990-navbar-mobile.png)
+![1990 Navbar Mobile](documentation/testing/1990-navbar-mobile.png)
 ###### Desktop
-![1990 Navbar Desktop](documentation/1990-navbar-desktop.png)
+![1990 Navbar Desktop](documentation/testing/1990-navbar-desktop.png)
 ##### 1980 Navbar
 ###### Mobile
-![1980 Navbar Mobile](documentation/1980-navbar-mobile.png)
+![1980 Navbar Mobile](documentation/testing/1980-navbar-mobile.png)
 ###### Desktop
-![1980 Navbar Desktop](documentation/1980-navbar-desktop.png)
+![1980 Navbar Desktop](documentation/testing/1980-navbar-desktop.png)
 </details>
 
 #### Home
@@ -135,27 +135,27 @@ The home section consists of the Title, subtitle and introductory text for the w
 #### Buttons
 This activate the main Javascript function that is the one that changes the css file, favicon and hides and shows the corresponding elements.
 ##### 2020 Buttons
-![2020 Buttons Desktop](documentation/2020-buttons.png)
+![2020 Buttons Desktop](documentation/testing/2020-buttons.png)
 <details>
 <summary>See other buttons</summary>
 
 ##### 2010 Buttons
-![2010 Buttons Desktop](documentation/2010-buttons.png)
+![2010 Buttons Desktop](documentation/testing/2010-buttons.png)
 ##### 2000 Buttons
-![2000 Buttons Desktop](documentation/2000-buttons.png)
+![2000 Buttons Desktop](documentation/testing/2000-buttons.png)
 ##### 1990 Buttons
-![1990 Buttons Desktop](documentation/1990-buttons.png)
+![1990 Buttons Desktop](documentation/testing/1990-buttons.png)
 ##### 1980 Buttons
-![1980 Buttons Desktop](documentation/1980-buttons.png)
+![1980 Buttons Desktop](documentation/testing/1980-buttons.png)
 </details>
 
 #### About me
 This section conists on an image, followed by a text that describes my experience. In the mobile version the text is located under the image and in bigger screen is sometimes located next to it.
 
 ##### Mobile
-![2020 About Me Mobile](documentation/2020-aboutme-mobile.png)
+![2020 About Me Mobile](documentation/testing/2020-aboutme-mobile.png)
 ##### Desktop
-![2020 About Me Desktop](documentation/2020-aboutme-desktop.png)
+![2020 About Me Desktop](documentation/testing/2020-aboutme-desktop.png)
 
 <details>
 <summary>See Other About Me versions</summary>
@@ -164,32 +164,32 @@ This section conists on an image, followed by a text that describes my experienc
 <summary>See 2010 Version</summary>
 
 ##### There Are no noticable changes between desktop and mobile versions
-![2010 About Me](documentation/2010-aboutme.png)
+![2010 About Me](documentation/testing/2010-aboutme.png)
 </details>
 
 <details>
 <summary>See 2000 Version</summary>
 
 ##### Mobile
-![2000 About Me Mobile](documentation/2000-aboutme-mobile.png)
+![2000 About Me Mobile](documentation/testing/2000-aboutme-mobile.png)
 ##### Desktop
-![2000 About Me Desktop](documentation/2000-aboutme-desktop.png)
+![2000 About Me Desktop](documentation/testing/2000-aboutme-desktop.png)
 </details>
 
 <details>
 <summary>See 1990 Version</summary>
 
 ##### Mobile
-![1990 About Me Mobile](documentation/1990-aboutme-mobile.png)
+![1990 About Me Mobile](documentation/testing/1990-aboutme-mobile.png)
 ##### Desktop
-![1990 About Me Desktop](documentation/1990-aboutme-desktop.png)
+![1990 About Me Desktop](documentation/testing/1990-aboutme-desktop.png)
 </details>
 
 <details>
 <summary>See 1980 Version</summary>
 
 ##### There Are no noticable changes between desktop and mobile versions
-![1980 About Me](documentation/1980-aboutme.png)
+![1980 About Me](documentation/testing/1980-aboutme.png)
 </details>
 
 </details>
@@ -198,9 +198,9 @@ This section conists on an image, followed by a text that describes my experienc
 My work section consists first of 4 icons that describe some of the characteristics of my work (Responsive, easy to navigate, Modern and fast). followed by it is my current portfolio (two projects when this file was written) each portfolio card consists of the title of the website, the website description, a list of technologies used and language abvailable for the website and two links (one for the website and one for the GitHub repository) but the order of how this information is presenter changes through some versions.
 
 ##### Work Icons
-![2020 Work Icons](documentation/2020-work-icons.png)
+![2020 Work Icons](documentation/testing/2020-work-icons.png)
 ##### Portfolio
-![2020 Portfolio](documentation/2020-portfolio.png)
+![2020 Portfolio](documentation/testing/2020-portfolio.png)
 
 <details>
 <summary>See other my work versions</summary>
@@ -208,36 +208,36 @@ My work section consists first of 4 icons that describe some of the characterist
 <summary>2010</summary>
 
 ##### Work Icons
-![2010 Work Icons](documentation/2010-work-icons.png)
+![2010 Work Icons](documentation/testing/2010-work-icons.png)
 ##### Portfolio
-![2010 Portfolio](documentation/2010-portfolio.png)
+![2010 Portfolio](documentation/testing/2010-portfolio.png)
 </details>
 
 <details>
 <summary>2000</summary>
 
 ##### Work Icons
-![2000 Work Icons](documentation/2000-work-icons.png)
+![2000 Work Icons](documentation/testing/2000-work-icons.png)
 ##### Portfolio
-![2000 Portfolio](documentation/2000-portfolio.png)
+![2000 Portfolio](documentation/testing/2000-portfolio.png)
 </details>
 
 <details>
 <summary>1990</summary>
 
 ##### Work Icons
-![1990 Work Icons](documentation/1990-work-icons.png)
+![1990 Work Icons](documentation/testing/1990-work-icons.png)
 ##### Portfolio
-![1990 Portfolio](documentation/1990-portfolio.png)
+![1990 Portfolio](documentation/testing/1990-portfolio.png)
 </details>
 
 <details>
 <summary>1980</summary>
 
 ##### Work Icons
-![1980 Work Icons](documentation/1980-work-icons.png)
+![1980 Work Icons](documentation/testing/1980-work-icons.png)
 ##### Portfolio
-![1980 Portfolio](documentation/1980-portfolio.png)
+![1980 Portfolio](documentation/testing/1980-portfolio.png)
 </details>
 
 </details>

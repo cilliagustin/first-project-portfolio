@@ -6,73 +6,73 @@ The site was tested to work correctly in Google Chrome, Mozilla Firefox and Safa
 <details>
 <summary>Google Chrome</summary>
 
-![2020 Chrome](documentation/screenshot-2020-chrome.png)
-![2010 Chrome](documentation/screenshot-2010-chrome.png)
+![2020 Chrome](documentation/testing/screenshot-2020-chrome.png)
+![2010 Chrome](documentation/testing/screenshot-2010-chrome.png)
 </details>
 
 <details>
 <summary>Firefox</summary>
 
-![2020 Firefox](documentation/screenshot-2000-firefox.png)
-![2010 Firefox](documentation/screenshot-1990-firefox.png)
+![2020 Firefox](documentation/testing/screenshot-2000-firefox.png)
+![2010 Firefox](documentation/testing/screenshot-1990-firefox.png)
 </details>
 
 <details>
 <summary>Safari</summary>
 
-![2020 Safari](documentation/screenshot-2020-safari.png)
-![2010 Safari](documentation/screenshot-1980-safari.png)
+![2020 Safari](documentation/testing/screenshot-2020-safari.png)
+![2010 Safari](documentation/testing/screenshot-1980-safari.png)
 </details>
 
 ## Code Validation
 
 ### HTML
 Result from [W3C Markup Validation Service](https://validator.w3.org/):
-![HTML Validator](documentation/HTML-validator.png)
+![HTML Validator](documentation/testing/HTML-validator.png)
    
 ### CSS
 Since the website has 6 different css files each one has been validated.
 
 Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) for general styling:
-![CSS Validator](documentation/CSS-validator.png)
+![CSS Validator](documentation/testing/CSS-validator.png)
 Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) for 2020 style sheet:
-![CSS Validator](documentation/CSS20-validator.png)
+![CSS Validator](documentation/testing/CSS20-validator.png)
 Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)for 2010 style sheet:
-![CSS Validator](documentation/CSS10-validator.png)
+![CSS Validator](documentation/testing/CSS10-validator.png)
 Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)for 2000 style sheet:
-![CSS Validator](documentation/CSS00-validator.png)
+![CSS Validator](documentation/testing/CSS00-validator.png)
 Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)for 1990 style sheet:
-![CSS Validator](documentation/CSS90-validator.png)
+![CSS Validator](documentation/testing/CSS90-validator.png)
 Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)for 1980 style sheet:
-![CSS Validator](documentation/CSS80-validator.png)
+![CSS Validator](documentation/testing/CSS80-validator.png)
 
 ### JavaScript
 Result from [JSHint](https://jshint.com/):
-![JS Validator](documentation/js-validator.png)
+![JS Validator](documentation/testing/js-validator.png)
 
 ### Lighthouse
 Result from [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=es):
-![Lighthouse](documentation/lighthouse.png)
+![Lighthouse](documentation/testing/lighthouse.png)
 
 ## Responsiveness
 Here are screenshots of the website on the desktop and mobile version. The breakpoint for this is at 768px of width. There is no comparisson provided for the 1980 and 1990 versions since their main structure is very similar to the 2020´s one. There are though comparisions provided for the 2000 and 2010 since they structure varies a little bit more from the 2020 version.
 <details>
 <summary>2020</summary>
 
-![2020 Desktop](documentation/screenshot-2020-desktop.png)
-![2020 Mobile](documentation/screenshot-2020-chrome.png)
+![2020 Desktop](documentation/testing/screenshot-2020-desktop.png)
+![2020 Mobile](documentation/testing/screenshot-2020-chrome.png)
 </details>
 <details>
 <summary>2010</summary>
 
-![2010 Desktop](documentation/screenshot-2010-desktop.png)
-![2010 Mobile](documentation/screenshot-2010-chrome.png)
+![2010 Desktop](documentation/testing/screenshot-2010-desktop.png)
+![2010 Mobile](documentation/testing/screenshot-2010-chrome.png)
 </details>
 <details>
 <summary>2000</summary>
 
-![2000 Desktop](documentation/screenshot-2000-desktop.png)
-![2000 Mobile](documentation/screenshot-2000-firefox.png)
+![2000 Desktop](documentation/testing/screenshot-2000-desktop.png)
+![2000 Mobile](documentation/testing/screenshot-2000-firefox.png)
 </details>
 
 ## Bugs
@@ -82,7 +82,7 @@ This was fixed by adding a specific height rule for the text area only on Firefo
 <details>
 <summary>See bug</summary>
 
-![1990 Bug](documentation/contact-bug.png)
+![1990 Bug](documentation/testing/contact-bug.png)
 </details>
 
 ## Unfixed Bugs
