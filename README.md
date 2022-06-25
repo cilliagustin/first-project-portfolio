@@ -1,6 +1,6 @@
 # First Project Portfolio
-
 ![2020 screenshot](documentation/20-screenshot-responsive.png)
+
 <details>
 <summary>Other versions</summary>
 
@@ -35,16 +35,14 @@ In the home section is a container with 5 different buttons, this can be pressed
 
 ### Skeleton
 The wireframes were created with the first version (the 2020 version) in mind. The other versions used most of the same structures but had some changes that differ from the original one. The wireframes were drawn using [Balsamiq](https://balsamiq.com/), the key for this aplication was provided by [Code Institute](https://codeinstitute.net/global/).
-#### Mobile Wireframe
 <details>
-<summary>Wireframe</summary>
+<summary>Mobile Wireframe</summary>
 
 ![Mobile Wireframe](documentation/mobile-wireframe.png)
 </details>
 
-#### Desktop Wireframe
 <details>
-<summary>Wireframe</summary>
+<summary>Desktop Wireframe</summary>
 
 ![Desktop Wireframe](documentation/desktop-wireframe.png)
 </details>
@@ -62,7 +60,6 @@ The design was made with a mobile first aproach. Using flexbox and mediaqueries 
 Each version has it´s own color palette that generates enough contrast and provides consistency through all the site, this were created taking inspiration from different sources which will be credited in the credit section.
 ##### 2020 palette
 ![2020 Palette](documentation/2020-palette.png)
-
 <details>
 <summary>Other Palettes</summary>
 
@@ -91,7 +88,7 @@ With the exception of my own photos, all images were provided by external source
 #### Loader
 in order to provide a smooth transition when the versions are changed a loader was created. this occupies 100% of the pages height and with and has a fixed positioning blocking all the screen while the new styling for the page is loaded.
 <details>
-<summary>Loader</summary>
+<summary>See loader</summary>
 
 ![Loader](documentation/loader.png)
 </details>
@@ -99,6 +96,7 @@ in order to provide a smooth transition when the versions are changed a loader w
 #### Navbar
 The navbar has a fixed positioning on the top of the website. In the mobile version it collapses into a hamburger menu, when pressed the hamburger it displays the navegation menu. The desktop version displays the navegation menu normally without the use of a hamburger. When the user scrolls, this triggers a function that acording to where the user is located gives the respective nav link the active class. There are 5 different logo images used in the Navbar depending on the decade.
 * The 2010 version on the mobile version when the Hamburger icon is pressed opens the menu, which occupied 100% of the width and height and displays icons next to the navbar links.
+
 ##### 2020 Navbar
 ###### Mobile
 ![2020 Navbar Mobile](documentation/2020-navbar-mobile.png)
@@ -127,7 +125,6 @@ The navbar has a fixed positioning on the top of the website. In the mobile vers
 ![1980 Navbar Mobile](documentation/1980-navbar-mobile.png)
 ###### Desktop
 ![1980 Navbar Desktop](documentation/1980-navbar-desktop.png)
-
 </details>
 
 #### Home
@@ -150,7 +147,6 @@ This activate the main Javascript function that is the one that changes the css 
 ![1990 Buttons Desktop](documentation/1990-buttons.png)
 ##### 1980 Buttons
 ![1980 Buttons Desktop](documentation/1980-buttons.png)
-
 </details>
 
 #### About me
@@ -163,6 +159,7 @@ This section conists on an image, followed by a text that describes my experienc
 
 <details>
 <summary>See Other About Me versions</summary>
+
 <details>
 <summary>See 2010 Version</summary>
 
@@ -245,10 +242,8 @@ My work section consists first of 4 icons that describe some of the characterist
 
 </details>
 
-
 #### Contact
 The contact section consists of a form with redirect temporarily to a confitmation.html page. All the input displayed are mandatory. In the form all items are displayed in the revserse order and then have aplied a reverse column flex so the labels can be  stylized when the input are active.
-
 
 #### Footer
 The footer consists on my name and 2 links, one for my github profile and one to automatically send me an Email. this always share the same styling as the navbar to provide consistency but is not fixed positioned.
@@ -257,7 +252,6 @@ The footer consists on my name and 2 links, one for my github profile and one to
 As seen in the about me section and my work section, in the 1980 version there are no images used. Instead there is Ascii code art aplied in this section to provide the acompaning art.
 
 ## Testing
-
 Testing information can be found in a separate testing [file](TESTING.md "Link to testing file")
 
 ## Technologies Used
@@ -300,6 +294,8 @@ I aplied for the website some technologies that are beyond the scope of what Cod
       - Used to visualize websites earlier versions for inspiration.
 -   [Many Tools](https://manytools.org/hacker-tools/convert-images-to-ascii-art/)
       - Used for creating the ASCII code desplayed on the 1980 version.
+-   [Online Image Tools](https://onlineimagetools.com/pixelate-image)
+      - Used to pixelate the photo for the 1990 version.
 -   [Windows 98 Icons by Alex Meub](https://win98icons.alexmeub.com/)
       - Used to provide the icons used on the 1990 version.
 -   [Gif Cities](https://gifcities.org/)
@@ -308,16 +304,6 @@ I aplied for the website some technologies that are beyond the scope of what Cod
       - Used to provide the free licensing image used on the 2000 banner.
 -   [Free SVG](https://freesvg.org/)
       - Used to provide some the SVG images used on the 2000 version.
--   []()
-      - Used .
--   []()
-      - Used .
--   []()
-      - Used .
--   []()
-      - Used .
-
-    
 
 ## Deployment
 ​
