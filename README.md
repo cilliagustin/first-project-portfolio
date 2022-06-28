@@ -254,8 +254,8 @@ The Footer consists on my name and 2 links, one for my [GitHub](https://github.c
 As seen in the About Me section and My Work section, in the 1980 version there are no images used. Instead there is ASCII code art aplied in this section to provide the acompaning art.
 
 #### JavaScript
-The websites uses 2 functions:
-  * The first one activates when the buttons are pressed. this chyanges the css file, hides all unnecesary elements and displays the elements necesary for that version. 
+The websites functions can be activated the following ways:
+  * First by pressing the decade buttons. When this happens the loader is unhidden, the CSS link changes, all unnecesary elements are hidden, all elements necesary for that version are shown, and after a second the loader is unhidden. 
   * The second one activates when scrolling and detects where the user is standing and changes the active class to the corresponding nav link.
 On my first project call my mentor pointed out that I was not correctly working on my JS file. I originally deleted the elements instead of hiding them and created new with inner-HTML, after the call i put all the HTML elements on the HTML file and used the js only to hide them and show them when necesary.
 
