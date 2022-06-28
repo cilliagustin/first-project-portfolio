@@ -246,7 +246,7 @@ mark{
     height: 210px;
     padding: .3em;
     background: var(--light-blue);
-    background-image: url(../images/coding.jpg);
+    background-image: url(../images/2000/2000coding.jpg);
     background-size: cover;
     border-bottom: var(--blue-border);
     margin-bottom: 1.1em;
@@ -341,7 +341,7 @@ mark{
     position: relative;
     height: 270px;
     width: 270px;
-    background-image: url(../images/photoTree.jpg);
+    background-image: url(../images/photos/photo-tree.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -360,7 +360,7 @@ mark{
     left: -0.5%;
     border-radius: 50%;
     opacity: .5;
-    background-image: url(../images/spark.gif);
+    background-image: url(../images/2000/2000spark.gif);
     background-size: 50%;
     background-repeat: repeat-x;
     background-position: 5%;

@@ -102,8 +102,8 @@ function blockLoader(){
 function setEighties() {
     displayLoader();
     cssFile.setAttribute("href", "assets/css/style80.css");
-    favicon.setAttribute("href", "assets/images/1980favicon.png");
-    logo.setAttribute("src", "assets/images/1980logo.png");
+    favicon.setAttribute("href", "assets/images/1980/1980favicon.png");
+    logo.setAttribute("src", "assets/images/1980/1980logo.png");
     hideAll();
     let eightiesElements = [eightiesAboutImg, eightiesIconResponsive, 
         eightiesIconNavegate, eightiesIconModern, eightiesIconFast, 
@@ -117,8 +117,8 @@ function setEighties() {
 function setNineties() {
     displayLoader();
     cssFile.setAttribute("href", "assets/css/style90.css");
-    favicon.setAttribute("href", "assets/images/1990favicon.png");
-    logo.setAttribute("src", "assets/images/1990logo.png");
+    favicon.setAttribute("href", "assets/images/1990/1990favicon.png");
+    logo.setAttribute("src", "assets/images/1990/1990logo.png");
     hideAll();
     let ninetiesElements = [ninetiesAboutImg, ninetiesIconResponsive, 
         ninetiesIconNavegate, ninetiesIconModern, ninetiesIconFast, 
@@ -133,8 +133,8 @@ function setNineties() {
 function setTwoThousands() {
     displayLoader();
     cssFile.setAttribute("href", "assets/css/style00.css");
-    favicon.setAttribute("href", "assets/images/2000favicon.png");
-    logo.setAttribute("src", "assets/images/2000logo.png");
+    favicon.setAttribute("href", "assets/images/2000/2000favicon.png");
+    logo.setAttribute("src", "assets/images/2000/2000logo.png");
     hideAll();
     let twoThousandsElements = [twoThousandsAboutImg, twoThousandsIconResponsive, 
         twoThousandsIconNavegate, twoThousandsIconModern, twoThousandsIconFast,
@@ -148,8 +148,8 @@ function setTwoThousands() {
 function setTwentyTen() {
     displayLoader();
     cssFile.setAttribute("href", "assets/css/style10.css");
-    favicon.setAttribute("href", "assets/images/2010logo.png");
-    logo.setAttribute("src", "assets/images/2010logo.png");
+    favicon.setAttribute("href", "assets/images/2010/2010logo.png");
+    logo.setAttribute("src", "assets/images/2010/2010logo.png");
     hideAll();
     let twentyTenElements = [twentyTenProfilePic, twentyTenAboutImg, 
         twentyTenIconResponsive, twentyTenIconNavegate, twentyTenIconModern, 
@@ -163,8 +163,8 @@ function setTwentyTen() {
 function setTwentyTwenty() {
     displayLoader();
     cssFile.setAttribute("href", "assets/css/style20.css");
-    favicon.setAttribute("href", "assets/images/2020favicon.png");
-    logo.setAttribute("src", "assets/images/2020logo.png");
+    favicon.setAttribute("href", "assets/images/2020/2020favicon.png");
+    logo.setAttribute("src", "assets/images/2020/2020logo.png");
     hideAll();
     let TwentyTwentyElements = [twentyTwentyAboutImg, twentyTwentyAboutBorder, 
         twentyTwentyIconResponsive, twentyTwentyIconNavegate, 

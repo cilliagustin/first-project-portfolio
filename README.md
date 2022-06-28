@@ -247,7 +247,7 @@ My work section consists first of 4 icons that describe some of the characterist
 The contact section consists of a form with redirect temporarily to a confitmation.html page. All the input displayed are mandatory. In the form all items are displayed in the revserse order and then have aplied a reverse column flex so the labels can be  stylized when the input are active.
 
 #### Footer
-The footer consists on my name and 2 links, one for my github profile and one to automatically send me an Email. this always share the same styling as the navbar to provide consistency but is not fixed positioned.
+The footer consists on my name and 2 links, one for my github profile and one to automatically send me an Email. This always share the same styling as the navbar to provide consistency but is not fixed positioned. In some cases the links are stylized as buttons or as icons(depending on the decade)
 
 #### ASCII Code
 As seen in the about me section and my work section, in the 1980 version there are no images used. Instead there is Ascii code art aplied in this section to provide the acompaning art.
