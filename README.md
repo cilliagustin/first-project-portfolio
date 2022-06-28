@@ -19,10 +19,10 @@ The way the site works is there are 6 css files: A general one with most of the 
 
 ### Purpose
 #### For the creator:
-To show all prevous projects created in a fun way that is engaging to the user and to show how a website can radycally change with just a few tweeks
+To show all prevous projects created in a fun way that is engaging to the user and to show how a website can radically change with just a few tweeks.
 
 #### For the user (potential employeer):
-To see the creator´s capabilities in case he/she is looking for a new employee
+To see the creator´s capabilities in case he/she is looking for a new employee.
 
 ## UX
 ### Development-Planes
@@ -52,9 +52,10 @@ The wireframes were created with the first version (the 2020 version) in mind. T
 #### Design description
 The design was made with a mobile first aproach. Using flexbox and mediaqueries to create the positioning for mobile and desktop versions.
 * The 2020 version is a design created taking inspiration from various web developer portfolios. the concept is a minimalistic and futuristic aproach of web design. This uses thin lines and a box-shadow to give elements a led effect when necessary.
-* The 2010 version is inspired on the 2010 [facebook](https://www.facebook.com/) wall. All the information is displayed as if they were Facebook posts with the exception of the profile picture and the buttons for toggeling the versions that in the desktop version are fix positioned to look like asides.
-* The 2000 version takes inspiration for the websites used in the beginning of the millennium. The Main title was stylised to look similar to the Microsoft Word´s WordArt. Floats were used so the text can wrap an image and there are plenty of effects (blink, marquee) applied to catch the user´s eye.
-* The 1990 version takes it´s aesthetic from Microsoft´s Windows 98 operating system. Many of the elements were stylized to look like they were engraved in the screen and some look like they actually raise. All buttons have an effect when pressed that look like they are being sunken. The Photo displayed has a pixelated effect to intentionally lower the resolution.
+* The 2010 version is inspired on the 2010 [Facebook](https://www.facebook.com/) wall. All the information is displayed as if they were Facebook posts with the exception of the profile picture and the buttons for toggeling the versions that in the desktop version are fix positioned to look like asides.
+* The 2000 version takes inspiration for the websites used in the beginning of the millennium. The Main title was stylised to look similar to the [Microsoft Word´s](https://www.microsoft.com/en-us/microsoft-365/p/word/cfq7ttc0hlkm?activetab=pivot:overviewtab) 
+[WordArt](https://support.microsoft.com/en-us/office/wordart-tools-eb0e6ddc-d9ff-4d4a-859f-fa28e5ad2d00#__toc261522512). Floats were used so the text can wrap an image and there are plenty of effects (blink, marquee) applied to catch the user´s eye.
+* The 1990 version takes it´s aesthetic from Microsoft´s [Windows 98](https://en.wikipedia.org/wiki/Windows_98) operating system. Many of the elements were stylized to look like they were engraved in the screen and some to look like they raise. All buttons have an effect when pressed that look like they are being sunken. The Photo displayed has a pixelated effect to intentionally lower the resolution.
 * The 1980 version looks like an 80´s terminal. The site aplies a text shadow and is covered by an after pseudo element which apllies a filter that makes the whole screen look like a 1980´s computer monitor. This is the only version that does not use images (since it would interfear with the desired aesthetic) Intead in this cases uses ASCII code art to represent the pictures.
 
 #### Colour
@@ -76,9 +77,9 @@ Each version has it´s own color palette that generates enough contrast and prov
 
 #### Typography
 With the exception of the 2010 version, all fonts were provided by [Google Fonts](https://fonts.google.com/)
-* 2020: The section titles and the text next to the icons in the "my Work" section has [Montserrat](https://fonts.google.com/?query=montserrat) applied as the default font and the rest of the website uses [Lato](https://fonts.google.com/?query=lato) In both cases a backup of Sans-Serif has been applied.
+* 2020: The section titles and the text next to the icons in the "My Work" section has [Montserrat](https://fonts.google.com/?query=montserrat) applied as the default font and the rest of the website uses [Lato](https://fonts.google.com/?query=lato) In both cases a backup of Sans-Serif has been applied.
 * 2010: This is the only case where only one font is aplied through the hole site, this is [Helvetica](https://en.wikipedia.org/wiki/Helvetica)
-* 2000: In this case [Work Sans](https://fonts.google.com/?query=work+sans) was used in all titles, navbar links, buttons and next to the icons in the "my Work" section with a back up of Sans-Serif. The rest of the website uses [Mali](https://fonts.google.com/?query=mali)  with a back up of Cursive.
+* 2000: In this case [Work Sans](https://fonts.google.com/?query=work+sans) was used in all titles, navbar links, buttons and next to the icons in the "My Work" section with a back up of Sans-Serif. The rest of the website uses [Mali](https://fonts.google.com/?query=mali)  with a back up of Cursive.
 * 1990: Here [VT323](https://fonts.google.com/?query=vt323) was used for all titles and [DotGothic16](https://fonts.google.com/?query=DotGothic16) for the rest of the site. In both cases a backup of Monospace has been applied.
 * 1980: Finally [Press Start 2p](https://fonts.google.com/?query=press+start+2p) was used in all titles, in the text next to icons in the "My Work" section and as header in the portfolio-cards in the "My Work" section. The rest of the site uses [Share Tech Mono](https://fonts.google.com/?query=share+tech+mono). A backup of Monospace has been applied for the whole site.
 
@@ -87,7 +88,7 @@ With the exception of my own photos, all images were provided by external source
 
 ### Features
 #### Loader
-in order to provide a smooth transition when the versions are changed a loader was created. this occupies 100% of the pages height and with and has a fixed positioning blocking all the screen while the new styling for the page is loaded.
+In order to provide a smooth transition when the versions are changed a loader was created. this occupies 100% of the pages height and width and has a fixed positioning blocking all the screen while the new styling for the page is loaded.
 <details>
 <summary>See loader</summary>
 
@@ -129,12 +130,12 @@ The navbar has a fixed positioning on the top of the website. In the mobile vers
 </details>
 
 #### Home
-The home section consists of the Title, subtitle and introductory text for the website. After this are located the 5 buttons which toggle the different website versions. Noticable changes in other versions:
-* 2000: The main title has a background image that acts like a hero image and in the desktop version has the buttons located next to the text intead of under them like in the other versions.
-* 2010: This version provides an extra image (profile picture) which in the mobile version is located in the top of the header and in the desktop version is located with a fixed positioning at the left of the website (emulating the profile picture positioning in facebook) the same happens with the buttons that are located to the right the same way Facebook places some extra links or advertising.
+The Home section consists of the title, subtitle and introductory text for the website. After this are located the 5 buttons which toggle the different website versions. Noticable changes in other versions:
+* 2000: The main title has a background image that acts like a hero image and in the desktop version has the buttons located next to the text instead of under them like in the other versions.
+* 2010: This version provides an extra image (profile picture) which in the mobile version is located in the top of the header and in the desktop version is located with a fixed positioning at the left of the website (emulating the profile picture positioning in [Facebook](https://www.facebook.com/)) the same happens with the buttons that are located to the right the same way Facebook places some extra links or advertising.
 
 #### Buttons
-This activate the main Javascript function that is the one that changes the css file, favicon and hides and shows the corresponding elements.
+This activate the main Javascript function that is the one that changes the CSS file, favicon and hides and shows the corresponding elements.
 ##### 2020 Buttons
 ![2020 Buttons Desktop](documentation/testing/2020-buttons.png)
 <details>
@@ -196,7 +197,7 @@ This section conists on an image, followed by a text that describes my experienc
 </details>
 
 #### My work
-My work section consists first of 4 icons that describe some of the characteristics of my work (Responsive, easy to navigate, Modern and fast). followed by it is my current portfolio (two projects when this file was written) each portfolio card consists of the title of the website, the website description, a list of technologies used and language abvailable for the website and two links (one for the website and one for the GitHub repository) but the order of how this information is presenter changes through some versions.
+My Work section consists first of 4 icons that describe some of the characteristics of my work (Responsive, easy to navigate, Modern and fast). followed by it is my current portfolio (two projects when this file was written) each portfolio card consists of the title of the website, the website description, a list of technologies used and language available for the website and two links (one for the website and one for the GitHub repository) but the order of how this information is presented changes through some versions.
 
 ##### Work Icons
 ![2020 Work Icons](documentation/testing/2020-work-icons.png)
@@ -244,13 +245,13 @@ My work section consists first of 4 icons that describe some of the characterist
 </details>
 
 #### Contact
-The contact section consists of a form with redirect temporarily to a confitmation.html page. All the input displayed are mandatory. In the form all items are displayed in the revserse order and then have aplied a reverse column flex so the labels can be  stylized when the input are active.
+The Contact section consists of a form with redirect temporarily to a confitmation.html page. All the inputs displayed are mandatory. In the form all items are displayed in the reverse order and then have applied a (reverse column) flex so the labels can be stylized when the inputs are active.
 
 #### Footer
-The footer consists on my name and 2 links, one for my github profile and one to automatically send me an Email. This always share the same styling as the navbar to provide consistency but is not fixed positioned. In some cases the links are stylized as buttons or as icons(depending on the decade)
+The Footer consists on my name and 2 links, one for my [GitHub](https://github.com/) profile and one to automatically send me an Email. This always share the same styling as the navbar to provide consistency but is not fixed positioned. In some cases the links are stylized as buttons or as icons(depending on the decade)
 
 #### ASCII Code
-As seen in the about me section and my work section, in the 1980 version there are no images used. Instead there is Ascii code art aplied in this section to provide the acompaning art.
+As seen in the About Me section and My Work section, in the 1980 version there are no images used. Instead there is ASCII code art aplied in this section to provide the acompaning art.
 
 #### JavaScript
 The websites uses 2 functions:
@@ -268,7 +269,7 @@ Testing information can be found in a separate testing [file](TESTING.md "Link t
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Other technologies Used
-I aplied for the website some technologies that are beyond the scope of what Code institute teaches:
+I aplied for the website some technologies that are beyond the scope of what Code Institute teaches:
 * Flexbox
 * Root variables
 
@@ -337,12 +338,12 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 ### Inpiration
 I took inspiration from many sources to create the diferent versions of my website:
 * 2020
-    * For this version I took inspiration from many web developer portfolios, the biggest inpiration for the structure are [Brittany Chiang´s](https://brittanychiang.com/) and [Matthew Williams´s](http://findmatthew.com/) websites.
-    * For the color Palette I took some inspiration from the [Dark Dracula Theme](https://draculatheme.com/visual-studio-code) for VSC.
+    * For this version I took inspiration from many web developer portfolios, the biggest inpiration for the structure were [Brittany Chiang´s](https://brittanychiang.com/) and [Matthew Williams´s](http://findmatthew.com/) websites.
+    * For the color Palette I took some inspiration from the [Dark Dracula Theme](https://draculatheme.com/visual-studio-code) for [VSC](https://code.visualstudio.com/).
 * 2010
-    * For this version both structure and color scheme was taken from he 2010 version of the [facebook](https://www.facebook.com/) wall. [This](https://techcrunch.com/wp-content/uploads/2010/12/fbprofile3.png) is the image I took as reference for the Desktop version and the inspiration for the mobile versions are [this](https://techcrunch.com/wp-content/uploads/2010/06/aaa2.png) and [this](https://newsfeed.org/wp-content/uploads/mobile-facebook-ads-1260x840.jpg).
+    * For this version both structure and color scheme was taken from he 2010 version of the [Facebook](https://www.facebook.com/) wall. [This](https://techcrunch.com/wp-content/uploads/2010/12/fbprofile3.png) is the image I took as reference for the Desktop version and the inspiration for the mobile versions are [this](https://techcrunch.com/wp-content/uploads/2010/06/aaa2.png) and [this](https://newsfeed.org/wp-content/uploads/mobile-facebook-ads-1260x840.jpg).
 * 2000
-    * In this version I used [The Wayback Macxhine](https://archive.org/web/) to see old versions of websites which help me decide the correct structure. The Navbar is inspired by the [2001 Apple](https://web.archive.org/web/20010701002920/http://www.apple.com/) Navbar and the background by the [2003 Britney Spears](https://web.archive.org/web/20040901074530/http://www.britneyspears.com/) website.
+    * In this version I used [The Wayback Machine](https://archive.org/web/) to see old versions of websites which help me decide the correct structure. The Navbar is inspired by the [2001 Apple](https://web.archive.org/web/20010701002920/http://www.apple.com/) Navbar and the background by the [2003 Britney Spears](https://web.archive.org/web/20040901074530/http://www.britneyspears.com/) website.
     * For the main title I took inspiration for the early 2000´s [Microsoft WordArt](https://support.microsoft.com/en-us/office/wordart-tools-eb0e6ddc-d9ff-4d4a-859f-fa28e5ad2d00#__toc261522512)
 * 1990
     * This version takes inspiration from the [Windows 98](https://en.wikipedia.org/wiki/Windows_98) operating system. [Jordan Scales](https://github.com/jdan) has a [project](https://jdan.github.io/98.css/) where he designed a website recreating this operating system, I took most of the color palette and how the buttons work from here.
