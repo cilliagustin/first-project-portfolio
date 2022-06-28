@@ -2,7 +2,7 @@
 "Click to return back to the [README.md](README.md)"
 
 ## Browser Compatibility
-The site was tested to work correctly in Google Chrome, Mozilla Firefox and Safari. here are some screenshots of the site in the diferent browsers.
+The site was tested to work correctly in [Google Chrome](https://www.google.com/chrome/), Mozilla [Firefox](https://www.mozilla.org/en-US/firefox/new/) and [Safari](https://www.apple.com/safari/). Here are some screenshots of the site in the different browsers.
 <details>
 <summary>Google Chrome</summary>
 
@@ -31,7 +31,7 @@ Result from [W3C Markup Validation Service](https://validator.w3.org/):
 ![HTML Validator](documentation/testing/HTML-validator.png)
    
 ### CSS
-Since the website has 6 different css files each one has been validated.
+Since the website has 6 different CSS files each one has been validated.
 
 Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) for general styling:
 ![CSS Validator](documentation/testing/CSS-validator.png)
@@ -76,8 +76,8 @@ Here are screenshots of the website on the desktop and mobile version. The break
 </details>
 
 ## Bugs
-* On the 1990 version there was a problem with the inputs in the Form. On Firefox the text area has a bigger size than on other browsers and in Safari both text inputs and the textarea did not accept the styling rules.
-This was fixed by adding a specific height rule for the text area only on Firefox and the bug with safari required a "-webkit-appearance none" rule and setting a specific border radius.
+* On the 1990 version there was a problem with the inputs in the Form. On [Firefox](https://www.mozilla.org/en-US/firefox/new/) the text area has a bigger size than on other browsers and in [Safari](https://www.apple.com/safari/) both text inputs and the textarea did not accept the styling rules.
+This was fixed by adding a specific height rule for the text area only on Firefox and the bug with Safari required a "-webkit-appearance none" rule and setting a specific border radius.
 
 <details>
 <summary>See bug</summary>
