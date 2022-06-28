@@ -15,6 +15,7 @@
 
 ## Introduction
 This website consists in my portolio which can be viewed in 5 different versions, each one representing one decade for front end development (from the eighties to the 2020)
+The way the site works is there are 6 css files: A general one with most of the styling that repeats in all versions and one for each decade. When pressing one of the decade buttons the second css link toggles between files, hides all elements and shows the ones corresponding to that decade.
 
 ### Purpose
 #### For the creator:
