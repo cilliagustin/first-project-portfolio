@@ -291,6 +291,7 @@ I aplied for the website some technologies that are beyond the scope of what Cod
 -   [JSHint](https://jshint.com/)
     - Used to validate Javascript.
 -   [Microsoft Paint](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H?hl=en-us&gl=US)
+    - Used to edit the screenshots providided in the README and TESTING files.
 -   [TinyPNG](https://tinypng.com/)
     - Used to compress the size of my images.
     - Used edit screenshots for README file.
