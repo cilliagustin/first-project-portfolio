@@ -374,6 +374,11 @@ mark{
 
 /* CONTACT */
 
+#contact{
+    justify-content: flex-start;
+    padding-bottom: 0;
+}
+
 .contact-card{
     width: 100%;
 }
