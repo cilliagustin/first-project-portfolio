@@ -34,7 +34,7 @@ body{
 }
 
 mark{
-    color: var(--blue-link)!important;
+    color: var(--blue-link);
     font-weight: bold;
 }
 
@@ -292,7 +292,7 @@ mark{
 
 .my-work-card .icon-container i{
     font-size: 65px;
-    color: var(--blue-icon)!important;
+    color: var(--blue-icon);
     text-shadow: var(--icon-border);
 }
 
@@ -305,7 +305,7 @@ mark{
 }
 
 .my-work-card:hover .icon-container i{
-    color: white!important;
+    color: white;
 }
 
 .portfolio{
