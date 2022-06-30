@@ -24,7 +24,7 @@ body{
 }
 
 mark{
-    color: var(--blue)!important;
+    color: var(--blue);
 }
 
 .section-title{
@@ -220,7 +220,7 @@ nav{
 
 .my-work-card .icon .icon-container i{
     font-size: 50px;
-    color: var(--white)!important;
+    color: var(--white);
 }
 
 .my-work-card .icon .icon-container :nth-child(2){
@@ -291,7 +291,7 @@ nav{
 .portfolio-card .portfolio-links i{
     cursor: pointer;
     font-size: 2em;
-    color: var(--gray-typography)!important;
+    color: var(--gray-typography);
 }
 
 .portfolio-card .portfolio-title{
@@ -317,7 +317,7 @@ nav{
 }
 
 .portfolio-card .portfolio-info .portfolio-characteristics i{
-    color: var(--gray-typography)!important;
+    color: var(--gray-typography);
     font-size: 1.7em;
     margin-right: .8em;
     transition: var(--transition-03s);
@@ -339,14 +339,14 @@ nav{
 
 .portfolio-card:hover .portfolio-info .portfolio-text,
 .portfolio-card:hover .portfolio-links a i{
-    color: var(--white)!important;
+    color: var(--white);
     transition: var(--transition-03s);
 }
 
 .portfolio-card:hover .portfolio-title,
 .portfolio-card:hover .portfolio-info .portfolio-characteristics i,
 .portfolio-card .portfolio-links a i:hover{
-    color: var(--blue)!important;
+    color: var(--blue);
     transition: var(--transition-03s);
 }
 
@@ -381,7 +381,7 @@ nav{
 }
 
 ::placeholder{ 
-    color: var(--gray-typography)!important;
+    color: var(--gray-typography);
 }
 
 .contact-card:hover{
@@ -422,14 +422,14 @@ textarea:focus + label{
 footer .footer-icons a i{
     padding-left: 1em;
     font-size: 2em;
-    color: var(--gray-typography)!important;
+    color: var(--gray-typography);
     transition: var(--transition-03s);
 }
 
 footer .footer-icons a i:hover{
     padding-left: 1em;
     font-size: 2em;
-    color: var(--blue)!important;
+    color: var(--blue);
     transition: var(--transition-03s);
 }
 
