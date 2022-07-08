@@ -28,23 +28,23 @@ The site was tested to work correctly in [Google Chrome](https://www.google.com/
 
 ### HTML
 Result from [W3C Markup Validation Service](https://validator.w3.org/):
-![HTML Validator](documentation/testing/HTML-validator.png)
+![HTML Validator](documentation/testing/html-validator.png)
    
 ### CSS
 Since the website has 6 different CSS files each one has been validated.
 
 Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) for general styling:
-![CSS Validator](documentation/testing/CSS-validator.png)
+![CSS Validator](documentation/testing/css-validator.png)
 Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) for 2020 style sheet:
-![CSS Validator](documentation/testing/CSS20-validator.png)
+![CSS Validator](documentation/testing/css20-validator.png)
 Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)for 2010 style sheet:
-![CSS Validator](documentation/testing/CSS10-validator.png)
+![CSS Validator](documentation/testing/css10-validator.png)
 Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)for 2000 style sheet:
-![CSS Validator](documentation/testing/CSS00-validator.png)
+![CSS Validator](documentation/testing/css00-validator.png)
 Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)for 1990 style sheet:
-![CSS Validator](documentation/testing/CSS90-validator.png)
+![CSS Validator](documentation/testing/css90-validator.png)
 Result from [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)for 1980 style sheet:
-![CSS Validator](documentation/testing/CSS80-validator.png)
+![CSS Validator](documentation/testing/css80-validator.png)
 
 ### JavaScript
 Result from [JSHint](https://jshint.com/):
