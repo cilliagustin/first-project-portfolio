@@ -380,6 +380,11 @@ nav{
     transition: var(--transition-03s);
 }
 
+#contact-form form input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0px 1000px var(--secondary-gray) inset;
+    -webkit-text-fill-color: var(--white);
+}
+
 ::placeholder{ 
     color: var(--gray-typography);
 }
