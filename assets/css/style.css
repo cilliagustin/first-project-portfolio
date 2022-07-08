@@ -422,5 +422,21 @@ footer p{
 
 /* CONFIRMATION.HTML */
 #navbar.confirmation-navbar{
-    position: relative;
+    position: absolute;
+}
+
+#confirmation {
+    height: 100vh;
+}
+
+#confirmation img{
+    width: 40%;
+    height: auto;
+    margin-right: 10px;
+}
+
+#confirmation p{
+    text-align: right;
+    width: 40%;
+    font-size: 20px;
 }
