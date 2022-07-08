@@ -245,7 +245,7 @@ My Work section consists first of 4 icons that describe some of the characterist
 </details>
 
 #### Contact
-The Contact section consists of a form with redirect temporarily to a confitmation.html page. All the inputs displayed are mandatory. In the form all items are displayed in the reverse order and then have applied a (reverse column) flex so the labels can be stylized when the inputs are active.
+The Contact section consists of a form with redirect temporarily to a confitmation.html page. All the inputs displayed are mandatory. In the form all labels are placed after the inputs and are then reorganized in CSS using the property order so the labels can be stylized when the inputs are active (I could only do this if the labels are after the input because CSS does not have predecessor selectors).
 
 #### Footer
 The Footer consists on my name and 2 links, one for my [GitHub](https://github.com/) profile and one to automatically send me an Email. This always share the same styling as the navbar to provide consistency but is not fixed positioned. In some cases the links are stylized as buttons or as icons(depending on the decade)
