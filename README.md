@@ -331,6 +331,7 @@ In order to make a local copy of this project, you can clone it. In your IDE Ter
 ​
 - `git clone https://github.com/cilliagustin/first-project-portfolio.git`
 ​
+
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 ​
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/cilliagustin/first-project-portfolio)
