@@ -271,6 +271,7 @@ nav{
 }
 
 #contact-form form input:-webkit-autofill{
+    box-shadow: 0 0 0px 1000px var(--background-green) inset;
     -webkit-box-shadow: 0 0 0px 1000px var(--background-green) inset;
     -webkit-text-fill-color: var(--typography-green);
 }
