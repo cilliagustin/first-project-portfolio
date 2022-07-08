@@ -295,8 +295,40 @@ mark{
 
 .contact-card form{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin-bottom: 2.5em;
+}
+
+.contact-card form :nth-child(1){
+    order: 2;
+}
+
+.contact-card form :nth-child(2){
+    order: 1;
+}
+
+.contact-card form :nth-child(3){
+    order: 4;
+}
+
+.contact-card form :nth-child(4){
+    order: 3;
+}
+
+.contact-card form :nth-child(5){
+    order: 6;
+}
+
+.contact-card form :nth-child(6){
+    order: 5;
+}
+
+.contact-card form :nth-child(7){
+    order: 7;
+}
+
+.contact-card form :nth-child(8){
+    order: 8;
 }
 
 .contact-card form input,
